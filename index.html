@@ -225,6 +225,38 @@
           </div>
         </div>
 
+        </div>
+
+        <!-- Natija va xatolarni tekshirish bo'limi -->
+        <div class="card" style="margin-top:2rem; background:rgba(255,255,255,0.01); border:1px solid var(--panel-border); text-align:left;">
+          <h3 style="font-family:var(--font-title); font-size:1.1rem; margin-bottom:1rem; color:var(--accent); display:flex; align-items:center; gap:6px;">
+            🔍 Yo'l qo'yilgan xatolar va tahlil:
+          </h3>
+          
+          <!-- Qobiliyat bahosi (A+, A, B+, B, C+, C) -->
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:1.5rem; background:rgba(167,139,250,0.08); border:1px solid var(--primary); padding:1rem; border-radius:12px;">
+            <div style="font-size:1.8rem;">🎓</div>
+            <div>
+              <div style="font-size:0.8rem; color:var(--text-muted);">Rasch modeli bo'yicha bahoingiz:</div>
+              <div style="font-family:var(--font-title); font-size:1.4rem; font-weight:800; color:var(--success);" id="lbl-res-sertifikat-grade">-</div>
+            </div>
+          </div>
+
+          <!-- Kamchiliklar va tavsiyalar -->
+          <div style="margin-bottom:1.5rem;">
+            <h4 style="font-size:0.9rem; font-weight:600; margin-bottom:0.5rem; color:#fbbf24;">⚠️ E'tibor qaratish kerak bo'lgan mavzular:</h4>
+            <div id="lbl-res-weaknesses" style="font-size:0.85rem; line-height:1.5; color:var(--text-muted); display:flex; flex-direction:column; gap:6px;">
+              Hammasi ajoyib! Hech qanday jiddiy kamchilik aniqlanmadi.
+            </div>
+          </div>
+
+          <!-- Savollar bo'yicha batafsil ro'yxat -->
+          <h4 style="font-size:0.9rem; font-weight:600; margin-bottom:1rem; color:var(--text-main);">📝 Savollar va sizning javoblaringiz:</h4>
+          <div id="div-res-questions-list" style="display:flex; flex-direction:column; gap:1rem; max-height:400px; overflow-y:auto; padding-right:6px; border:1px solid var(--panel-border); padding:1rem; border-radius:10px; background:rgba(0,0,0,0.2);">
+            <!-- Savollar dinamik ravishda shu yerga yuklanadi -->
+          </div>
+        </div>
+
         <div style="margin-top:2rem; text-align:center;">
           <button class="btn btn-outline" onclick="quitTest()">Asosiy sahifaga qaytish</button>
         </div>
@@ -563,9 +595,9 @@
   </div>
 
   <!-- Script Files -->
-  <script src="questions.js?v=1.5"></script>
-  <script src="rasch.js?v=1.5"></script>
-  <script src="app.js?v=1.5"></script>
+  <script src="questions.js?v=1.6"></script>
+  <script src="rasch.js?v=1.6"></script>
+  <script src="app.js?v=1.6"></script>
 
   <script>
     // Theme toggler logic

@@ -36,7 +36,7 @@ const ADMIN_CARD_HOLDER = "TOPILDIYEV SIROJIDDIN";
 // 2. LocalStorage dan foydalanuvchi holatini yuklash
 function initUser() {
   // Programmatik versiya nazorati — eski brauzer xotirasini avtomat tozalaydi
-  const CURRENT_VERSION = "1.4";
+  const CURRENT_VERSION = "1.6";
   const storedVersion = localStorage.getItem('rasch_app_version');
   if (storedVersion !== CURRENT_VERSION) {
     localStorage.clear();
@@ -660,6 +660,141 @@ function finishTest() {
   document.getElementById('lbl-res-percent').innerText = `${result.percentage}%`;
   document.getElementById('lbl-res-theta').innerText = `${result.theta > 0 ? '+' : ''}${result.theta} logit`;
   document.getElementById('lbl-res-sem').innerText = `±${result.sem} logit`;
+
+  // 1. Qobiliyat bahosi (A+, A, B+, B, C+, C, F) ni hisoblash va ko'rsatish
+  let grade = 'F';
+  if (result.theta >= 2.0) grade = 'A+ 🥇 (90%+ ball) - MUKAMMAL!';
+  else if (result.theta >= 1.2) grade = 'A 🥈 (80%-89% ball) - JUDA YAXSHI!';
+  else if (result.theta >= 0.5) grade = 'B+ 🥉 (70%-79% ball) - YAXSHI!';
+  else if (result.theta >= 0.0) grade = 'B 🎖️ (60%-69% ball) - QONIQARLI!';
+  else if (result.theta >= -0.5) grade = 'C+ 📈 (50%-59% ball) - CHEGARAVIY QONIQARLI!';
+  else if (result.theta >= -1.2) grade = 'C 📉 (40%-49% ball) - PAST DARAJA!';
+  else grade = 'F ❌ (40% dan past) - SERTIFIKAT BERILMAYDI';
+
+  const gradeEl = document.getElementById('lbl-res-sertifikat-grade');
+  if (gradeEl) {
+    gradeEl.innerText = grade;
+    if (grade.startsWith('F')) {
+      gradeEl.style.color = '#ef4444';
+    } else if (grade.startsWith('C')) {
+      gradeEl.style.color = '#fbbf24';
+    } else {
+      gradeEl.style.color = '#10b981';
+    }
+  }
+
+  // 2. Bo'limlar bo'yicha kamchiliklar va tahlillar
+  const categoryStats = {};
+  state.currentTest.questions.forEach((q, idx) => {
+    const isCorrect = state.currentTest.isAdaptive 
+      ? state.currentTest.responses[idx] 
+      : (state.currentTest.answers[q.id] === q.correctAnswer ? 1 : 0);
+    
+    const cat = q.category || 'Boshqa';
+    if (!categoryStats[cat]) {
+      categoryStats[cat] = { total: 0, correct: 0 };
+    }
+    categoryStats[cat].total++;
+    if (isCorrect) categoryStats[cat].correct++;
+  });
+
+  const weaknessesEl = document.getElementById('lbl-res-weaknesses');
+  if (weaknessesEl) {
+    let weakHTML = '';
+    let hasWeaknesses = false;
+
+    for (const [cat, stats] of Object.entries(categoryStats)) {
+      const accuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+      if (accuracy < 60) {
+        hasWeaknesses = true;
+        let advice = '';
+        if (cat.includes('Geometriya')) advice = "Geometrik chizmalar, burchaklar va yuzalarni hisoblash formulalarini takrorlang.";
+        else if (cat.includes('Trigonometriya')) advice = "Trigonometrik ayniyatlar, keltirish formulalari va tenglamalarni qayta ko'rib chiqing.";
+        else if (cat.includes('Analiz')) advice = "Hosilalar, integrallar va ularning geometrik ma'nolariga ko'proq e'tibor qarating.";
+        else if (cat.includes('Tenglama') || cat.includes('tengsizlik')) advice = "Kvadrat, ko'rsatkichli va logarifmik tenglama/tengsizliklarni yechish usullarini mustahkamlang.";
+        else if (cat.includes('Sonlar')) advice = "Tub bo'luvchilar, sonli ketma-ketliklar va amallarni bajarish qoidalarini takrorlang.";
+        else advice = "Ushbu mavzuda ko'proq amaliy mashg'ulotlar bajaring.";
+
+        weakHTML += `
+          <div style="background:rgba(251,191,36,0.04); border-left: 3px solid #fbbf24; padding:0.6rem; border-radius:6px; margin-bottom: 6px; font-size:0.8rem; line-height:1.4;">
+            <strong>📌 ${cat}:</strong> ${stats.correct}/${stats.total} to'g'ri (${Math.round(accuracy)}%). <span style="color:var(--text-muted);">${advice}</span>
+          </div>
+        `;
+      }
+    }
+
+    if (hasWeaknesses) {
+      weaknessesEl.innerHTML = weakHTML;
+    } else {
+      weaknessesEl.innerHTML = `<div style="color:#10b981; font-weight:600; font-size:0.85rem;">🎉 Ajoyib! Barcha bo'limlardan yuqori natija ko'rsatdingiz. Kamchiliklar aniqlanmadi!</div>`;
+    }
+  }
+
+  // 3. Savollar bo'yicha batafsil ro'yxat (xatolarni qizil bilan belgilash)
+  const listEl = document.getElementById('div-res-questions-list');
+  if (listEl) {
+    let listHTML = '';
+    state.currentTest.questions.forEach((q, idx) => {
+      const userAnswerIdx = state.currentTest.isAdaptive 
+        ? (state.currentTest.responses[idx] ? q.correctAnswer : -1)
+        : state.currentTest.answers[q.id];
+      
+      const isCorrect = state.currentTest.isAdaptive
+        ? state.currentTest.responses[idx] === 1
+        : (userAnswerIdx === q.correctAnswer);
+
+      const statusIcon = isCorrect ? '✅ TO\'G\'RI' : '❌ NOTO\'G\'RI (XATO)';
+      const statusColor = isCorrect ? '#10b981' : '#ef4444';
+      const bgColor = isCorrect ? 'rgba(16,185,129,0.02)' : 'rgba(239,68,68,0.02)';
+      const borderColor = isCorrect ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.15)';
+
+      let optionsHTML = '';
+      q.options.forEach((opt, optIdx) => {
+        let optBg = 'transparent';
+        let optBorder = '1px solid var(--panel-border)';
+        let optColor = 'var(--text-main)';
+        
+        if (optIdx === q.correctAnswer) {
+          optBg = 'rgba(16,185,129,0.12)';
+          optBorder = '1px solid #10b981';
+          optColor = '#10b981';
+        } else if (optIdx === userAnswerIdx && !isCorrect) {
+          optBg = 'rgba(239,68,68,0.12)';
+          optBorder = '1px solid #ef4444';
+          optColor = '#ef4444';
+        }
+
+        optionsHTML += `
+          <div style="background:${optBg}; border:${optBorder}; color:${optColor}; padding:0.5rem; border-radius:6px; margin-top:4px; font-size:0.8rem; line-height:1.3;">
+            ${String.fromCharCode(65 + optIdx)}) ${opt}
+          </div>
+        `;
+      });
+
+      listHTML += `
+        <div style="background:${bgColor}; border:1px solid ${borderColor}; padding:1rem; border-radius:8px; display:flex; flex-direction:column; gap:0.5rem; text-align:left;">
+          <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; margin-bottom: 4px;">
+            <span style="color:var(--text-muted);">Mavzu: <strong>${q.category || 'Boshqa'}</strong></span>
+            <span style="color:${statusColor}; font-weight:bold; font-size:0.8rem;">${statusIcon}</span>
+          </div>
+          <div style="font-size:0.85rem; font-weight:600; line-height:1.4; color:var(--text-main);">
+            ${idx + 1}. ${q.text}
+          </div>
+          <div style="display:grid; grid-template-columns:1fr; gap:4px; margin-top:8px;">
+            ${optionsHTML}
+          </div>
+        </div>
+      `;
+    });
+    listEl.innerHTML = listHTML;
+
+    // Matematik formulalarni qayta render qilish
+    if (window.MathJax) {
+      setTimeout(() => {
+        MathJax.typesetPromise([listEl]).catch(err => console.log(err));
+      }, 200);
+    }
+  }
 
   // Izoh yozish (Feedback)
   let feedback = '';
