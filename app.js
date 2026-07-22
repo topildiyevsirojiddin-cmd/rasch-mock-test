@@ -43,23 +43,17 @@ function initUser() {
     saveUserState();
   }
 
-  // To'lov tarixi statistikasini yuklash
+  // To'lov tarixi va bepul foydalanish statistikasi (noldan boshlanadi)
   const savedSales = localStorage.getItem('rasch_sales_history');
   if (savedSales) {
     state.salesHistory = JSON.parse(savedSales);
   } else {
-    // Boshlang'ich simulyatsion ma'lumotlar
-    state.salesHistory = [
-      { date: "2026-07-15 14:22", tier: "starter", cost: 5000 },
-      { date: "2026-07-16 09:15", tier: "standard", cost: 9000 },
-      { date: "2026-07-16 18:40", tier: "premium", cost: 15000 },
-      { date: "2026-07-17 11:30", tier: "starter", cost: 5000 },
-      { date: "2026-07-17 21:05", tier: "premium", cost: 15000 },
-      { date: "2026-07-18 08:12", tier: "standard", cost: 9000 },
-      { date: "2026-07-18 12:45", tier: "starter", cost: 5000 },
-      { date: "2026-07-18 16:30", tier: "premium", cost: 15000 }
-    ];
+    state.salesHistory = [];
     localStorage.setItem('rasch_sales_history', JSON.stringify(state.salesHistory));
+  }
+
+  if (!state.user.displayName) {
+    state.user.displayName = 'Nomzod';
   }
 
   // Telegram WebApp integratsiyasi
@@ -73,6 +67,8 @@ function initUser() {
     const tgUser = tg.initDataUnsafe ? tg.initDataUnsafe.user : null;
     if (tgUser) {
       const displayName = tgUser.first_name + (tgUser.last_name ? ' ' + tgUser.last_name : '');
+      state.user.displayName = displayName;
+      saveUserState();
       setTimeout(() => {
         const welcomeEl = document.querySelector('.profile-name');
         if (welcomeEl) {
@@ -301,19 +297,7 @@ function confirmPayment() {
   }
 
   // Sotuv statistikasiga yozish
-  const now = new Date();
-  const dateStr = now.getFullYear() + "-" + 
-                  String(now.getMonth() + 1).padStart(2, '0') + "-" + 
-                  String(now.getDate()).padStart(2, '0') + " " + 
-                  String(now.getHours()).padStart(2, '0') + ":" + 
-                  String(now.getMinutes()).padStart(2, '0');
-  
-  state.salesHistory.push({
-    date: dateStr,
-    tier: tier,
-    cost: cost
-  });
-  localStorage.setItem('rasch_sales_history', JSON.stringify(state.salesHistory));
+  logUsage(tier, cost);
 
   saveUserState();
   updateUIProfile();
@@ -366,6 +350,11 @@ function startStandardTest(variantId) {
   if (variantId !== 1 && state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
     showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
     return;
+  }
+
+  // Bepul test topshirilganini statistikaga yozish
+  if (variantId === 1) {
+    logUsage('free', 0);
   }
 
   let rawQuestions = questionBank.filter(q => q.variant === variantId);
@@ -1070,37 +1059,72 @@ function importFromPDFText() {
 }
 
 // 17. Sotuvlar statistikasini hisoblash va render qilish
+// Helper: Foydalanish yoki sotib olish voqeasini statistikaga yozish
+function logUsage(tier, cost = 0) {
+  const now = new Date();
+  const dateStr = now.getFullYear() + "-" + 
+                  String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                  String(now.getDate()).padStart(2, '0') + " " + 
+                  String(now.getHours()).padStart(2, '0') + ":" + 
+                  String(now.getMinutes()).padStart(2, '0');
+  
+  if (!state.salesHistory) state.salesHistory = [];
+  
+  // Capturing the current user's name
+  const userName = state.user.displayName || 'Nomzod';
+  
+  state.salesHistory.push({
+    date: dateStr,
+    user: userName,
+    tier: tier,
+    cost: cost
+  });
+  localStorage.setItem('rasch_sales_history', JSON.stringify(state.salesHistory));
+}
+
+// 17. Sotuvlar hamda bepul foydalanish statistikasini hisoblash va render qilish
 function renderSalesStats() {
   const history = state.salesHistory || [];
   
   let totalRevenue = 0;
+  let countFree = 0;
   let countStarter = 0;
   let countStandard = 0;
   let countPremium = 0;
   
   history.forEach(item => {
-    totalRevenue += item.cost;
-    if (item.tier === 'starter') countStarter++;
+    totalRevenue += (item.cost || 0);
+    if (item.tier === 'free') countFree++;
+    else if (item.tier === 'starter') countStarter++;
     else if (item.tier === 'standard') countStandard++;
     else if (item.tier === 'premium') countPremium++;
   });
   
   const totalCount = history.length;
+  const paidCount = countStarter + countStandard + countPremium;
   
   // DOM elementlarni yangilash
   const revEl = document.getElementById('lbl-stats-revenue');
   const cntEl = document.getElementById('lbl-stats-count');
-  const usrEl = document.getElementById('lbl-stats-users');
+  const freeUsrEl = document.getElementById('lbl-stats-free-users');
+  const paidUsrEl = document.getElementById('lbl-stats-paid-users');
   
   if (revEl) revEl.innerText = totalRevenue.toLocaleString('uz-UZ') + " so'm";
   if (cntEl) cntEl.innerText = totalCount + " ta";
-  if (usrEl) usrEl.innerText = (totalCount + 7) + " ta";
+  if (freeUsrEl) freeUsrEl.innerText = countFree + " ta";
+  if (paidUsrEl) paidUsrEl.innerText = paidCount + " ta";
   
   // Foizlarni hisoblash
+  const pctFree = totalCount > 0 ? Math.round((countFree / totalCount) * 100) : 0;
   const pctStarter = totalCount > 0 ? Math.round((countStarter / totalCount) * 100) : 0;
   const pctStandard = totalCount > 0 ? Math.round((countStandard / totalCount) * 100) : 0;
   const pctPremium = totalCount > 0 ? Math.round((countPremium / totalCount) * 100) : 0;
   
+  const lblFree = document.getElementById('lbl-stats-free');
+  const barFree = document.getElementById('bar-stats-free');
+  if (lblFree) lblFree.innerText = `${countFree} ta (${pctFree}%)`;
+  if (barFree) barFree.style.width = `${pctFree}%`;
+
   const lblStarter = document.getElementById('lbl-stats-starter');
   const barStarter = document.getElementById('bar-stats-starter');
   if (lblStarter) lblStarter.innerText = `${countStarter} ta (${pctStarter}%)`;
@@ -1115,4 +1139,42 @@ function renderSalesStats() {
   const barPremium = document.getElementById('bar-stats-premium');
   if (lblPremium) lblPremium.innerText = `${countPremium} ta (${pctPremium}%)`;
   if (barPremium) barPremium.style.width = `${pctPremium}%`;
+
+  // Tranzaksiyalar tarixi jadvalini render qilish
+  const tbody = document.getElementById('tbl-stats-history-body');
+  if (tbody) {
+    if (history.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Hozircha tranzaksiya yoki faollik yo'q</td></tr>`;
+    } else {
+      let rowsHTML = '';
+      // Eng so'nggisini eng tepada ko'rsatamiz
+      [...history].reverse().forEach(item => {
+        let actionText = '';
+        let costText = '0 so\'m';
+        let statusText = '';
+        
+        if (item.tier === 'free') {
+          actionText = '🆓 Bepul Variant 1 ni yechdi';
+          costText = '0 so\'m';
+          statusText = '<span style="color:#fbbf24; font-weight:600;">✓ Faol</span>';
+        } else {
+          let tierLabel = item.tier === 'starter' ? 'Starter' : (item.tier === 'standard' ? 'Standard' : 'Premium');
+          actionText = `🔑 ${tierLabel} Tarifini sotib oldi`;
+          costText = `${(item.cost || 0).toLocaleString('uz-UZ')} so'm`;
+          statusText = '<span style="color:var(--success); font-weight:600;">✓ Tasdiqlangan</span>';
+        }
+        
+        rowsHTML += `
+          <tr>
+            <td>${item.date}</td>
+            <td><strong>${item.user || 'Nomzod'}</strong></td>
+            <td>${actionText}</td>
+            <td>${costText}</td>
+            <td>${statusText}</td>
+          </tr>
+        `;
+      });
+      tbody.innerHTML = rowsHTML;
+    }
+  }
 }

@@ -6,7 +6,7 @@
   <title>Rasch Matematika - Milliy Sertifikat Mok Test Platformasi</title>
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1.2">
 
   <!-- KaTeX for beautiful math formulas rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -241,23 +241,37 @@
         </p>
 
         <!-- Stats summary boxes -->
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
-          <div style="background:rgba(34,211,238,0.05); border:1px solid var(--panel-border); padding:1rem; border-radius:12px; text-align:center;">
-            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:4px;">Jami Tushum</div>
-            <div style="font-family:var(--font-title); font-size:1.3rem; font-weight:800; color:var(--accent);" id="lbl-stats-revenue">0 so'm</div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:rgba(34,211,238,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Jami Tushum</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--accent);" id="lbl-stats-revenue">0 so'm</div>
           </div>
-          <div style="background:rgba(167,139,250,0.05); border:1px solid var(--panel-border); padding:1rem; border-radius:12px; text-align:center;">
-            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:4px;">Jami Tranzaksiyalar</div>
-            <div style="font-family:var(--font-title); font-size:1.3rem; font-weight:800; color:var(--primary);" id="lbl-stats-count">0 ta</div>
+          <div style="background:rgba(167,139,250,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Jami Kirganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--primary);" id="lbl-stats-count">0 ta</div>
           </div>
-          <div style="background:rgba(52,211,153,0.05); border:1px solid var(--panel-border); padding:1rem; border-radius:12px; text-align:center;">
-            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:4px;">A'zolar soni</div>
-            <div style="font-family:var(--font-title); font-size:1.3rem; font-weight:800; color:var(--success);" id="lbl-stats-users">1 ta</div>
+          <div style="background:rgba(251,191,36,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Bepul ishlaganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:#fbbf24;" id="lbl-stats-free-users">0 ta</div>
+          </div>
+          <div style="background:rgba(52,211,153,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Sotib olganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--success);" id="lbl-stats-paid-users">0 ta</div>
           </div>
         </div>
 
         <!-- Tariff Breakdown list -->
         <div style="display:flex; flex-direction:column; gap:0.8rem;">
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+              <span>🆓 Bepul Variant 1 (0 UZS)</span>
+              <strong id="lbl-stats-free" style="color:#fbbf24;">0 ta (0%)</strong>
+            </div>
+            <div style="width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px; overflow:hidden;">
+              <div id="bar-stats-free" style="width:0%; height:100%; background:#fbbf24; border-radius:4px; transition: width 0.4s ease;"></div>
+            </div>
+          </div>
+
           <div>
             <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
               <span>Starter Tarif (5 000 UZS)</span>
@@ -288,6 +302,30 @@
             </div>
           </div>
         </div>
+
+        <!-- Tranzaksiyalar tarixi jadvali -->
+        <div style="margin-top: 1.8rem; border-top: 1px dashed var(--panel-border); padding-top: 1.2rem;">
+          <h4 style="font-family:var(--font-title); font-size:0.95rem; color:var(--accent); margin-bottom:0.8rem; display:flex; align-items:center; gap:6px;">🕒 Faoliyatlar va Tranzaksiyalar tarixi (Log):</h4>
+          <div class="matrix-table-container" style="max-height: 200px; overflow-y: auto;">
+            <table class="matrix-table" style="font-size: 0.8rem; text-align: left;">
+              <thead>
+                <tr>
+                  <th>Sana va Vaqt</th>
+                  <th>Foydalanuvchi</th>
+                  <th>Amal / Tarif</th>
+                  <th>Summa</th>
+                  <th>Holat</th>
+                </tr>
+              </thead>
+              <tbody id="tbl-stats-history-body">
+                <tr>
+                  <td colspan="5" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Hozircha tranzaksiya yoki faollik yo'q</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
 
       <div class="card" style="margin-bottom:2rem;">
@@ -525,9 +563,9 @@
   </div>
 
   <!-- Script Files -->
-  <script src="questions.js"></script>
-  <script src="rasch.js"></script>
-  <script src="app.js"></script>
+  <script src="questions.js?v=1.4"></script>
+  <script src="rasch.js?v=1.4"></script>
+  <script src="app.js?v=1.4"></script>
 
   <script>
     // Theme toggler logic

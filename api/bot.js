@@ -35,10 +35,16 @@ module.exports = async (req, res) => {
         const host = req.headers['x-forwarded-host'] || req.headers.host || 'localhost:8080';
         const webAppUrl = `https://${host}`;
 
-        if (text.startsWith('/start')) {
-          const welcomeMessage = `Assalomu alaykum, ${firstName}! 📐\n\n` +
-            `Matematika fanidan Milliy sertifikat imtihonlariga tayyorgarlik ko'rish uchun **Rasch Modeli** asosida ishlaydigan mok test platformamizga xush kelibsiz!\n\n` +
-            `Quyidagi tugmani bosib, testlarni to'g'ridan-to'g'ri Telegram ichida, juda qulay va tezkor ravishda topshirishingiz mumkin:`;
+        if (text.startsWith('/start') || text) {
+          const welcomeMessage = `Assalomu alaykum, *${firstName}*! 📐\n\n` +
+            `🎓 **Rasch Math — Matematika Milliy Sertifikat Mok Test Platformasi**ga xush kelibsiz!\n\n` +
+            `Ushbu bot orqali siz matematika fanidan Milliy sertifikat imtihonlariga **Rasch Moslashuvchan (CAT) modeli** va **DTM standartlari** bo'yicha tayyorgarlik ko'rasiz.\n\n` +
+            `✨ **Platforma imkoniyatlari:**\n` +
+            `• 📈 *Rasch CAT Test:* Savollar bilim darajangizga moslashadi.\n` +
+            `• 📚 *30 ta Variant:* 900 ta saralangan va original DTM testlari.\n` +
+            `• 📊 *Real vaqtli tahlil:* Logitlar hamda Wright Map chartlari.\n` +
+            `• 💳 *Mos tariflar:* Starter, Standard va Premium paketlar.\n\n` +
+            `👇 *Testni boshlash uchun quyidagi tugmani bosing:*`;
 
           await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
             method: 'POST',
@@ -50,7 +56,7 @@ module.exports = async (req, res) => {
               reply_markup: {
                 inline_keyboard: [[
                   {
-                    text: "Mok testni boshlash 📝",
+                    text: "🚀 Mok Testni Boshlash 📝",
                     web_app: { url: webAppUrl }
                   }
                 ]]
