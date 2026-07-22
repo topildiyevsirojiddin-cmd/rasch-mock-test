@@ -35,6 +35,14 @@ const ADMIN_CARD_HOLDER = "TOPILDIYEV SIROJIDDIN";
 
 // 2. LocalStorage dan foydalanuvchi holatini yuklash
 function initUser() {
+  // Programmatik versiya nazorati — eski brauzer xotirasini avtomat tozalaydi
+  const CURRENT_VERSION = "1.4";
+  const storedVersion = localStorage.getItem('rasch_app_version');
+  if (storedVersion !== CURRENT_VERSION) {
+    localStorage.clear();
+    localStorage.setItem('rasch_app_version', CURRENT_VERSION);
+  }
+
   loadCustomVariants();
   const saved = localStorage.getItem('rasch_user_state');
   if (saved) {
