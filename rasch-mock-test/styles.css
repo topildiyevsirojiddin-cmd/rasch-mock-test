@@ -1,0 +1,823 @@
+/* Rasch Matematika Platformasi CSS (styles.css) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark Mode Variables (Default) */
+  --bg-color: #0b0c15;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #1e1145 0%, #0b0c15 70%);
+  --panel-bg: rgba(17, 18, 36, 0.7);
+  --panel-border: rgba(139, 92, 246, 0.2);
+  --panel-glow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --text-dark: #111827;
+  
+  --primary: #a78bfa;
+  --primary-glow: rgba(167, 139, 250, 0.4);
+  --accent: #22d3ee;
+  --accent-glow: rgba(34, 211, 238, 0.4);
+  
+  --success: #34d399;
+  --danger: #f87171;
+  --warning: #fbbf24;
+  
+  --card-locked-bg: rgba(15, 17, 33, 0.85);
+  --font-title: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+[data-theme="light"] {
+  /* Light Mode Variables */
+  --bg-color: #f3f4f6;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #e0e7ff 0%, #f3f4f6 80%);
+  --panel-bg: rgba(255, 255, 255, 0.75);
+  --panel-border: rgba(109, 40, 217, 0.15);
+  --panel-glow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+  
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --text-dark: #ffffff;
+  
+  --primary: #6d28d9;
+  --primary-glow: rgba(109, 40, 217, 0.2);
+  --accent: #0891b2;
+  --accent-glow: rgba(8, 145, 178, 0.2);
+  
+  --success: #059669;
+  --danger: #dc2626;
+  --warning: #d97706;
+  
+  --card-locked-bg: rgba(243, 244, 246, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-color);
+  background-image: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}
+
+/* Navigatsiya */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(11, 12, 21, 0.4);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--panel-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-links li.active a, .nav-links li a:hover {
+  color: var(--text-main);
+  background: var(--panel-border);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+  background: none;
+  border: 1px solid var(--panel-border);
+  color: var(--text-main);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-btn:hover {
+  background: var(--panel-border);
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* Layout va Konteyner */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Sahifalar (Tab panels) */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* User Profil Card */
+.profile-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: var(--panel-glow);
+  backdrop-filter: blur(12px);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.profile-info {
+  z-index: 1;
+}
+
+.profile-name {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.profile-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(167, 139, 250, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.profile-status.premium {
+  background: rgba(34, 211, 238, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-val {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.stat-lbl {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.pricing-btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+/* Asosiy Variantlar Paneli */
+.section-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grid-variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Variant Card */
+.variant-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
+}
+
+.variant-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.variant-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.variant-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.variant-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+/* Locked Card Visuals */
+.locked-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--card-locked-bg);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+  padding: 1rem;
+  text-align: center;
+}
+
+.locked-icon {
+  font-size: 2.2rem;
+  color: var(--primary);
+  filter: drop-shadow(0 0 8px var(--primary-glow));
+}
+
+.locked-price {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+/* Tugmalar */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--primary);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--primary-glow);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-accent {
+  background: var(--accent);
+}
+
+.btn-accent:hover {
+  box-shadow: 0 5px 15px var(--accent-glow);
+}
+
+.btn-outline {
+  background: none;
+  border: 1px solid var(--panel-border);
+  color: var(--text-main);
+}
+
+.btn-outline:hover {
+  background: var(--panel-border);
+  box-shadow: none;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* Test Ishlash Oynasi */
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.timer {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--warning);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.question-panel {
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Variant javoblari */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border: 1.5px solid var(--panel-border);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.02);
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.option-item:hover {
+  border-color: var(--primary);
+  background: rgba(167, 139, 250, 0.05);
+}
+
+.option-item.selected {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
+}
+
+.option-item.selected .option-letter {
+  color: #f59e0b;
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+.option-letter {
+  font-family: var(--font-title);
+  font-weight: 800;
+  color: var(--primary);
+  margin-right: 12px;
+  font-size: 1.2rem;
+  width: 24px;
+}
+
+.test-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--panel-border);
+}
+
+.nav-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.nav-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--panel-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-dot.answered {
+  background: var(--panel-border);
+  color: var(--text-main);
+}
+
+.nav-dot.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--text-dark);
+  box-shadow: 0 0 8px var(--primary-glow);
+}
+
+/* Natijalar paneli */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.results-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.score-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid var(--primary);
+  box-shadow: 0 0 20px var(--primary-glow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.score-val {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.score-lbl {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.ability-metric {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed var(--panel-border);
+}
+
+.ability-val {
+  font-family: var(--font-title);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Modal Oyna (P2P To'lov oynasi) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #111327;
+  border: 1px solid var(--panel-border);
+  width: 90%;
+  max-width: 480px;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+[data-theme="light"] .modal-content {
+  background: #ffffff;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.payment-tab {
+  border: 2px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-tab:hover {
+  border-color: var(--primary);
+}
+
+.payment-tab.active {
+  border-color: var(--primary);
+  background: rgba(167, 139, 250, 0.1);
+  box-shadow: 0 0 8px var(--primary-glow);
+}
+
+.payment-tab img {
+  height: 24px;
+  object-fit: contain;
+}
+
+.card-number-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-digits {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.payment-instruction {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* O'qituvchi/Admin Paneli */
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.matrix-table-container {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.matrix-table th, .matrix-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.matrix-table th {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+}
+
+.matrix-val {
+  font-weight: 800;
+}
+
+.matrix-val.correct {
+  color: var(--success);
+}
+
+.matrix-val.incorrect {
+  color: var(--danger);
+}
+
+.guide-box {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.guide-box h4 {
+  font-family: var(--font-title);
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.formula-block {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+  margin: 1rem 0;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+/* Toast xabarnomasi */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--panel-bg);
+  border: 1px solid var(--success);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10000;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toast.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-icon {
+  color: var(--success);
+  font-size: 1.2rem;
+}
+
+.toast.error {
+  border-color: var(--danger);
+}
+
+.toast.error .toast-icon {
+  color: var(--danger);
+}

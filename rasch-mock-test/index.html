@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasch Matematika - Milliy Sertifikat Mok Test Platformasi</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=1.2">
+
+  <!-- KaTeX for beautiful math formulas rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Chart.js for data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Telegram WebApp SDK -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+
+  <!-- Navigatsiya paneli -->
+  <nav>
+    <div class="logo">
+      <span>📐</span> Rasch Math
+    </div>
+    <ul class="nav-links">
+      <li class="active"><a onclick="switchTab('dashboard')">Asosiy panel</a></li>
+      <li><a onclick="switchTab('mocktest')">Mok testlar</a></li>
+      <li><a onclick="switchTab('analyzer')">O'qituvchi paneli</a></li>
+      <li><a onclick="switchTab('guide')">Qo'llanma</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" onclick="toggleTheme()" title="Mavzuni o'zgartirish">🌓</button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- ==================== DASHBOARD TAB ==================== -->
+    <div id="dashboard" class="tab-content active">
+      <div class="profile-section">
+        <!-- Profil holati -->
+        <div class="card profile-card">
+          <div class="profile-info">
+            <div id="profile-status-badge" class="profile-status">👤 Oddiy a'zo</div>
+            <div class="profile-name" style="margin-top:0.5rem;">Xush kelibsiz, Nomzod!</div>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Matematika fani milliy sertifikat testlariga Rasch modeli bilan tayyorlaning.</p>
+            <div class="stats-container">
+              <div class="stat-item" id="lbl-attempts-container">
+                <div class="stat-val" id="lbl-attempts">1</div>
+                <div class="stat-lbl">Qolgan urinishlar</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-val" id="lbl-tier">FREE</div>
+                <div class="stat-lbl">Tarifingiz</div>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-btn-container">
+            <button class="btn btn-accent" onclick="switchTab('mocktest')">Testlarni boshlash ➔</button>
+          </div>
+        </div>
+
+        <!-- Tezkor narxlar kartasi -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <h3 style="font-family:var(--font-title); font-size:1.15rem; margin-bottom:0.5rem; display:flex; align-items:center; gap:6px;">💰 Urinishlar sotib olish</h3>
+          <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
+            Shaxsiy kartaga to'g'ridan-to'g'ri o'tkazish orqali variantlarni tezkor va qulay oching.
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('starter', 5000)">Starter Tarif (2 ta variant) - 5 000 so'm</button>
+            <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('standard', 9000)">Standard Tarif (5 ta variant) - 9 000 so'm</button>
+            <button class="btn btn-accent btn-sm btn-block" onclick="openPaymentModal('premium', 15000)">Premium Tarif (Cheksiz) - 15 000 so'm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platforma Statistikasi va E'lonlar -->
+      <div style="display:grid; grid-template-columns:1fr 2fr; gap:1.5rem; margin-bottom:2rem;">
+        <!-- Stat Card -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:1.5rem; background:linear-gradient(135deg, rgba(167,139,250,0.1) 0%, rgba(34,211,238,0.1) 100%); border:1px solid var(--panel-border);">
+          <div style="font-size:2.5rem; margin-bottom:0.5rem;">📚</div>
+          <div style="font-family:var(--font-title); font-size:1.8rem; font-weight:800; color:var(--accent); line-height:1.2;">900 ta</div>
+          <div style="font-size:0.9rem; font-weight:700; color:var(--text-main); margin-top:0.3rem;">Milliy Sertifikat Testlari</div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.4rem;">30 ta variant × 30 ta savol</div>
+        </div>
+
+        <!-- Announcement Card -->
+        <div class="card" style="display:flex; flex-direction:column; justify-content:center; padding:1.5rem; border:1px solid var(--panel-border); background:rgba(251,191,36,0.03);">
+          <h4 style="font-family:var(--font-title); font-size:1.05rem; color:#fbbf24; margin-bottom:0.5rem; display:flex; align-items:center; gap:6px;">🌟 Premium Tarif E'loni:</h4>
+          <p style="font-size:0.9rem; line-height:1.5; color:var(--text-main); margin:0;">
+            Platformamiz doimiy ravishda yangilanib boradi! **Premium Tarif** a'zolari uchun har **10 kunda yangi test bazalari va variantlar** muntazam ravishda qo'shib boriladi. Tayyorgarlikni eng yangi savollar bilan davom ettiring!
+          </p>
+        </div>
+      </div>
+
+      <!-- Rasch Modeli Haqida Ma'lumot -->
+      <div class="card" style="margin-bottom: 2rem; position:relative; overflow:hidden;">
+        <h3 class="section-title">📊 Nega oddiy ball emas, balki Rasch Modeli?</h3>
+        <p style="line-height:1.6; margin-bottom:1.2rem;">
+          An'anaviy testlarda barcha savollarga 1 ball beriladi va umumiy to'g'ri javoblar foizi hisoblanadi. Bu adolatsiz! Chunki 1 ta qiyin integralni yechgan o'quvchi bilan 1 ta oson qo'shish amalini yechgan o'quvchining bilim darajasi bir xil emas.
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1.5rem 0;">
+          <div style="background:rgba(248,113,113,0.05); border:1px solid rgba(248,113,113,0.2); padding:1rem; border-radius:12px;">
+            <strong style="color:var(--danger); display:block; margin-bottom:0.5rem;">❌ An'anaviy test tizimi</strong>
+            <ul style="list-style-type:none; font-size:0.9rem; display:flex; flex-direction:column; gap:6px; color:var(--text-muted);">
+              <li>• Oson va qiyin savollar teng qiymatga ega.</li>
+              <li>• Nomzodning haqiqiy bilim darajasini (logitlarda) ko'rsatmaydi.</li>
+              <li>• Savollarning testga yaroqlilik darajasini tekshirib bo'lmaydi.</li>
+            </ul>
+          </div>
+          <div style="background:rgba(52,211,153,0.05); border:1px solid rgba(52,211,153,0.2); padding:1rem; border-radius:12px;">
+            <strong style="color:var(--success); display:block; margin-bottom:0.5rem;">✅ Rasch Modeli tizimi</strong>
+            <ul style="list-style-type:none; font-size:0.9rem; display:flex; flex-direction:column; gap:6px; color:var(--text-muted);">
+              <li>• Har bir savolning qiyinchilik darajasi ($\beta$) alohida hisoblanadi.</li>
+              <li>• O'quvchi bilimiga mos testlar beriladi (Moslashuvchan CAT test).</li>
+              <li>• Infit/Outfit tahlillari orqali yaroqsiz savollar aniqlanadi.</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:0.9rem; color:var(--text-muted);">
+          Bizning platformada Matematika variantlarini yechish orqali siz o'z bilimingizning haqiqiy **logit (θ)** shkalasidagi o'lchovini bilib olasiz va milliy sertifikatga tayyorgarligingizni aniqlashtirasiz.
+        </p>
+      </div>
+    </div>
+
+    <!-- ==================== MOCK TESTS TAB ==================== -->
+    <div id="mocktest" class="tab-content">
+      <!-- 1. Test tanlash oynasi -->
+      <div id="test-setup-view">
+        <h2 class="section-title">📝 Variantni tanlang va testni boshlang</h2>
+        <div class="grid-variants" id="variants-grid">
+          <!-- Dinamik tarzda variantlar yuklanadi -->
+        </div>
+      </div>
+
+      <!-- 2. Test ishlash oynasi (Active) -->
+      <div id="test-active-view" class="card" style="display:none; max-width:800px; margin:0 auto;">
+        <div class="test-header">
+          <div>
+            <span id="question-category" class="profile-status" style="font-size:0.8rem; margin-bottom:5px;">Matematika</span>
+            <h2 id="test-title" style="font-family:var(--font-title); font-size:1.4rem;">Variant 1 Testi</h2>
+          </div>
+          <div class="timer">
+            ⏱️ <span id="timer-val">20:00</span>
+          </div>
+        </div>
+
+        <div class="question-panel">
+          <div class="question-title">Savol <span id="lbl-question-num">1</span> / 10</div>
+          <div class="question-text" id="question-text">
+            Integralnı hisoblang: \(\int_{0}^{2} (3x^2 - 2x) dx\)
+          </div>
+          <div class="options-list" id="options-list">
+            <!-- Dinamik ravishda javob variantlari yuklanadi -->
+          </div>
+        </div>
+
+        <!-- Pastki navigatsiya tugmalari -->
+        <div class="test-navigation">
+          <button class="btn btn-outline" id="btn-prev" onclick="prevQuestion()">
+            ◀ Orqaga
+          </button>
+          <button class="btn btn-danger" onclick="if(confirm('Testni muddatidan oldin yakunlaysizmi?')){finishTest();}">
+            Tugatish 🏁
+          </button>
+          <button class="btn btn-accent" id="btn-next" onclick="nextQuestion()">
+            Keyingi savol ➔
+          </button>
+        </div>
+
+        <!-- Navigatsiya nuqtalari -->
+        <div class="nav-dots" id="navigation-dots">
+          <!-- 1 2 3 4 ... dots -->
+        </div>
+      </div>
+
+      <!-- 3. Test Natijalari oynasi -->
+      <div id="test-results-view" class="card" style="display:none; max-width:900px; margin:0 auto;">
+        <h2 class="section-title" style="color:var(--success);">🎉 Test yakunlandi! Sizning Natijangiz</h2>
+        
+        <div class="results-grid">
+          <!-- Chap tomon: Ball va ko'rsatkichlar -->
+          <div class="results-left">
+            <div class="card score-circle-container">
+              <div class="score-circle">
+                <span class="score-val" id="lbl-res-score">8/10</span>
+                <span class="score-lbl">To'g'ri javob</span>
+              </div>
+              <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:700;" id="lbl-res-percent">80%</div>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-top:5px;">To'g'ri javob foizi</p>
+            </div>
+
+            <div class="card">
+              <h3 style="font-family:var(--font-title); font-size:1.1rem; margin-bottom:1rem;">Rasch Tahlili</h3>
+              <div class="ability-metric">
+                <span>Qobiliyat darajasi (θ):</span>
+                <span class="ability-val" id="lbl-res-theta">+1.25 logit</span>
+              </div>
+              <div class="ability-metric">
+                <span>Baholash xatoligi (SEM):</span>
+                <span style="font-weight:700;" id="lbl-res-sem">±0.45 logit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'ng tomon: Rivojlanish grafigi va sharh -->
+          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+            <div class="card" style="flex:1;">
+              <h3 style="font-family:var(--font-title); font-size:1.1rem; margin-bottom:1rem;">📊 Qobiliyat o'zgarish grafigi</h3>
+              <div style="height:220px; position:relative;">
+                <canvas id="theta-chart"></canvas>
+              </div>
+            </div>
+            
+            <div class="card">
+              <h3 style="font-family:var(--font-title); font-size:1.1rem; margin-bottom:0.5rem; color:var(--accent);">🔍 Tavsiya va sharh</h3>
+              <p style="line-height:1.5; font-size:0.95rem;" id="lbl-res-feedback">
+                Yaxshi natija! Sizda A yoki B darajadagi sertifikatni olish uchun imkoniyatlar yuqori. Qiyinroq integrallar ustida biroz ishlang.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; text-align:center;">
+          <button class="btn btn-outline" onclick="quitTest()">Asosiy sahifaga qaytish</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== TEACHER / ANALYZER TAB ==================== -->
+    <div id="analyzer" class="tab-content">
+      <!-- Sotuvlar Statistikasi Kartasi -->
+      <div class="card" style="margin-bottom:2rem;">
+        <h2 class="section-title">📊 Sotuvlar va To'lovlar Statistikasi</h2>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.5rem;">
+          Mijozlar tomonidan sotib olingan tariflar va umumiy tushumlar tahlili:
+        </p>
+
+        <!-- Stats summary boxes -->
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+          <div style="background:rgba(34,211,238,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Jami Tushum</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--accent);" id="lbl-stats-revenue">0 so'm</div>
+          </div>
+          <div style="background:rgba(167,139,250,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Jami Kirganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--primary);" id="lbl-stats-count">0 ta</div>
+          </div>
+          <div style="background:rgba(251,191,36,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Bepul ishlaganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:#fbbf24;" id="lbl-stats-free-users">0 ta</div>
+          </div>
+          <div style="background:rgba(52,211,153,0.05); border:1px solid var(--panel-border); padding:0.8rem; border-radius:12px; text-align:center;">
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">Sotib olganlar</div>
+            <div style="font-family:var(--font-title); font-size:1.2rem; font-weight:800; color:var(--success);" id="lbl-stats-paid-users">0 ta</div>
+          </div>
+        </div>
+
+        <!-- Tariff Breakdown list -->
+        <div style="display:flex; flex-direction:column; gap:0.8rem;">
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+              <span>🆓 Bepul Variant 1 (0 UZS)</span>
+              <strong id="lbl-stats-free" style="color:#fbbf24;">0 ta (0%)</strong>
+            </div>
+            <div style="width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px; overflow:hidden;">
+              <div id="bar-stats-free" style="width:0%; height:100%; background:#fbbf24; border-radius:4px; transition: width 0.4s ease;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+              <span>Starter Tarif (5 000 UZS)</span>
+              <strong id="lbl-stats-starter">0 ta (0%)</strong>
+            </div>
+            <div style="width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px; overflow:hidden;">
+              <div id="bar-stats-starter" style="width:0%; height:100%; background:var(--accent); border-radius:4px; transition: width 0.4s ease;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+              <span>Standard Tarif (9 000 UZS)</span>
+              <strong id="lbl-stats-standard">0 ta (0%)</strong>
+            </div>
+            <div style="width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px; overflow:hidden;">
+              <div id="bar-stats-standard" style="width:0%; height:100%; background:var(--primary); border-radius:4px; transition: width 0.4s ease;"></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+              <span>Premium Tarif (15 000 UZS)</span>
+              <strong id="lbl-stats-premium">0 ta (0%)</strong>
+            </div>
+            <div style="width:100%; height:8px; background:rgba(255,255,255,0.05); border-radius:4px; overflow:hidden;">
+              <div id="bar-stats-premium" style="width:0%; height:100%; background:var(--success); border-radius:4px; transition: width 0.4s ease;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tranzaksiyalar tarixi jadvali -->
+        <div style="margin-top: 1.8rem; border-top: 1px dashed var(--panel-border); padding-top: 1.2rem;">
+          <h4 style="font-family:var(--font-title); font-size:0.95rem; color:var(--accent); margin-bottom:0.8rem; display:flex; align-items:center; gap:6px;">🕒 Faoliyatlar va Tranzaksiyalar tarixi (Log):</h4>
+          <div class="matrix-table-container" style="max-height: 200px; overflow-y: auto;">
+            <table class="matrix-table" style="font-size: 0.8rem; text-align: left;">
+              <thead>
+                <tr>
+                  <th>Sana va Vaqt</th>
+                  <th>Foydalanuvchi</th>
+                  <th>Amal / Tarif</th>
+                  <th>Summa</th>
+                  <th>Holat</th>
+                </tr>
+              </thead>
+              <tbody id="tbl-stats-history-body">
+                <tr>
+                  <td colspan="5" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Hozircha tranzaksiya yoki faollik yo'q</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card" style="margin-bottom:2rem;">
+        <h2 class="section-title">👩‍🏫 O'qituvchilar Paneli: Rasch Tahlil Tizimi (JMLE)</h2>
+        <p style="line-height:1.6; margin-bottom:1rem; color:var(--text-muted);">
+          Ushbu bo'limda o'qituvchilar talabalar javoblari matritsasi asosida savollar qiyinchiligini va talabalar bilimini **Rasch modeli JMLE** (Joint Maximum Likelihood Estimation) algoritmi yordamida kalibrlashi mumkin. Quyida 15 ta talabaning 8 ta matematika savoliga javoblar matritsasi berilgan.
+        </p>
+
+        <!-- Matritsa jadvali -->
+        <div class="matrix-table-container">
+          <table class="matrix-table">
+            <thead id="tbl-matrix-head">
+              <!-- JS da render qilinadi -->
+            </thead>
+            <tbody id="tbl-matrix-body">
+              <!-- JS da render qilinadi -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="text-align:center; margin-top:1.5rem;">
+          <button class="btn btn-accent" onclick="runRaschCalibration()">Rasch Kalibrlashni Boshlash 🚀</button>
+        </div>
+      </div>
+
+      <!-- Kalibrlash natijalari (Dastlab yopiq turadi) -->
+      <div id="calibration-results-container" style="display:none;">
+        <div class="admin-grid">
+          <!-- Wright Map -->
+          <div class="card">
+            <h3 class="section-title">🗺️ Wright Map (Savol va Person xaritasi)</h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
+              Bu xaritada talabalar qobiliyati (chapda) va savollar qiyinchiligi (o'ngda) bir xil logit o'lchovida vizual solishtiriladi.
+            </p>
+            <div id="wright-map-view" style="min-height:350px;">
+              <!-- JS da render qilinadi -->
+            </div>
+          </div>
+
+          <!-- ICC Chart -->
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <h3 class="section-title">📈 Item Characteristic Curves (ICC)</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
+                Savollarning bilim darajasiga bog'liq ravishda to'g'ri yechilish ehtimolligi chiziqlari.
+              </p>
+              <div style="height:320px; position:relative;">
+                <canvas id="icc-chart"></canvas>
+              </div>
+            </div>
+            <div style="margin-top:1rem; font-size:0.85rem; background:rgba(34,211,238,0.05); padding:0.8rem; border-radius:10px; border:1px dashed var(--accent);">
+              💡 **Tahlil:** Qizil chiziq (Savol 6) o'ngroqda joylashgani uchun u ko'k chiziqqa (Savol 4) nisbatan ancha **qiyinroq** savol hisoblanadi.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Variant Creator & PDF Parser -->
+      <div class="card" style="margin-top:2rem;">
+        <h3 class="section-title">📥 Variantlarni yuklash va PDF import</h3>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.5rem;">
+          Yangi test variantlarini (masalan, Variant 6 dan 30 gacha) ikki xil usulda tizimga yuklashingiz mumkin:
+        </p>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+          <!-- 1. PDF matnini import qilish -->
+          <div style="background:rgba(255,255,255,0.01); border:1px solid var(--panel-border); padding:1rem; border-radius:12px;">
+            <h4 style="font-family:var(--font-title); font-size:0.95rem; margin-bottom:0.5rem; color:var(--accent);">📄 1-usul: PDF matnidan avtomat import</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.8rem;">
+              PDF yoki matnli fayldan savollarni nusxalang (Ctrl+A va Ctrl+C) va quyiga joylashtiring. Tizim ularni o'zi formatlab oladi.
+            </p>
+            <textarea id="txt-import-pdf" placeholder="1. Tenglamani yeching... A) 2 B) 3 C) 4 D) 5" style="width:100%; height:120px; background:rgba(0,0,0,0.2); border:1px solid var(--panel-border); border-radius:10px; color:var(--text-main); padding:0.6rem; font-size:0.8rem; margin-bottom:0.8rem; resize:vertical;"></textarea>
+            <button class="btn btn-sm btn-block" onclick="importFromPDFText()">Matnni tahlil qilish va yuklash ➔</button>
+          </div>
+
+          <!-- 2. JSON import -->
+          <div style="background:rgba(255,255,255,0.01); border:1px solid var(--panel-border); padding:1rem; border-radius:12px;">
+            <h4 style="font-family:var(--font-title); font-size:0.95rem; margin-bottom:0.5rem; color:var(--accent);">💻 2-usul: Tayyor JSON import</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.8rem;">
+              Agar sizda savollar tayyor JSON formatida bo'lsa, quyidagi maydonga joylashtirib yuklashingiz mumkin.
+            </p>
+            <textarea id="txt-import-json" placeholder='[{"text":"Savol...","options":["A","B","C","D"],"correctAnswer":0}]' style="width:100%; height:120px; background:rgba(0,0,0,0.2); border:1px solid var(--panel-border); border-radius:10px; color:var(--text-main); padding:0.6rem; font-family:monospace; font-size:0.8rem; margin-bottom:0.8rem; resize:vertical;"></textarea>
+            <button class="btn btn-sm btn-block btn-outline" onclick="importCustomVariant()">JSON yuklash ➔</button>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1rem; margin-top:1.5rem; border-top:1px dashed var(--panel-border); padding-top:1rem;">
+          <div style="display:flex; flex-direction:column; gap:4px; width:150px;">
+            <label style="font-size:0.75rem; color:var(--text-muted);">Yuklanadigan Variant Raqami</label>
+            <input type="number" id="num-import-variant" min="1" max="30" value="6" style="background:rgba(0,0,0,0.2); border:1px solid var(--panel-border); border-radius:10px; color:var(--text-main); padding:0.6rem; font-family:var(--font-title); font-weight:700; text-align:center;">
+          </div>
+          <div style="font-size:0.8rem; color:var(--text-muted); line-height:1.4;">
+            ℹ️ *Eslatma:* Yangi yuklangan savollar standart bazani o'zgartiradi va joriy brauzer xotirasida variant raqamiga moslab saqlanadi.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== GUIDE TAB ==================== -->
+    <div id="guide" class="tab-content">
+      <div class="card">
+        <h2 class="section-title">📚 Rasch Modeli Psixometrik Qo'llanmasi</h2>
+        
+        <div class="guide-box">
+          <h3>1. Rasch modeli nima?</h3>
+          <p>
+            Rasch modeli — bu ta'limiy va psixologik o'lchovlar uchun foydalaniladigan matematik modeldir. Model 1960-yilda daniyalik matematik **Georg Rasch** tomonidan kashf etilgan. U javob beruvchining qobiliyati ($\theta$) va savolning qiyinchiligi ($\beta$) o'rtasidagi munosabatni logistik ehtimollik orqali bog'laydi.
+          </p>
+
+          <h3>2. Matematik formulasi</h3>
+          <p>Foydalanuvchining ma'lum bir savolga to'g'ri javob berish ehtimolligi quyidagi formula orqali aniqlanadi:</p>
+          <div class="formula-block">
+            P(X = 1 | θ, β) = e^(θ - β) / (1 + e^(θ - β))
+          </div>
+          <p>
+            Bu yerda e — natural logarifm asosi (2.718). Agar foydalanuvchi qobiliyati ($\theta$) savol qiyinchiligi ($\beta$) bilan teng bo'lsa, u holda to'g'ri javob berish ehtimolligi to'liq **50%** bo'ladi.
+          </p>
+
+          <h3>3. Logit nima?</h3>
+          <p>
+            Rasch modelida barcha hisob-kitoblar **Logit (log-odds unit)** deb ataladigan o'lchov birligida amalga oshiriladi. Logit shkalasi odatda -4.0 dan +4.0 gacha bo'ladi:
+          </p>
+          <ul>
+            <li>• **0.0 logit** — o'rtacha qiyinchilik yoki o'rtacha qobiliyat.</li>
+            <li>• **Musbat (+) qiymatlar** — yuqori qobiliyat yoki qiyin savollar.</li>
+            <li>• **Manfiy (-) qiymatlar** — past qobiliyat yoki oson savollar.</li>
+          </ul>
+
+          <h3>4. Wright Map (Rayt xaritasi)</h3>
+          <p>
+            Rayt xaritasi Rasch modelining eng muhim vizual vositasidir. U testdagi savollar to'g'ri taqsimlanganini tekshirish imkonini beradi. Agar xaritaning o'ng tomonida (savollar) bo'shliqlar bo'lsa, demak testda shu darajadagi bilimni baholash uchun savollar yetishmaydi.
+          </p>
+
+          <h3>5. Fit Statistics (Moslik ko'rsatkichlari)</h3>
+          <p>
+            Infit va Outfit qiymatlari savollarning testga mosligini ko'rsatadi.
+            Ideal holda Infit/Outfit MNSQ ko'rsatkichi **1.0** bo'lishi kerak. Amaliyotda **0.5 dan 1.5 gacha** bo'lgan oraliq me'yor hisoblanadi. Agar ko'rsatkich 1.5 dan yuqori bo'lsa, demak savolda "shovqin" bor (savol chalkash yoki javobi ko'chirib olingan bo'lishi mumkin).
+          </p>
+        </div>
+      </div>
+
+      <!-- Rasmiy DTM Spetsifikatsiyasi Kartasi -->
+      <div class="card" style="margin-top: 1.5rem;">
+        <h2 class="section-title">📋 Matematika Milliy Sertifikat Spetsifikatsiyasi (DTM)</h2>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1.2rem;">
+          Bilim va malakalarni baholash agentligi (DTM) tomonidan matematika fanidan milliy test tizimi uchun tasdiqlangan rasmiy spetsifikatsiya ma'lumotlari:
+        </p>
+
+        <div class="guide-box">
+          <h3>1. Qamrab olingan bo'limlar</h3>
+          <ol style="margin-left: 1.5rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            <li><strong>Sonlar va amallar:</strong> Haqiqiy sonlar, kasrlar, arifmetik amallar.</li>
+            <li><strong>Algebraik shakl almashtirishlar:</strong> Ko'phadlar, trigonometrik va logarifmik ifodalar.</li>
+            <li><strong>Tenglama va tengsizliklar:</strong> Ratsional, irratsional, ko'rsatkichli va logarifmik tenglamalar/tengsizliklar.</li>
+            <li><strong>Funksiyalar:</strong> Chiziqli, kvadratik, trigonometrik, logarifmik funksiyalar va ularning xossalari.</li>
+            <li><strong>Matematik analiz asoslari:</strong> Hosila, integral, yuzalarni hisoblash, optimallashtirish.</li>
+            <li><strong>Geometriya:</strong> Planimetriya (uchburchak, aylana) va Stereometriya (silindr, konus, shar).</li>
+            <li><strong>Ma'lumotlar tahlili va kombinatorika:</strong> To'plamlar, ehtimollar nazariyasi, ehtimollik hisobi.</li>
+          </ol>
+
+          <h3>2. Test topshiriqlarining turlari</h3>
+          <ul style="list-style-type: square; margin-left: 1.5rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            <li><strong>Y-1 (Yopiq test):</strong> Bitta to'g'ri javobga ega bo'lgan muqobil javobli testlar.</li>
+            <li><strong>Y-2 (Moslashtirish):</strong> Moslashtirishni talab qiladigan muqobil javobli testlar.</li>
+            <li><strong>O (Ochiq test):</strong> Qisqa javobni talab qiladigan, a va b bandlarga bo'lingan topshiriqlar.</li>
+          </ul>
+
+          <h3>3. Baholash mezonlari (Rasmiy ballar)</h3>
+          <div style="background:rgba(34,211,238,0.03); border:1px solid var(--panel-border); padding:1rem; border-radius:12px;">
+            <ul style="list-style-type:none; font-size:0.9rem; display:flex; flex-direction:column; gap:8px;">
+              <li>• <strong>Y-1 (Yopiq test):</strong> To'g'ri javob uchun qiyinchiligiga ko'ra <strong>1.3 ball</strong> yoki <strong>2.2 ball</strong> beriladi.</li>
+              <li>• <strong>Y-2 (Moslashtirish):</strong> To'g'ri moslashtirish uchun <strong>2.2 ball</strong> beriladi.</li>
+              <li>• <strong>O (Ochiq test):</strong> Faqat a bandi to'g'ri bo'lsa <strong>1.5 ball</strong>, faqat b bandi uchun <strong>1.7 ball</strong>, ikkalasi ham to'g'ri bo'lsa jami <strong>3.2 ball</strong> beriladi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==================== P2P TO'LOV MODALI ==================== -->
+  <div class="modal" id="payment-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closePaymentModal()">×</button>
+      <h3 style="font-family:var(--font-title); font-size:1.3rem; text-align:center; margin-bottom:1rem;">💳 Karta orqali to'lov (P2P)</h3>
+      
+      <p style="text-align:center; font-size:0.9rem; color:var(--text-muted); margin-bottom:1rem;">
+        Siz tanlagan paket narxi: <strong id="modal-cost" style="color:var(--accent); font-size:1.1rem;">5 000 so'm</strong>
+      </p>
+
+      <!-- Click / Payme tanlash -->
+      <div class="payment-options">
+        <div class="payment-tab active" id="tab-click">
+          <img src="https://click.uz/click/images/click-white.png" alt="Click" style="filter: brightness(1) invert(0.1);">
+          <span>Click</span>
+        </div>
+        <div class="payment-tab" id="tab-payme" style="opacity: 0.6;" onclick="alert('Hozircha faqat Click orqali o\'tkazish faol.')">
+          <img src="https://cdn.payme.uz/logo/payme_color.svg" alt="Payme">
+          <span>Payme</span>
+        </div>
+      </div>
+
+      <div style="font-size:0.9rem; margin-bottom:0.5rem; font-weight:600;">O'tkazma uchun karta raqami:</div>
+      <div class="card-number-box">
+        <span class="card-digits" id="admin-card-number">5614 6812 7158 4975</span>
+        <button class="btn btn-sm btn-outline" onclick="copyCardNumber()" style="padding: 0.3rem 0.6rem; font-size: 0.75rem;">Nusxalash 📋</button>
+      </div>
+
+      <div style="font-size:0.85rem; margin-bottom:1rem; color:var(--text-muted);">
+        Karta egasi: <strong id="admin-card-holder" style="color:var(--text-main);">TOPILDIYEV SIROJIDDIN</strong>
+      </div>
+
+      <div class="payment-instruction" style="margin-bottom:1rem;">
+        ⚠️ **Yo'riqnoma:** Ushbu karta raqamini nusxalab, Click yoki Payme ilovangiz orqali summani o'tkazing. To'lovni tasdiqlash uchun o'tkazma chekini (rasm yoki PDF) quyidagi maydon orqali yuklang va tasdiqlash tugmasini bosing.
+      </div>
+
+      <div style="margin-bottom: 1.2rem;">
+        <label for="payment-receipt" style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem; color:var(--text-main);">📸 To'lov chekini (skrinshot yoki PDF) yuklang:</label>
+        <input type="file" id="payment-receipt" accept="image/*, application/pdf" style="width:100%; font-size:0.8rem; background:rgba(0,0,0,0.2); border:1px dashed var(--panel-border); padding:0.5rem; border-radius:10px; color:var(--text-muted); cursor:pointer;">
+      </div>
+
+      <div style="display:flex; gap:1rem;">
+        <button class="btn btn-outline btn-block" onclick="closePaymentModal()">Bekor qilish</button>
+        <button class="btn btn-accent btn-block" onclick="confirmPayment()">To'lovni tasdiqlash ✅</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Xabarnoma -->
+  <div class="toast" id="payment-toast">
+    <span class="toast-icon">✓</span>
+    <span>To'lov muvaffaqiyatli qabul qilindi!</span>
+  </div>
+
+  <!-- Script Files -->
+  <script src="questions.js?v=1.4"></script>
+  <script src="rasch.js?v=1.4"></script>
+  <script src="app.js?v=1.4"></script>
+
+  <script>
+    // Theme toggler logic
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('rasch_theme', newTheme);
+    }
+
+    // Set saved theme on load
+    const savedTheme = localStorage.getItem('rasch_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    // Initial parsing of LaTeX in guide tab or general elements on load
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      }
+    });
+  </script>
+</body>
+</html>
