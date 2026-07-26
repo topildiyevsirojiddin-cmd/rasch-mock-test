@@ -1077,10 +1077,27 @@ function drawResultChart() {
 
 function quitTest() {
   resetTestState();
+  
+  // Clear result and analysis DOM elements to prevent leftover text in new tests
+  const weaknessesEl = document.getElementById('lbl-res-weaknesses');
+  if (weaknessesEl) weaknessesEl.innerHTML = '';
+  const listEl = document.getElementById('div-res-questions-list');
+  if (listEl) listEl.innerHTML = '';
+  const gradeEl = document.getElementById('lbl-res-sertifikat-grade');
+  if (gradeEl) gradeEl.innerText = '-';
+  const scoreEl = document.getElementById('lbl-res-score');
+  if (scoreEl) scoreEl.innerText = '0/0';
+  const percentEl = document.getElementById('lbl-res-percent');
+  if (percentEl) percentEl.innerText = '0%';
+  const feedbackEl = document.getElementById('lbl-res-feedback');
+  if (feedbackEl) feedbackEl.innerText = '';
+
   document.getElementById('test-setup-view').style.display = 'block';
   document.getElementById('test-active-view').style.display = 'none';
   document.getElementById('test-results-view').style.display = 'none';
+  
   renderVariantsList();
+  switchTab('mocktest'); // Srazi testlar bolimiga o'tadi
 }
 
 // 11. O'qituvchi/Admin Paneli Logikasi

@@ -951,3 +951,125 @@ body.landing-active nav {
 body.landing-active .container {
   display: none !important;
 }
+
+/* ==================== RESPONSIVE MOBILE LAYOUT ADJUSTMENTS ==================== */
+@media (max-width: 600px) {
+  /* Profile card vertical stacking */
+  .profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  
+  .profile-stats {
+    width: 100%;
+    border-top: 1px solid var(--panel-border);
+    padding-top: 0.8rem;
+  }
+  
+  /* Results view adjustments */
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Compact container padding */
+  .container {
+    padding: 0.8rem 0.5rem;
+  }
+
+  /* Compact card padding */
+  .card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  /* Landing Page mobile vertical stack */
+  .landing-card {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+
+  .landing-options {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .landing-btn {
+    padding: 1.2rem 1rem;
+  }
+
+  .btn-icon {
+    font-size: 2rem;
+  }
+
+  .btn-title {
+    font-size: 1.1rem;
+  }
+
+  /* Compact variant cards */
+  .grid-variants {
+    gap: 1rem;
+  }
+
+  .variant-card {
+    height: auto;
+    min-height: 170px;
+    padding: 1rem;
+  }
+
+  .variant-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .variant-meta {
+    font-size: 0.78rem;
+    margin: 0.4rem 0 0.8rem 0;
+  }
+
+  /* Active Test view font and buttons resizing */
+  #test-active-view {
+    padding: 1rem;
+  }
+
+  #question-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .option-item {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+
+  .test-navigation {
+    gap: 0.6rem;
+  }
+
+  .test-navigation button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+    flex: 1;
+    justify-content: center;
+  }
+
+  /* Navigation dots scaling */
+  .nav-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+    line-height: 28px;
+  }
+}
+
+/* Ensure inline SVG elements scale fluidly within active test cards */
+.svg-container svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
