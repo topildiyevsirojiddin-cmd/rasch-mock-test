@@ -1,0 +1,684 @@
+Total lines: 13753
+Matches found:
+Line 17: 2. Qaysi javobda  tarkibida faqat  unli  va  jarangli  undosh 
+Line 40: 5. Qaysi  javobda  keltirilgan gapda  tarkibida  faqat  til  oldi 
+Line 48: 6. Qaysi javobda  keltirilgan gapda  tarkibida  faqat  til  oldi 
+Line 104: 13. Sifatning ichki yasalishi berilgan javobni toping. 
+Line 136: 17.  Qaysi javobda otlashgan yasama sifat ishtirok etgan? 
+Line 145: 18.  Qaysi javobda otlashgan yasama sifatlar ishtirok etgan? 
+Line 154: 19.  Qaysi javobda otlashgan yasama sifat mavjud emas? 
+Line 162: 20. Qaysi javobdagi har ikki gapda yasama sifat ajratib 
+Line 174: 21.  Qaysi javobdagi har ikki gapda yasama sifat ajratib  
+Line 186: 22. Qaysi javobda yasama sifat va yasama ot ajratib 
+Line 197: 23. Qaysi javobda yasama ot va yasama sifat ajratib 
+Line 209: 24.  Qaysi javobda yasama sifat va yasama ot ajratib 
+Line 221: 25.  Qaysi javobda yasama ot va yasama sifat ajratib 
+Line 246: 28. Qaysi javobdagi so‘zlarda so‘z yasovchilar har xil so‘z 
+Line 316: o’tirgan qahramon qaysi javobda to’g’ri 
+Line 359: tushadigan javobni aniqlang.  
+Line 683: 2. Qaysi javobda o‘z paronimi bilan o‘zaro bir xil so‘z 
+Line 705: 5. Qaysi javobda yasama o‘rinjoy otlari qatori 
+Line 728: A) qaram-onam, to‘lat-ishlat, changi-boyi, javobing-keling 
+Line 770: 13. Qaysi javobdagi barcha so'zlar noto‘g‘ri yozilgan? 
+Line 804: 17. Qaysi javobda o‘z shakldashi bilan o'zaro bir xil 
+Line 808: 18. Qaysi javobda egalik qo'shimchasi qo'shilganda 
+Line 845: 23. Kampirchaning so‘rog‘iga aravakash hazillashib javob 
+Line 898: 29. Qaysi javobda Mirkarim Osimning «Zulmat ichra 
+Line 1030: asosdosh antonim so’z berilgan javobni belgilang   
+Line 1192: qatnashgan gap berilgan javobni toping 
+Line 1607: D) Barcha javoblarda imloviy xatoga yo’l qo’yilgan 
+Line 1627: A) Savol bering—javob beramiz  
+Line 1764: javobni belgilang. 
+Line 2003: javob berishini talab qildi 
+Line 2067: 1.   Qaysi javobda kuzatilgan so’zning tasviriy 
+Line 2077: yasolishi tofovut qaysi javobda berilgan? 
+Line 2087: 4. Qaysi javobda so’z yasovchi va  lug’aviy shakl 
+Line 2093: 5.   Qaysi javobda yasama so’z asosida  bir necha 
+Line 2104: 6. Qaysi javobdagi so’zlarga qo’shimcha 
+Line 2109: 7.   Qaysi javobdagi so’zning ma`noli qismlari 
+Line 2204: 20.   Qaysi javobda yasama so’zlar 
+Line 2233: 23.   Qaysi javobda ham shakldoshi, ham 
+Line 2294: darajasiga ko’ra to’g’ri joylashtirilgan javobni 
+Line 2302: javobni belgilang. 
+Line 2339: tub so’z qaysi javobda berilgan?   
+Line 2402: 15.   Metonimiya asosida ma`no ko’chgan javob qaysi 
+Line 2446: 20.   Qaysi javobda yasama so’zga tobelangan urg’u 
+Line 2452: 21.   Qaysi javobda bir so’zning turli ma`nolarini 
+Line 2636: 12.  Qaysi javobda egalik qo’shimchasi qo’shilganda 
+Line 2642: 13.   Qaysi javobdagi shakl munosabat shakli emas? 
+Line 2662: gap berilgan javobni aniqlang. 
+Line 2735: 27.   Qaysi javobda urg’usi oxirgi bo’g’inga 
+Line 2757: 30. Qaysi javobda jarangsiz juftiga ega bo’lmagan 
+Line 2772: 1.  Qaysi javobda ham imloviy ham paronimlarni 
+Line 2816: 8.  Qaysi javobda so’zlarni qisqartirish noto’g’ti 
+Line 2944: 26.   Qaysi javobda til orqa jarangsiz undoshlarini 
+Line 2952: 27.  Qaysi javobda assimilatsiya hodisasi 
+Line 2957: 28.   Fonetik hodisalar eng ko’p bo’lgan javobni 
+Line 2974: javobni belgilang. 
+Line 3019: 4.  Qaysi javobda birgina tovushdan iborat 
+Line 3061: ko’makchi morfemalar soni qaysi javobda berilgan?   
+Line 3064: 10.  Qaysi javobdagi jarangli undoshlarni jarangsiz jufti 
+Line 3088: xatolik qaysi javobda kuzatiladi? 
+Line 3179: C) 1, 2, 3, 5 D) bunday so'z javoblarda  yo'q 
+Line 3606: berilgan javobni toping. 
+Line 3615: Kelishik qo’shimchalari haqida to’g’ri javobni 
+Line 3659: tovushlar haqida to’g’ri javobni toping 
+Line 3670: C) Ishlaydigan kalit doim yaltriab turarmish 
+Line 3782: teng kelgan javobni toping 
+Line 4258: ko’makchi morfemalar soni qaysi javobda 
+Line 4323: 10. Qaysi javobda keltirilgan so’zlar tarkibida 
+Line 4334: barcha qo‘shimchalar to‘liq ko‘rsatilgan javobni 
+Line 4873: 19.  Qaysi javobda til orqa jarangsiz undoshini 
+Line 4991: 3.  Qaysi javobda yopiq bo'g'inlari jarangsiz 
+Line 5381: o'zgarish yuz bergan javobni belgilang. 
+Line 5402: berilgan javobni toping. 
+Line 5694: 26.  Bosh harflar imlosi buzligan javobni belgilang. 
+Line 6106: 6. “Orzu va qasos” dostonning muallifi qaysi javobda 
+Line 6150: javobda to’g’ri berilgan?  
+Line 6286: 4. Asqad Muxtorning birinchi qissasi qaysi javobda 
+Line 6432: 10. Mirmuhsin ijodiga tegishli to’g’ri javobni 
+Line 6658: Sarsonboy otaning  o’g’ilini ismi qaysi javobda to’g’ri 
+Line 6839: qahramon qaysi javobda to’g’ri ko’rsatilgan?  
+Line 7290: 31. Navoiy “Mantiq ut-tayr” asariga javoban “Lison 
+Line 7656: xususiyat  qaysi javobda to’g’ri berilgan.  
+Line 7924: she’ridan olingan parchaga mos tushadigan javobni 
+Line 8199: nomi qaysi javobda xato berilgan?  
+Line 8468: 1. Qaysi javobda boshqaruvli birikma berilgan? 
+Line 8606: 20. Qaysi javobda bitishuvli birikma berilgan? 
+Line 8610: 21. Qaysi javobda bitishuvli birikmalar berilgan? 
+Line 8676: birikmalar berilgan javobni aniqlang. 
+Line 8695: D) Xato javob yo'q 
+Line 8930: 6. Qo'l so'zida metonimik ma`no ko'chgan javobni 
+Line 8960: berilgan javobni belgilang. 
+Line 9103: ega bo’lgan yasama so’z berilgan javobni toping. 
+Line 9139: ket qo’llangan javobni belgilang. 
+Line 9157: javobni toping. 
+Line 9210: berilgan javobni belgilang. 
+Line 9244: 17.  Qaysi javobda paremologik birlik qo’llangan?  
+Line 9250: 18.   Faqat argo so’zlar berilgan javobni belgilang. 
+Line 9407: tub so’z berilgan javobni belgilang.   
+Line 9427: shakldoshlik hosil qiluvchi so’z berilgan javob 
+Line 9509: javobni belgilang. 
+Line 9926: turib ham yuradi, lekin doktorlar negadir javob 
+Line 10015: 1. Qaysi javobda yordamchi so‘z turkumiga oid 
+Line 10043: 3. Qaysi javobda tarkibidagi kelishik qo‘shimchalarini 
+Line 10081: 6. Qaysi javobda bog‘lovchi, ko‘makchi, yuklamalarga 
+Line 10089: 7. Qaysi  javobda bog‘lovchi, ko'makchi,  yuklamalarga 
+Line 10173: 14. Qaysi javobda jo'nalish kelishigi shaklidagi 
+Line 10306: javobni toping. 
+Line 10321: 1. Ko’chma ma’nodagi so’z qatnashgan javobni 
+Line 10328: 2. Qaysi javobdagi so'zlar faqat jarangli 
+Line 10354: 5. Qaysi javobda tushum kelishigi belgisiz 
+Line 10369: 7. Qaysi javobdagi gapda tovush almashishi va 
+Line 10427: 13. Qaysi javobdagi gapda ajratib ko‘rsatilgan 
+Line 10447: javobda berilgan? 
+Line 10464: 17. Qaysi javobda yordamchi so‘z turkumlaridan 
+Line 10517: 23. Shaxs otlarini berilgan javobni toping! 
+Line 10523: 24. Qaysi javobda so‘zlarning tuzilishiga ko‘ra 
+Line 10546: haqida to‘g‘ri ma’lumot berilgan javobni aniqlang. 
+Line 10570: tuzilgan savollarga javob bering. 
+Line 10598: 28. Qaysi javobda matn mazmuniga to‘g‘ri 
+Line 10740: 13. Qaysi javobdagi gapda tovush tushishi va 
+Line 10769: 16. Qaysi javobda keltirilgan gapda birgalik 
+Line 10781: 17. Qaysi javobda imloviy xatolik bilan yozilgan 
+Line 10819: tuzilgan savollarga javob bering. 
+Line 10851: 21. Qaysi javobda matn mazmuniga to‘g‘ri 
+Line 10888: javobda berilgan? 
+Line 10942: 1. Ko’chma ma’nodagi so’z qatnashgan javobni 
+Line 10949: 2. Qaysi javobda bo‘g‘inlari faqat yopiq bo‘g‘indan 
+Line 10979: 6. Qaysi javobda sifat yasovchi qo‘shimcha 
+Line 10993: qatnashgan javobni toping! 
+Line 11003: 9. Qaysi javobda sodda yasama ot qo’llanilgan? 
+Line 11011: 10. Qaysi javobda “Ravshan” dostoniga ta’luqli 
+Line 11032: 13. Qaysi javobdagi so’zlarda qo’shimcha(lar) 
+Line 11039: 14. Qaysi javobda nuqtalar o’rnida bo’g’iz undoshi 
+Line 11078: maqolni inkor etgan, ya’ni ziddi qaysi javobda 
+Line 11085: 20. Qaysi javobda qismlari qo‘shib yoziladigan 
+Line 11117: 23. Qaysi javobda bitishuvli birikma berilgan? 
+Line 11233: 6. Qaysi javobda ot yasovchi qo‘shimcha 
+Line 11246: 8. Ichi bo’sh so’zlar eng kam qatnashgan javobni 
+Line 11258: 9. Quyidagi qaysi javobda sodda yasama so’zda 
+Line 11266: 10. Qaysi javobda “Go’ro’g’i” dostoniga ta’luqli 
+Line 11285: 13. Qaysi javobdagi so’zlarda qo’shimcha(lar) 
+Line 11296: 14. Qaysi javobda nuqtalar o’rnida bo’g’iz undoshi 
+Line 11329: maqolni inkor etgan, ya’ni ziddi qaysi javobda 
+Line 11336: 20. Qaysi javobda qismlari qo‘shib yoziladigan 
+Line 11375: 24. Qaysi javobda to’g’ri yozilgan bitishuvli 
+Line 11447: 1. Qaysi javobda jismoniy holat fe’llari berilgan? 
+Line 11479: fe’llariga to‘g‘ri izoh berilgan javobni toping. 
+Line 11737: 1.  Qaysi javobda ma’noli qismlari asos + so‘z 
+Line 11850: B) Akangni chaqir, bugungi ishi uchun javob bersin. 
+Line 11856: 14. Qaysi javobda yasama holat fe’li berilgan? 
+Line 11869: 16. Qaysi javobda imloviy xato yozilgan fe’l 
+Line 11909: 18. Qaysi javobdagi so‘z birikmasida fe’l bilan 
+Line 11914: 19. Qaysi javobdagi so‘z birikmasida fe’l bilan 
+Line 11971: qaysi javobda to‘g‘ri berilgan? 
+Line 12047: 16. Qaysi javobda kelasi zamon ma’nosini ifodalay 
+Line 12149: 27. Qaysi  javobdagi  fe’ldan I shaxs  birlik  
+Line 12161: 28. Qaysi javobda qatnashgan sof fe’llarning 
+Line 12269: 9. Qaysi javobda ko‘tarinkilik, tantanavorlik 
+Line 12306: 10. Qaysi javobda ko‘tarinkilik, tantanavorlik 
+Line 12322: 11.  Qaysi javobda uslubiy xoslangan kelasi zamon 
+Line 12336: 12. Qaysi javobda kelasi zamon qo‘shimchasining 
+Line 12349: 14. Qaysi javobda hozirgi zamon shakli kelasi 
+Line 12367: Qaysi javobda o‘tgan zamon 
+Line 12609: 13. Qaysi javobda keltirilgan gapda birgalik 
+Line 12621: 14. Qaysi javobda quyida keltirilgan parchadagi 
+Line 12625: kalitni olib eshikning qulfini jaranglatib ochdi. 
+Line 12853: 7. Qaysi  javobda  holat  fe’li berilmagan? 
+Line 12934: shakllari qaysi javobda to‘gri sanab o‘tilgan? 
+Line 12956: shakllari ko‘rsatilgan javobni aniqlang. 
+Line 12999: ketdi”, deb javob berdi.  
+Line 13271: 6. Javoblarning qaysi birida ravishdosh payt 
+Line 13345: 13. Sifatdosh to‘g’ri yozilgan javobni aniqlang. 
+Line 13392: Qaysi  javobda  harakat nomidan  keyin  
+Line 13430: 20. Qaysi javobda uyushiq bo'lak vazifasida kelgan  
+Line 13492: 25. Berilgan  gaplar  va  ularda  ishtirok  etgan  fe’l  shakllari to‘g‘ri moslashtirilgan javobni aniqlang. 
+Line 13520: 26. Berilgan  gaplar  va  ularda  ishtirok  etgan  fe’l shakllari to‘g‘ri moslashtirilgan javobni aniqlang. 
+Line 13542: Mavlono javob berdi:   –Ha, seva oladi. 
+Line 13642: 12. Qaysi javobda ot + fe’l qolipidagi qo‘shma 
+Line 13644: A) bayram qilmoq, ruxsat olmoq, javob bermoq 
+Line 13679: keltirilgan javobni belgilang.
+Line 13735: A) U bunga javoban yig‘lab 
+
+--- Last 500 lines ---
+turi qatnashgan. 
+B) Ushbu gapda fe’l nisbatlarining ikki turi 
+qatnashgan. 
+C) Ushbu gapda barcha fe’llar o‘timsiz fe’llar 
+sanaladi. 
+D) Ushbu gapdagi barcha fe’llar sodda yasama fe’llar 
+sanaladi. 
+ 
+5. Quyida berilgan parchadagi ravishdoshlar qaysi 
+nisbatda kelgan? 
+. . . O‘n ming uyli Qo‘ng‘irot elining boyvachchalari 
+bilan yig‘ilib, bir yerga jam bo‘lib, bir baxmal o‘tovni 
+tikib, shu o‘tovning ichida hamma boyvachchalar 
+bilan qimiz ichib, o‘z kayf-u safosi bilan o‘tirar edi. 
+A) o‘zlik va aniq  B) aniq va orttirma 
+C) majhul va aniq  D) o‘zlik va orttirma 
+ 
+6. Javoblarning qaysi birida ravishdosh payt 
+ma’nosini ifodalagan? 
+A) Bahor kelib, ariqlarda suvlar oqa boshladi. 
+B) Gapni bilib-bilmay gapirmaslik kerak. 
+C) Bola otasidan qo‘rqib uyga kirmadi. 
+D) Bola egilib salom berdi. 
+ 
+7.  
+ 
+ 
+8. U  ohista  tebrandi.   
+Ushbu  gap kesimi  haqidagi  qaysi  fikr  xato? 
+A)  o‘timsiz  fe’l   
+B)  ijro  maylida 
+C)  kesimi  o‘zlik  nisbatda   
+D)  barcha  fikrlar  to‘g‘ri 
+ 
+9. Qaysi  gap  tarkibida fe’lning munosabat  shakli  
+vazifasida qo'llangan  ko‘makchi  morfema sonor  
+undosh  tovush bilan ifodalangan? 
+A)  Otangning bolasi  bo‘lma, odamning bolasi bo‘l. 
+B)  Nima  qilay,  o‘rgilay,  aytsam, tilim  kuyadi,  
+aytmasam  -  dilim. 
+C)  Kimki buni  tushunmabdi,  u katta  xatoga yo‘l  
+qo‘yadi. 
+1. O‘sha kuni kechasiyoq qahramonliklar ko‘rsatib o‘quvchilarimni hayratda qoldirdim.
+2. Men bobomning maqtovini eshitib, kekkayib bormoqdaman.
+3. Aka-uka maslahatlashib, tong otguncha shu yerda qolishga qaror qilishdi.
+4. Boysariboy o‘n ming uyli Qo‘ng‘irot eli bilan ko‘chib borgach, Ko‘kqamish ko‘li atrofida 
+mollarni semirtirib, yaylovda yayrab yotadi.
+Fe’l shakllaridan qaysi biri shaxs-son 
+ko'rsatmaydi?
+A) Sof fe’l
+B) Harakat nomi
+C) Sifatdosh
+D) Ravishdosh
+--- PAGE 125 ---
+@Milliy_til_1 2017-2022 Javohir Yo’ldoshev 
+41 
+ 
+D)  Bir  tishlam  non  gadosi bo'lib,  birovning  
+eshigiga borgan  vaqtlari bo‘ldi. 
+ 
+10. Qaysi  gapda vazifa  shakliga ko‘ra o‘zaro bir  
+turga  mansub bo‘lgan fe’llar ikki  o‘rinda 
+qatnashgan? 
+A)  Qo'ziboy ishga  aralashuvini ham,  chiqib  
+ketishini  ham bilmadi. 
+B) Orqa tomonda o‘tirgan Dilbar o‘zini  tutolmay 
+qiqirladi. 
+C)  Kitobni o'qigach,  anglagani shu bo‘ldiki,  hali 
+juda  ko‘p shug'ullanishi  kerak  ekan. 
+D) Mehmonlar Matqovulning qistashiga qaramasdan 
+ichkariga kirishmadi. 
+ 
+11.  
+ 
+ 
+12. Ko‘p kishilar arzimaydigan narsalar uchun  
+o‘ch olishga intiladilar, uni o‘zlari uchun katta  
+muammoga aylantirishadi va butun umrini shunday  
+narsalarga sarflaganlarni bilmay qoladilar.  
+Ushbu gapda qatnashgan fe’llar haqida qaysi 
+ma’lumot to‘g’ri? 
+A) Ushbu gapda kesim vazifasidagi barcha fe’llar  
+o'zaro bir xil mayl va bir xil shaxs-son ma’nosida 
+qo‘llangan 
+B) Ushbu gapda qatnashgan barcha fe’llar tasdiq  
+shaklidagi fe’llar sanaladi 
+C) Ushbu gapda qatnashgan barcha fe’llar o‘timsiz 
+fe’llar sanaladi 
+D) Ushbu gapda aniqlovchi vazifasidagi fe’llar 
+qatnashgan 
+ 
+13. Sifatdosh to‘g’ri yozilgan javobni aniqlang. 
+A) turgan, ketgan B) o'qikan, yozkan 
+C)boqgan, ekgan D) chiqgan, ko‘rsatkan 
+ 
+14. . U giloslar ostiga qo‘yilgan panjaralari ko‘k 
+bo‘yoq bilan sirlangan katta yog‘och karavotda 
+yonboshlab o‘tirar edi. 
+Ushbu gapda qatnashgan fe’llarga oid to‘g‘ri 
+ma’lumotni aniqlang. 
+A) Ushbu gapda fe’l vazifa shakllarining faqat bir turi 
+qatnashgan. 
+B) Ushbu gapda o‘timli va o‘timsiz fe’llar 
+qatnashgan. 
+C) Ushbu gapdagi barcha fe’llar sodda yasama fe’llar 
+sanaladi. 
+D) Ushbu gapda fe’l nisbatlarining ikki turi 
+qatnashgan. 
+ 
+15. 
+ 
+ 
+16. Qaysi gapda sifatlovchi aniqlovchilar bo'lishli 
+va bo‘lishsiz shakldagi sifatdosh bilan 
+ifodalangan? 
+A) Bo'lar elning bolalari bir-birin der, Bo'lmas elning 
+bolalari bir-birin yer. 
+B) Men sizga 0‘zbekistonning uzoq qishloqlaridan 
+birida o'sgan, beg'ubor yaylov havosida chiniqqan, bir 
+necha bor yirtqich hayvonlar hujumiga yo'liqqan 
+qo'rqmas va kamtar, kamgap va qaysar bir bola haqida 
+hikoya qilmoqchiman. 
+C) Sehrli qalpoq axtarib eski-tuski kiyim-boshlar 
+tashlanadigan burchak-burchaklarni tintuv qilib 
+yurgan edim. 
+D) Bunday qaltis vaziyatlarda tushunib-tushunmay 
+qaror chiqarish yaramaydi. 
+ 
+17. Harakat nomi ishtirok etmagan gapni toping. 
+A) G'iybatchilar davrasidan imkon boricha tezroq 
+uzoqlash. 
+B) Har qanday mahsulotni xarid qilayotganda 
+yarog‘lilik muddatiga e’tibor berish lozim. 
+C) Qishloqning kiraverishida adl teraklar saf tortib 
+turgan uzun ko'cha bor ekan. 
+D) Qo'lida stakan, payola ushlagan bemorlar suv 
+ichishga buloq tomonga ketishyapti. 
+ 
+Qaysi  javobda  harakat nomidan  keyin  
+qo‘shila  oladigan qo'shimchalar  to‘g ‘ri  
+berilgan?
+A)  egalik,  kelishik,  zamon,  nisbat
+B)  egalik,  kelishik,  ko‘plik
+C)  shaxs-son,  zamon,  mayl 
+D)  nisbat,  bo‘lishsizlik,  mayl
+Harakat 
+nomi 
+qo‘shimchas
+i qaysi 
+qatordagi 
+so‘zda bor?
+A) suruv
+B) bildiruv
+C) 
+kelganov
+D) 
+Akbarov
+--- PAGE 126 ---
+@Milliy_til_1 2017-2022 Javohir Yo’ldoshev 
+42 
+ 
+18. 
+ 
+ 
+19. Qaysi gapdagi harakat nomi shaklini sifatdosh 
+shakli bilan almashtirish mumkin? 
+A) Olam ostin-ustin bo‘lib ketishini kutgan. 
+B) Nihoyat, jo‘jalar tuxumlarni yorib chiqibdi, voy, 
+biram nozik, biram chiroyli ekanlarki, ota-onalari 
+sevinib, bedazorni boshlariga ko‘tarib sayrab 
+yuborishibdi. 
+C) Xizmat qilib, ota-onaning duosini olib, ota yurt 
+havosiga to‘yib, g‘ururlanib yurishga nima yetsin. 
+D) Qay yo‘sinda tasalli berib, yo‘lga solishni 
+bilmasdi. 
+ 
+20. Qaysi javobda uyushiq bo'lak vazifasida kelgan  
+fe’llar ravishdosh shaklidagi tub va yasama fe’llar  
+sanaladi? 
+A)  Muhit girdobida bir somon parcha, 
+Bir poxol cho‘pidek oqib boraman, 
+Har amal, har ishni haq deb boraman, 
+Vazminim qolmadi bir uzuk qilcha. 
+B)  To‘ng‘ich bilan o'rtancha  
+Shovqin solib mushtlashib  
+Yetishibdi mozorga  
+Ketmon-u bel ushlashib 
+C) Hamma farzandlari haqida yangi bir xabar eshitish,  
+ko‘nglini xotirjam qilish ilinjida kelgan edi. 
+D) Men seni esladim entikib, yonib, men seni izladim  
+baridan tonib. 
+ 
+21. Ravsihdosh qo‘shimchalari berilgan 
+qatorni toping. 
+A -sh, -ish, -v, -uv, -moq,-mak 
+B -gan, -kan, -qan, -yotgan, -ayotgan 
+C -gach, -guncha, -ib, -gunucha, -masdan 
+ 
+D ravishdosh maxsus qo'shimchaga ega 
+emas. 
+ 
+22. Qaysi gapda fe’lning  harakat nomi shakli 
+aniqlovchi  vazifasida kelgan? 
+A) So'rashdan uyalma,  bilmaslikdan  uyal. 
+B) To'kilgan paxtalarni terib  qoplarga joylash kerak. 
+C) Odam qancha ko'p bilsa,  yashashi shuncha 
+qiyinlashadi. 
+D) Yuragiga go'zallikdan bahra olish tuyg'usini quydi. 
+ 
+23. "Institutni bitirgan yilim meni aspiranturaga qabul 
+qilishdi va men yana shaharda qoldim",− deb so‘zini 
+davom ettirdi u biroz o‘ylangandan so‘ng. 
+Ushbu gapda qatnashgan fe’llar haqidagi qaysi 
+fikr to‘g‘ri emas? 
+A) 1 o‘rinda orttirma nisbatdagi sof fe’l qatnashgan. 
+B) Gapdagi sifatdoshlar 2 xil nisbatda. 
+C) Sof fe’llarning faqat 2 tasi xabar maylidagi fe’l 
+sanaladi. 
+D) O‘timli fe’llarning 1tasi birgalik nisbatida. 
+ 
+24. Suhbatlashishga arziydigan kishi bilan 
+gaplashmaslik kishini yo‘qotishdir. Suhbatlashishga 
+arzimaydigan kishilar bilan gaplashish so‘zni 
+yo‘qotishdir. Oqil odam esa kishilarni ham, so‘zni 
+ham yo‘qotmaydi. 
+Ushbu parchada qatnashgan fe’llar haqidagi 
+to‘g‘ri fikrni aniqlang. 
+A)Ushbu parchada qatnashgan tub fe’llar bir xil 
+bo‘lak vazifasini bajargan. 
+B)Ushbu parchada harakat nomi shaklida kelgan tub 
+fe’l qatnashgan. 
+C)Ushbu parchada birgalik nisbatdagi tub fe’l 
+qatnashgan. 
+D)Ushbu parchada qatnashgan tub fe’llar ikki xil 
+nisbat shaklida qo‘llangan. 
+ 
+ 
+ 
+25. Berilgan  gaplar  va  ularda  ishtirok  etgan  fe’l  shakllari to‘g‘ri moslashtirilgan javobni aniqlang. 
+ 
+1.  Zebi  yuragida tugilib  yotgan  zo‘r  tugunni  
+yechib  yuborgan edi. 
+ 
+2. Ufqlarda sayr etgin mudom. Quyosh kelib suvga 
+cho‘kkanda. 
+a)ko‘makchi  fe’lli  so‘z qo‘shilmasi; 
+b)qo‘shma fe’l; 
+d)nisbat  qo‘shimchasini olgan fe’l; 
+e)sof fe’l shaklidagi fe’l; 
+f)sifatdosh  shaklidagi fe’l; 
+g)  ravishdosh  shaklidagi fe’l. 
+ 
+A) 1-a, b, d, f, g; 2-b, e, g  B) 1-a, d, e, f; 2-b, e, f, g 
+C) 1-a, d, f, g; 2-a, e, f, g  D) 1-a, e, f; 2-a, b, e, g 
+Harakat nomi shaklini 
+aniqlang.
+A) qaymoq
+C) 
+ko'maklash
+B) yopish
+D) qarg'ash
+--- PAGE 127 ---
+@Milliy_til_1 2017-2022 Javohir Yo’ldoshev 
+43 
+ 
+ 
+26. Berilgan  gaplar  va  ularda  ishtirok  etgan  fe’l shakllari to‘g‘ri moslashtirilgan javobni aniqlang. 
+ 
+1.  Hasanali  bekning  yechinib yotishini kutib  
+turardi,  chunki  uni yotqizib,  yoqilgan shamni o‘zi 
+bilan narigi hujraga olib chiqmoqchi edi 
+ 
+2.  Yomg‘irdan  keyin osmonda  paydo bo‘ladigan  
+kamalak jahondagi  jamiki ranglarni  yettita  ipga  
+tortib  turganga  o‘xshaydi. 
+a)  ko‘makchi  fe’lli  so‘z qo‘shilmasi; 
+b) qo‘shma fe’l; 
+d)  nisbat  qo‘shimchasini olgan fe’l; 
+e) harakat nomi shaklidagi fe’l; 
+f)sifatdosh shaklidagi fe’l; 
+g)  ravishdosh  shaklidagi fe’l. 
+ 
+A) 1-a, b, d, e, f, g; 2-a, b, f  B) 1-a, d, e, f, g; 2-a, b, f, g 
+C) 1-a, d, e, g; 2-a, f, g  D) 1-b, d, e, f, g; 2-b, g, f 
+ 
+27. Ushbu gapda nuqtalar o‘rniga qaysi qo‘shimchani qo‘yib bo‘lmaydi? 
+Mavlono Rumiy hazratlaridan so‘rashdi:                  
+– Sin… ko‘ngil yana seva oladimi? 
+Mavlono javob berdi:   –Ha, seva oladi. 
+–Unda ayting-chi, singan payola… suv ichasizmi? 
+Mavlono esa nimtabassum bilan:                                          
+–Siz piyola sindi deya, suv ich…ni tark qildingizmi? – dedi. 
+A) fe’l yasovchi qo‘shimcha 
+B) lug‘aviy shakl yasovchi qo‘shimcha 
+C) ismlarning sintaktik shakl yasovchi qo‘shimchasi 
+D) fe’lning vazifa shaklini hosil qiluvchi qo‘shimcha 
+ 
+Fe’llarning yasalishi. Qo’shma fe’l va 
+KFSQ 
+ 
+ 1  
+ 
+1. -la fe’l yasovchi qo‘shimchasi otlarga qo‘shilib 
+fe’l yasaganda qanday ma’nolarni bildiradi? 
+ 
+A) 1, 2, 3, 4  B) 1, 2, 3  
+C) 1, 2, 4 D) 1, 3, 4 
+ 
+2. -la fe’l yasovchi qo‘shimchasi qaysi qatorda 
+yasashga asos qismdan anglashilgan tus, holatga 
+kirish harakatini bildiradi? 
+A) urug‘la, bolala  B) o‘g‘itla, moyla 
+C) dodla, ufla   D) silliqla, tozala 
+ 
+3. -la fe’l yasovchi qo‘shimchasi qaysi so‘zda 
+yasashga asos qismdan anglashilgan narsa-
+predmet bilan ta’minlash ma’nosini bildirgan? 
+ 
+ 
+ 
+4. Fe’l yasovchi -la qo‘shimchasi yasashga asos 
+qismdan anglashilgan narsa-predmet bilan 
+ta’minlash ma’nosini ifodalagan so‘zlarni toping. 
+A) o‘g‘itla, moyla  B) urug‘la, bolala 
+C) tekisla, yangila  D) o‘yla, yumala 
+ 
+5. Qaysi qatordagi yasama fe’llar asos qismdan 
+anglashilgan narsani yuzaga keltirish ma’nosini 
+bildiradi? 
+A) o‘g‘itla, moyla  B) qaychila, egovla 
+C) urug‘la, bolala  D) tezla, tozala 
+ 
+6. Fe’l+fe’l shaklidagi qo‘shma fe’llarni toping. 
+1) yasashga asos qismdan anglashilgan 
+narsa-predmet bilan ta’minlash; 
+2) asos qismda ifodalangan asbob 
+bilan harakatni bajarish;
+3) asosdan anglashilgan narsani 
+yuzaga keltirish;
+4) asos qismdan anglashilgan tus, 
+holatga kirish
+A) bolala
+B) qashila
+C) qaychila
+D) moyla
+--- PAGE 128 ---
+@Milliy_til_1 2017-2022 Javohir Yo’ldoshev 
+44 
+ 
+A)quvonib keldi,shoshilib qo‘ydi    
+B)sotib yubormoq,o‘ylab qolmoq 
+C)olib qochmoq, ishlab chiqarmoq    
+D)isib ketdi, yozib bordi 
+ 
+7. Ham yetakchi, ham ko‘makchi fe’llarga qo‘shila 
+oladigan qo‘shimchalarni aniqlang.  
+ 
+A) 1, 2  B) 2, 3  C) 3, 4  D) 2, 4 
+ 
+8. Qo‘shma fe’llar qatorini aniqlang. 
+A) o‘qib turdi, charaqlab ketdi, sayr etdi 
+B) tarbiya qilmoq, bunyod etmoq, chirs etmoq 
+C) yeb-ichmoq, so‘rab kelmoq, aytar-aytmas 
+D) keldi-ketdi, borib keldi, gup etdi 
+ 
+9. Quyida berilgan fe’llardan nechtasi tub, 
+nechtasi yasama fe’l hisoblanadi?  
+yiltiradi, keltiradi, suvsiradi, kulimsiradi, suvsadi, 
+borsaydi 
+A) 3 ta tub, 3 ta yasama 
+B) 4 ta tub, 2 ta yasama 
+C) 2 ta tub, 4 ta yasama 
+D) 1 ta tub, 5 ta yasama 
+ 
+10. Qaysi gapda ot + fe’l qolipidagi qo‘shma fe’l 
+qatnashgan? 
+A) Ko‘zimga allanima ko‘rindi, o‘zimni bosishga 
+harakat qildim. 
+B) Alibek qo‘lini shimining cho‘ntagiga solib, qo‘shni 
+xonaga chiqib ketdi. 
+C) G‘oyibnazarni yangi mavsum oldidan 
+hisobchilikdan bo‘shatishdi. 
+D) Issiq qaytganda, odam siyraklashib qolganda, 
+Eshonboyev keldi. 
+ 
+11. 
+ 
+ 
+12. Qaysi javobda ot + fe’l qolipidagi qo‘shma 
+fe’llar berilgan? 
+A) bayram qilmoq, ruxsat olmoq, javob bermoq 
+B) tasdiq qilmoq, borib kelmoq, kirib chiqmoq 
+C) yangi bo‘lmoq, bayon qilmoq, o‘qib chiqmoq 
+D) shunday bo‘lmoq, taklif qilmoq, ko‘rib qolmoq 
+ 
+13. Qaysi gapda yasama fe’l ishtirok etgan? 
+A) Chin do‘st uldirkim, do‘stidan hech qachon 
+ranjimaydi. 
+B) Haqiqatni ochinglar, to‘g‘ri yo‘ldan yuringlar. 
+C) Hazilkash mehmonlar bunga ishonmadilar. 
+D) Bizga vasiyat tariqasida nasihatlaringizni 
+aytsangiz. 
+ 
+14.  O‘z nafsini mag‘lub etgan marddir, 
+G‘iybatdan uzoq ketolgan marddir. 
+Nomard tegib o‘tar yiqilganlarga, 
+Ojizlar qo‘lini tutolgan marddir. 
+Ushbu she’rdagi yasama fe’llar sonini aniqlang. 
+A) 1 ta   B) 2 ta   C) 3 ta 
+D) yasama fe’l ishtirok etmagan 
+ 
+15. 1) chiqmoq; 2) yurmoq; 3) olmoq; 4) yubormoq; 
+5) boshlamoq; 6) tashlamoq; 7) qo‘ymoq; 8) yotmoq 
+Qaysi ko‘makchi fe’llar harakatning tez va oson 
+bajarilishini ifodalaydi? 
+A) 2, 3, 4, 6, 8   B) 2, 3, 8  
+C) 4, 6, 7  D) 1, 4, 6, 7, 8 
+ 
+1. nisbat
+2. 
+bo'lishsizlik
+3. zamon
+4. shaxs-
+son
+Ko‘makchi fe’lli so‘z qo‘shilmalari 
+keltirilgan javobni belgilang.
+A) o‘ynab ketdi, aytib beraman, qolib 
+ketdi
+B) sotib oldi, tashlab qo‘yilgan, uxlab qoldi
+C) o‘qib chiqdi, borib keldi, qochib 
+ketdi
+D) ko‘rib qoldi, vayron bo‘ldi, tushib 
+ketdi
+--- PAGE 129 ---
+@Milliy_til_1 2017-2022 Javohir Yo’ldoshev 
+45 
+ 
+16. 
+ 
+ 
+17. Qaysi gaplarda fe’llar tarkibidagi 
+qo‘shimchalar o‘zaro shakldoshlik hosil qilgan? 
+ 
+A) 1, 2, 3  B) 1, 3  C) 1   D) 1, 2 
+ 
+ 
+18. Yasama fe’llar juftlashishidan hosil bo‘lgan juft fe’l qatnashgan gaplarni aniqlang. 
+ 
+A) 1, 2, 3, 5   B) 1, 4   C) 1, 3, 4  D) 1, 3, 4, 5 
+19. To‘liqsiz fе’llаr to‘g‘risidаgi qаysi hukm to‘g‘ri 
+emаs? 
+A) to‘liqsiz fе’llаr mustаqil mа’nоgа egа emаs 
+B) shаxs-sоn qo‘shimchаlаri to‘liqsiz fе’llаrgа 
+qo‘shiladi 
+C) Edi, emish, ekan to‘liqsiz fe’llari - di, -mish, -kan 
+shaklida ham qo’shiladi. 
+D) zamon shakllari to‘liqsiz fe’ldan keyin qo‘shilishi 
+mumkin 
+ 
+20. Fе’l yasоvchi qo‘shimchаlаrning qаysi biri оt, 
+sifаt аsоslаrigа qo‘shilgаndа so‘zning ikkinchi 
+bo‘g‘inidаgi tоvush tushаdi? 
+A) -а   B) -аy   C) -illа  D) -y 
+ 
+21. Malika Mumtozmahal shohning ma’yusligini 
+sezgach, uni xushnud etish uchun g‘azallar o‘qib,  
+xayollarini yaxshilikka, ezgu ishlarga undardi. 
+Ushbu gapda ishtirok etgan fe’llar haqidagi 
+noto‘g‘ri fikrni belgilang. 
+A) Faqat o‘timli fe’llar ishtirok etgan. 
+B) Vazifasiga ko‘ra fe’lning uch turi mavjud. 
+C) Fe’lning tuzilishiga ko‘ra ikki turi mavjud. 
+D) Fe’llar hol, to‘ldiruvchi va kesim vazifasida 
+kelgan. 
+ 
+22. Ertalab bargsiz daraxtlarda va tomlarda qalingina 
+qirov yaltiraydi. Kech…ib kirgan qish endi kun sayin 
+sovug‘ini kuchaytira boshlagan edi.  
+Qaysi gapda ko‘makchi fe’lli so‘z 
+qo‘shilmasidagi yetakchi fe’l yasama fe’l 
+hisoblanmaydi?
+A) U bunga javoban yig‘lab 
+yubordi
+B) Bir mahal yo‘l kengayib ketdi.
+C) Unsin ostonadan hatlashi 
+bilan paranjisini yig‘ishtirib oldi.
+D) Birdan yuragi gursullab ketdi
+1. Anvar uyga kirishi bilan qolganlar 
+jim bo‘lishdi.
+2. Qushlar uni yaxshi ko‘rishib 
+Mayna deb ism qo‘yishibdi.
+3. Mehmonlar onamning qistashiga 
+qaramasdan ichkariga kirishmadi.
+1.Nazira boshqa o‘rtoqlaridan qolmaslik uchun qizarib-bo‘zarib ishlaydi, yuzidan quyilgan terni 
+artishga qizg‘anadi.
+2. Men shu Vatan qo‘ynida unib o‘sdim. 
+3. Kelganimga bir hafta bo‘ldimi-bo‘lmadimi, bilmadim, uning to‘g‘risidagi hamma gaplarni 
+bilib oldim.
+4. Bu niyatni Mohlaroyim ham qo‘llab-quvvatlar edi.
+5. Nabira ko‘rgach, omonatini osongina topshirdi-ketdi.

@@ -3,12 +3,19 @@
 // 1. Dasturiy holat (Application State)
 let state = {
   user: {
+    // Matematika
     tier: 'free', // 'free', 'starter' (5k), 'standard' (9k), 'premium' (15k)
     attemptsLeft: 1,
     unlockedVariants: [1],
-    balance: 0,
+    // Ona tili va adabiyot
+    langTier: 'free', // 'free', 'premium' (20k)
+    langAttemptsLeft: 2,
+    langUnlockedVariants: [1, 2],
+    
+    displayName: 'Nomzod',
     isAdmin: false
   },
+  currentSubject: 'math', // 'math' or 'lang'
   currentTest: {
     active: false,
     isAdaptive: false,
@@ -36,7 +43,7 @@ const ADMIN_CARD_HOLDER = "TOPILDIYEV SIROJIDDIN";
 // 2. LocalStorage dan foydalanuvchi holatini yuklash
 function initUser() {
   // Programmatik versiya nazorati — eski brauzer xotirasini avtomat tozalaydi
-  const CURRENT_VERSION = "1.6";
+  const CURRENT_VERSION = "1.7"; // Bumping to 1.7 for subject selector
   const storedVersion = localStorage.getItem('rasch_app_version');
   if (storedVersion !== CURRENT_VERSION) {
     localStorage.clear();
@@ -94,20 +101,59 @@ function saveUserState() {
   localStorage.setItem('rasch_user_state', JSON.stringify(state.user));
 }
 
+// Dastur fanini o'zgartirish
+function setSubject(subject) {
+  state.currentSubject = subject;
+  
+  const btnMath = document.getElementById('btn-sub-math');
+  const btnLang = document.getElementById('btn-sub-lang');
+  
+  if (subject === 'math') {
+    btnMath.className = 'btn btn-accent';
+    btnLang.className = 'btn btn-outline';
+  } else {
+    btnMath.className = 'btn btn-outline';
+    btnLang.className = 'btn btn-accent';
+  }
+  
+  updateUIProfile();
+  renderVariantsList();
+}
+
 // 3. UI yangilash (Profil va balans)
 function updateUIProfile() {
-  document.getElementById('lbl-tier').innerText = state.user.tier.toUpperCase();
-  document.getElementById('lbl-attempts').innerText = state.user.attemptsLeft;
-  
+  const isMath = state.currentSubject === 'math';
   const statusLabel = document.getElementById('profile-status-badge');
   statusLabel.className = 'profile-status';
-  if (state.user.tier === 'premium') {
-    statusLabel.classList.add('premium');
-    statusLabel.innerHTML = '✨ Premium A\'zo';
-    document.getElementById('lbl-attempts-container').style.display = 'none';
+
+  if (isMath) {
+    document.getElementById('lbl-tier').innerText = state.user.tier.toUpperCase();
+    document.getElementById('lbl-attempts').innerText = state.user.attemptsLeft;
+    
+    if (state.user.tier === 'premium') {
+      statusLabel.classList.add('premium');
+      statusLabel.innerHTML = '✨ Premium A\'zo';
+      document.getElementById('lbl-attempts-container').style.display = 'none';
+    } else {
+      statusLabel.innerHTML = '👤 Oddiy foydalanuvchi';
+      document.getElementById('lbl-attempts-container').style.display = 'block';
+    }
   } else {
-    statusLabel.innerHTML = '👤 Oddiy foydalanuvchi';
-    document.getElementById('lbl-attempts-container').style.display = 'block';
+    // Ona tili va adabiyot
+    const attempts = state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2;
+    const tier = state.user.langTier !== undefined ? state.user.langTier : 'free';
+    
+    document.getElementById('lbl-tier').innerText = tier.toUpperCase();
+    document.getElementById('lbl-attempts').innerText = attempts;
+    
+    if (tier === 'premium') {
+      statusLabel.classList.add('premium');
+      statusLabel.innerHTML = '✨ Premium A\'zo (Ona tili)';
+      document.getElementById('lbl-attempts-container').style.display = 'none';
+    } else {
+      statusLabel.innerHTML = '👤 Oddiy foydalanuvchi';
+      document.getElementById('lbl-attempts-container').style.display = 'block';
+    }
   }
 }
 
@@ -155,6 +201,8 @@ function switchTab(tabId) {
 function renderVariantsList() {
   const container = document.getElementById('variants-grid');
   container.innerHTML = '';
+  
+  const isMath = state.currentSubject === 'math';
 
   // Moslashuvchan test (CAT) kartasi
   const catCard = document.createElement('div');
@@ -174,7 +222,15 @@ function renderVariantsList() {
 
   // 30 ta standart variant
   for (let v = 1; v <= 30; v++) {
-    const isUnlocked = v === 1 || state.user.unlockedVariants.includes(v) || state.user.tier === 'premium';
+    let isUnlocked = false;
+    if (isMath) {
+      isUnlocked = v === 1 || state.user.unlockedVariants.includes(v) || state.user.tier === 'premium';
+    } else {
+      const unlockedList = state.user.langUnlockedVariants || [1, 2];
+      const tier = state.user.langTier || 'free';
+      isUnlocked = v === 1 || v === 2 || unlockedList.includes(v) || tier === 'premium';
+    }
+
     const card = document.createElement('div');
     card.className = 'card variant-card';
 
@@ -189,15 +245,20 @@ function renderVariantsList() {
     } else {
       let cost = 0;
       let packName = '';
-      if (v <= 3) {
-        cost = 5000;
-        packName = "Starter Tarif (Variant 2-3)";
-      } else if (v <= 8) {
-        cost = 9000;
-        packName = "Standard Tarif (Variant 4-8)";
+      if (isMath) {
+        if (v <= 3) {
+          cost = 5000;
+          packName = "Starter Tarif (Variant 2-3)";
+        } else if (v <= 8) {
+          cost = 9000;
+          packName = "Standard Tarif (Variant 4-8)";
+        } else {
+          cost = 15000;
+          packName = "Premium Tarif (Variant 9-30)";
+        }
       } else {
-        cost = 15000;
-        packName = "Premium Tarif (Variant 9-30)";
+        cost = 20000;
+        packName = "Ona Tili Premium (Variant 3-30)";
       }
 
       lockHTML = `
@@ -210,12 +271,18 @@ function renderVariantsList() {
       `;
     }
 
+    const subjectPrefix = isMath ? 'Matematika' : 'Ona tili';
+    const tagText = isMath ? (v === 1 ? 'Bepul' : 'A\'lo') : (v <= 2 ? 'Bepul' : 'A\'lo');
+    const metaText = isMath 
+      ? 'Algebra, geometriya va Progressiyalarga oid milliy sertifikat namunalari.'
+      : 'Fonetika, sintaksis, leksikologiya va adabiyot bo\'yicha milliy sertifikat namunalari.';
+
     card.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-        <h3>Matematika - Variant ${v}</h3>
-        <span class="variant-tag" style="background:rgba(167, 139, 250, 0.2); color:var(--primary);">${v === 1 ? 'Bepul' : 'A\'lo'}</span>
+        <h3>${subjectPrefix} - Variant ${v}</h3>
+        <span class="variant-tag" style="background:rgba(167, 139, 250, 0.2); color:var(--primary);">${tagText}</span>
       </div>
-      <p class="variant-meta">Algebra, geometriya va Progressiyalarga oid milliy sertifikat namunalari.</p>
+      <p class="variant-meta">${metaText}</p>
       <div class="variant-actions">
         ${actionHTML}
       </div>
@@ -227,25 +294,35 @@ function renderVariantsList() {
 
 // 6. To'lov tizimi oqimi (Unlock Flow)
 function triggerUnlockFlow(variantId) {
+  const isMath = state.currentSubject === 'math';
   let cost = 0;
   let tierName = '';
 
-  if (variantId <= 3) {
-    cost = 5000;
-    tierName = 'starter';
-  } else if (variantId <= 8) {
-    cost = 9000;
-    tierName = 'standard';
+  if (isMath) {
+    if (variantId <= 3) {
+      cost = 5000;
+      tierName = 'starter';
+    } else if (variantId <= 8) {
+      cost = 9000;
+      tierName = 'standard';
+    } else {
+      cost = 15000;
+      tierName = 'premium';
+    }
   } else {
-    cost = 15000;
-    tierName = 'premium';
+    cost = 20000;
+    tierName = 'lang_premium';
   }
 
   openPaymentModal(tierName, cost);
 }
 
 function triggerPremiumUnlock() {
-  openPaymentModal('premium', 15000);
+  if (state.currentSubject === 'math') {
+    openPaymentModal('premium', 15000);
+  } else {
+    openPaymentModal('lang_premium', 20000);
+  }
 }
 
 function openPaymentModal(tierName, cost) {
@@ -302,6 +379,13 @@ function confirmPayment() {
       if (!state.user.unlockedVariants.includes(v)) state.user.unlockedVariants.push(v);
     }
     state.user.attemptsLeft = 99999; // cheksiz
+  } else if (tier === 'lang_premium') {
+    state.user.langTier = 'premium';
+    if (!state.user.langUnlockedVariants) state.user.langUnlockedVariants = [1, 2];
+    for (let v = 3; v <= 30; v++) {
+      if (!state.user.langUnlockedVariants.includes(v)) state.user.langUnlockedVariants.push(v);
+    }
+    state.user.langAttemptsLeft = 99999; // cheksiz
   }
 
   // Sotuv statistikasiga yozish
@@ -354,21 +438,39 @@ function shuffleQuestionOptions(question) {
 
 // 8. Test topshirish jarayoni
 function startStandardTest(variantId) {
-  // Variant 1 to'liq bepul, urinishlar tekshirilmaydi
-  if (variantId !== 1 && state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
-    showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
-    return;
+  const isMath = state.currentSubject === 'math';
+  const isFree = isMath ? (variantId === 1) : (variantId === 1 || variantId === 2);
+  
+  // Urinishlarni tekshirish
+  if (!isFree) {
+    if (isMath) {
+      if (state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
+        showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+        return;
+      }
+    } else {
+      const attempts = state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2;
+      const tier = state.user.langTier || 'free';
+      if (attempts <= 0 && tier !== 'premium') {
+        showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+        return;
+      }
+    }
   }
 
   // Bepul test topshirilganini statistikaga yozish
-  if (variantId === 1) {
+  if (isFree) {
     logUsage('free', 0);
   }
 
-  let rawQuestions = questionBank.filter(q => q.variant === variantId);
+  // Savollarni fan bo'yicha filterlash
+  let rawQuestions = questionBank.filter(q => q.variant === variantId && (q.subject || 'math') === state.currentSubject);
   if (rawQuestions.length === 0) {
-    // Fallback: Agar savollar yuklanmagan bo'lsa (Variant 6-30), mavjud 150 tadan tasodifiy 30 tasini olamiz
-    const pool = [...questionBank];
+    const pool = questionBank.filter(q => (q.subject || 'math') === state.currentSubject);
+    if (pool.length === 0) {
+      showToast("Ushbu fan uchun savollar yaqin orada qo'shiladi!", true);
+      return;
+    }
     const shuffledPool = pool.sort(() => 0.5 - Math.random());
     rawQuestions = shuffledPool.slice(0, 30).map((q, idx) => ({
       ...q,
@@ -381,8 +483,17 @@ function startStandardTest(variantId) {
   const questions = rawQuestions.map(shuffleQuestionOptions);
 
   // Urinishni kamaytirish (faqat bepul bo'lmagan variantlar uchun)
-  if (variantId !== 1 && state.user.tier !== 'premium') {
-    state.user.attemptsLeft--;
+  if (!isFree) {
+    if (isMath) {
+      if (state.user.tier !== 'premium') {
+        state.user.attemptsLeft--;
+      }
+    } else {
+      const tier = state.user.langTier || 'free';
+      if (tier !== 'premium') {
+        state.user.langAttemptsLeft = (state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2) - 1;
+      }
+    }
     saveUserState();
     updateUIProfile();
   }
@@ -394,22 +505,35 @@ function startStandardTest(variantId) {
   state.currentTest.questions = questions;
   state.currentTest.timeLeft = 5400; // 90 daqiqa (30 ta savol uchun)
 
-  document.getElementById('test-title').innerText = `Variant ${variantId} testi`;
+  document.getElementById('test-title').innerText = `${isMath ? 'Matematika' : 'Ona tili'} - Variant ${variantId} testi`;
   showTestContainer();
 }
 
 function startAdaptiveTest() {
-  if (state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
-    showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
-    return;
+  const isMath = state.currentSubject === 'math';
+  
+  if (isMath) {
+    if (state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
+      showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+      return;
+    }
+    if (state.user.tier !== 'premium') {
+      state.user.attemptsLeft--;
+    }
+  } else {
+    const attempts = state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2;
+    const tier = state.user.langTier || 'free';
+    if (attempts <= 0 && tier !== 'premium') {
+      showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+      return;
+    }
+    if (tier !== 'premium') {
+      state.user.langAttemptsLeft = (state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2) - 1;
+    }
   }
 
-  // Urinishni kamaytirish
-  if (state.user.tier !== 'premium') {
-    state.user.attemptsLeft--;
-    saveUserState();
-    updateUIProfile();
-  }
+  saveUserState();
+  updateUIProfile();
 
   resetTestState();
   state.currentTest.active = true;
@@ -417,10 +541,14 @@ function startAdaptiveTest() {
   state.currentTest.questions = []; // CAT dinamik yuklanadi
   state.currentTest.timeLeft = 1200; // 20 daqiqa (10 ta savol uchun)
 
-  document.getElementById('test-title').innerText = "Rasch Moslashuvchan Test (CAT)";
+  document.getElementById('test-title').innerText = `Rasch Moslashuvchan Test (${isMath ? 'Matematika' : 'Ona tili'})`;
   
   // Dastlabki savolni tanlash va uning javoblarini chalkashtirish
-  const remaining = [...questionBank];
+  const remaining = questionBank.filter(q => (q.subject || 'math') === state.currentSubject);
+  if (remaining.length === 0) {
+    showToast("Ushbu fan uchun savollar bazasi yuklanmoqda...", true);
+    return;
+  }
   const initialTheta = 0.0;
   const rawFirstQuestion = Rasch.selectAdaptiveItem(initialTheta, remaining);
   const firstQuestion = shuffleQuestionOptions(rawFirstQuestion);
@@ -663,13 +791,27 @@ function finishTest() {
 
   // 1. Qobiliyat bahosi (A+, A, B+, B, C+, C, F) ni hisoblash va ko'rsatish
   let grade = 'F';
-  if (result.theta >= 2.0) grade = 'A+ 🥇 (90%+ ball) - MUKAMMAL!';
-  else if (result.theta >= 1.2) grade = 'A 🥈 (80%-89% ball) - JUDA YAXSHI!';
-  else if (result.theta >= 0.5) grade = 'B+ 🥉 (70%-79% ball) - YAXSHI!';
-  else if (result.theta >= 0.0) grade = 'B 🎖️ (60%-69% ball) - QONIQARLI!';
-  else if (result.theta >= -0.5) grade = 'C+ 📈 (50%-59% ball) - CHEGARAVIY QONIQARLI!';
-  else if (result.theta >= -1.2) grade = 'C 📉 (40%-49% ball) - PAST DARAJA!';
-  else grade = 'F ❌ (40% dan past) - SERTIFIKAT BERILMAYDI';
+  const isMath = state.currentSubject === 'math';
+
+  if (isMath) {
+    if (result.theta >= 2.0) grade = 'A+ 🥇 (90%+ ball) - MUKAMMAL!';
+    else if (result.theta >= 1.2) grade = 'A 🥈 (80%-89% ball) - JUDA YAXSHI!';
+    else if (result.theta >= 0.5) grade = 'B+ 🥉 (70%-79% ball) - YAXSHI!';
+    else if (result.theta >= 0.0) grade = 'B 🎖️ (60%-69% ball) - QONIQARLI!';
+    else if (result.theta >= -0.5) grade = 'C+ 📈 (50%-59% ball) - CHEGARAVIY QONIQARLI!';
+    else if (result.theta >= -1.2) grade = 'C 📉 (40%-49% ball) - PAST DARAJA!';
+    else grade = 'F ❌ (40% dan past) - SERTIFIKAT BERILMAYDI';
+  } else {
+    // Ona tili va adabiyot (BMB / DTM Milliy sertifikat baholash tizimi)
+    const percentage = result.percentage;
+    if (percentage >= 70) grade = 'A+ 🥇 (70 ball va undan yuqori) - MUKAMMAL!';
+    else if (percentage >= 65) grade = 'A 🥈 (65 - 69.9 ball) - JUDA YAXSHI!';
+    else if (percentage >= 60) grade = 'B+ 🥉 (60 - 64.9 ball) - YAXSHI!';
+    else if (percentage >= 55) grade = 'B 🎖️ (55 - 59.9 ball) - QONIQARLI!';
+    else if (percentage >= 50) grade = 'C+ 📈 (50 - 54.9 ball) - CHEGARAVIY QONIQARLI!';
+    else if (percentage >= 46) grade = 'C 📉 (46 - 49.9 ball) - PAST DARAJA!';
+    else grade = 'F ❌ (46 ball dan past) - SERTIFIKAT BERILMAYDI';
+  }
 
   const gradeEl = document.getElementById('lbl-res-sertifikat-grade');
   if (gradeEl) {
@@ -708,12 +850,21 @@ function finishTest() {
       if (accuracy < 60) {
         hasWeaknesses = true;
         let advice = '';
-        if (cat.includes('Geometriya')) advice = "Geometrik chizmalar, burchaklar va yuzalarni hisoblash formulalarini takrorlang.";
-        else if (cat.includes('Trigonometriya')) advice = "Trigonometrik ayniyatlar, keltirish formulalari va tenglamalarni qayta ko'rib chiqing.";
-        else if (cat.includes('Analiz')) advice = "Hosilalar, integrallar va ularning geometrik ma'nolariga ko'proq e'tibor qarating.";
-        else if (cat.includes('Tenglama') || cat.includes('tengsizlik')) advice = "Kvadrat, ko'rsatkichli va logarifmik tenglama/tengsizliklarni yechish usullarini mustahkamlang.";
-        else if (cat.includes('Sonlar')) advice = "Tub bo'luvchilar, sonli ketma-ketliklar va amallarni bajarish qoidalarini takrorlang.";
-        else advice = "Ushbu mavzuda ko'proq amaliy mashg'ulotlar bajaring.";
+        if (isMath) {
+          if (cat.includes('Geometriya')) advice = "Geometrik chizmalar, burchaklar va yuzalarni hisoblash formulalarini takrorlang.";
+          else if (cat.includes('Trigonometriya')) advice = "Trigonometrik ayniyatlar, keltirish formulalari va tenglamalarni qayta ko'rib chiqing.";
+          else if (cat.includes('Analiz')) advice = "Hosilalar, integrallar va ularning geometrik ma'nolariga ko'proq e'tibor qarating.";
+          else if (cat.includes('Tenglama') || cat.includes('tengsizlik')) advice = "Kvadrat, ko'rsatkichli va logarifmik tenglama/tengsizliklarni yechish usullarini mustahkamlang.";
+          else if (cat.includes('Sonlar')) advice = "Tub bo'luvchilar, sonli ketma-ketliklar va amallarni bajarish qoidalarini takrorlang.";
+          else advice = "Ushbu mavzuda ko'proq amaliy mashg'ulotlar bajaring.";
+        } else {
+          if (cat.includes('Fonetika') || cat.includes('imlo')) advice = "Fonetika qoidalari va imlo lug'atiga ko'proq e'tibor qarating.";
+          else if (cat.includes('Leksikologiya') || cat.includes('frazeologiya')) advice = "So'z ma'nolari, sinonimlar va iboralar tahlilini mustahkamlang.";
+          else if (cat.includes('Morfologiya')) advice = "Mustaqil va yordamchi so'z turkumlari, ularning turlanish hamda tuslanish qoidalarini takrorlang.";
+          else if (cat.includes('Sintaksis')) advice = "Gap bo'laklari, sodda va qo'shma gaplar tahlilini qayta ko'rib chiqing.";
+          else if (cat.includes('Adabiyot')) advice = "Adabiy asarlar, dostonlar va ijodkorlar tarjimai holini chuqurroq takrorlang.";
+          else advice = "Ushbu ona tili mavzusi bo'yicha qoidalarni qayta o'qing.";
+        }
 
         weakHTML += `
           <div style="background:rgba(251,191,36,0.04); border-left: 3px solid #fbbf24; padding:0.6rem; border-radius:6px; margin-bottom: 6px; font-size:0.8rem; line-height:1.4;">
