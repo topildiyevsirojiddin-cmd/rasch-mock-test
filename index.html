@@ -641,6 +641,31 @@
   <script src="app.js?v=1.7"></script>
 
   <script>
+    // Landing Screen logic (placed inline to ensure immediate availability)
+    function selectSubjectFromLanding(subject) {
+      if (typeof setSubject === 'function') {
+        setSubject(subject);
+      }
+      document.body.classList.remove('landing-active');
+      document.getElementById('landing-page').style.display = 'none';
+      if (typeof switchTab === 'function') {
+        switchTab('dashboard');
+      }
+    }
+
+    function showLandingPage() {
+      if (typeof state !== 'undefined' && state.currentTest && state.currentTest.active) {
+        if (!confirm("Diqqat! Test hali tugamadi. Sahifadan chiqsangiz natijalar saqlanmaydi. Chiqasizmi?")) {
+          return;
+        }
+        if (typeof resetTestState === 'function') {
+          resetTestState();
+        }
+      }
+      document.body.classList.add('landing-active');
+      document.getElementById('landing-page').style.display = 'flex';
+    }
+
     // Theme toggler logic
     function toggleTheme() {
       const currentTheme = document.documentElement.getAttribute('data-theme');
