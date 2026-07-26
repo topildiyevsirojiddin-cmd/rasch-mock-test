@@ -19,18 +19,49 @@
   <!-- Telegram WebApp SDK -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
-<body>
+<body class="landing-active">
+
+  <!-- Landing Screen / Subject Selector -->
+  <div id="landing-page" class="landing-screen">
+    <div class="landing-card">
+      <div class="landing-logo">📊 Rasch Assessment Platform</div>
+      <h1 class="landing-title">TEstdan oldin o'zingizni sinab ko'ring!</h1>
+      <p class="landing-desc">
+        Platformamiz an'anaviy ball hisoblashdan farqli ravishda, xalqaro miqyosda tan olingan <strong>Rasch modeli</strong> yordamida bilim darajangizni aniq logit birliklarida baholaydi. Bu sizning haqiqiy imkoniyatlaringizni va qaysi mavzularda kamchiliklaringiz borligini aniq ko'rsatib beradi.
+      </p>
+      
+      <div class="landing-choice-title">Tayyorgarlik yo'nalishini tanlang:</div>
+      <div class="landing-buttons">
+        <button class="landing-btn" onclick="selectSubjectFromLanding('math')" style="background: rgba(167, 139, 250, 0.08); border-color: rgba(167, 139, 250, 0.3);">
+          <span class="btn-icon">📐</span>
+          <div class="btn-text-wrapper">
+            <span class="btn-title">Matematika</span>
+            <span class="btn-subtitle">Milliy Sertifikat • 30 variant</span>
+          </div>
+        </button>
+        
+        <button class="landing-btn" onclick="selectSubjectFromLanding('lang')" style="background: rgba(34, 211, 238, 0.08); border-color: rgba(34, 211, 238, 0.3);">
+          <span class="btn-icon">📚</span>
+          <div class="btn-text-wrapper">
+            <span class="btn-title">Ona tili va Adabiyot</span>
+            <span class="btn-subtitle">Milliy Sertifikat • 30 variant</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Navigatsiya paneli -->
   <nav>
     <div class="logo">
-      <span>📐</span> Rasch Math
+      <span id="logo-icon">📐</span> <span id="logo-text">Rasch Math</span>
     </div>
     <ul class="nav-links">
       <li class="active"><a onclick="switchTab('dashboard')">Asosiy panel</a></li>
       <li><a onclick="switchTab('mocktest')">Mok testlar</a></li>
       <li><a onclick="switchTab('analyzer')">O'qituvchi paneli</a></li>
       <li><a onclick="switchTab('guide')">Qo'llanma</a></li>
+      <li><a onclick="showLandingPage()" style="color:var(--accent); font-weight:700; cursor:pointer;">🔄 Fanni o'zgartirish</a></li>
     </ul>
     <div class="nav-right">
       <button class="theme-btn" onclick="toggleTheme()" title="Mavzuni o'zgartirish">🌓</button>
@@ -57,7 +88,7 @@
           <div class="profile-info">
             <div id="profile-status-badge" class="profile-status">👤 Oddiy a'zo</div>
             <div class="profile-name" style="margin-top:0.5rem;">Xush kelibsiz, Nomzod!</div>
-            <p style="color:var(--text-muted); font-size:0.9rem;">Matematika fani milliy sertifikat testlariga Rasch modeli bilan tayyorlaning.</p>
+            <p id="lbl-welcome-desc" style="color:var(--text-muted); font-size:0.9rem;">Matematika fani milliy sertifikat testlariga Rasch modeli bilan tayyorlaning.</p>
             <div class="stats-container">
               <div class="stat-item" id="lbl-attempts-container">
                 <div class="stat-val" id="lbl-attempts">1</div>
@@ -80,7 +111,7 @@
           <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
             Shaxsiy kartaga to'g'ridan-to'g'ri o'tkazish orqali variantlarni tezkor va qulay oching.
           </div>
-          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+          <div id="pricing-tiers-container" style="display:flex; flex-direction:column; gap:0.5rem;">
             <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('starter', 5000)">Starter Tarif (2 ta variant) - 5 000 so'm</button>
             <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('standard', 9000)">Standard Tarif (5 ta variant) - 9 000 so'm</button>
             <button class="btn btn-accent btn-sm btn-block" onclick="openPaymentModal('premium', 15000)">Premium Tarif (Cheksiz) - 15 000 so'm</button>
@@ -131,7 +162,7 @@
             </ul>
           </div>
         </div>
-        <p style="font-size:0.9rem; color:var(--text-muted);">
+        <p id="lbl-rasch-desc" style="font-size:0.9rem; color:var(--text-muted);">
           Bizning platformada Matematika variantlarini yechish orqali siz o'z bilimingizning haqiqiy **logit (θ)** shkalasidagi o'lchovini bilib olasiz va milliy sertifikatga tayyorgarligingizni aniqlashtirasiz.
         </p>
       </div>

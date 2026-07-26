@@ -107,17 +107,63 @@ function setSubject(subject) {
   
   const btnMath = document.getElementById('btn-sub-math');
   const btnLang = document.getElementById('btn-sub-lang');
+  const logoIcon = document.getElementById('logo-icon');
+  const logoText = document.getElementById('logo-text');
+  const welcomeDesc = document.getElementById('lbl-welcome-desc');
+  const raschDesc = document.getElementById('lbl-rasch-desc');
+  const pricingContainer = document.getElementById('pricing-tiers-container');
   
   if (subject === 'math') {
-    btnMath.className = 'btn btn-accent';
-    btnLang.className = 'btn btn-outline';
+    if (btnMath) btnMath.className = 'btn btn-accent';
+    if (btnLang) btnLang.className = 'btn btn-outline';
+    if (logoIcon) logoIcon.innerText = '📐';
+    if (logoText) logoText.innerText = 'Rasch Math';
+    if (welcomeDesc) welcomeDesc.innerText = 'Matematika fani milliy sertifikat testlariga Rasch modeli bilan tayyorlaning.';
+    if (raschDesc) raschDesc.innerHTML = 'Bizning platformada Matematika variantlarini yechish orqali siz o\'z bilimingizning haqiqiy <strong>logit (θ)</strong> shkalasidagi o\'lchovini bilib olasiz va milliy sertifikatga tayyorgarligingizni aniqlashtirasiz.';
+    
+    if (pricingContainer) {
+      pricingContainer.innerHTML = `
+        <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('starter', 5000)">Starter Tarif (2 ta variant) - 5 000 so'm</button>
+        <button class="btn btn-outline btn-sm btn-block" onclick="openPaymentModal('standard', 9000)">Standard Tarif (5 ta variant) - 9 000 so'm</button>
+        <button class="btn btn-accent btn-sm btn-block" onclick="openPaymentModal('premium', 15000)">Premium Tarif (Cheksiz) - 15 000 so'm</button>
+      `;
+    }
   } else {
-    btnMath.className = 'btn btn-outline';
-    btnLang.className = 'btn btn-accent';
+    if (btnMath) btnMath.className = 'btn btn-outline';
+    if (btnLang) btnLang.className = 'btn btn-accent';
+    if (logoIcon) logoIcon.innerText = '📚';
+    if (logoText) logoText.innerText = 'Rasch Ona Tili';
+    if (welcomeDesc) welcomeDesc.innerText = 'Ona tili va Adabiyot fani milliy sertifikat testlariga Rasch modeli bilan tayyorlaning.';
+    if (raschDesc) raschDesc.innerHTML = 'Bizning platformada Ona tili va Adabiyot variantlarini yechish orqali siz o\'z bilimingizning haqiqiy <strong>logit (θ)</strong> shkalasidagi o\'lchovini bilib olasiz va milliy sertifikatga tayyorgarligingizni aniqlashtirasiz.';
+    
+    if (pricingContainer) {
+      pricingContainer.innerHTML = `
+        <button class="btn btn-outline btn-sm btn-block" style="pointer-events: none; opacity: 0.8; border-color: var(--success); color: var(--success);">Tekin Variantlar (1-2 Variantlar) - BEPUL</button>
+        <button class="btn btn-accent btn-sm btn-block" onclick="openPaymentModal('premium', 20000)">Premium Tarif (Hammasini ochish) - 20 000 so'm</button>
+      `;
+    }
   }
   
   updateUIProfile();
   renderVariantsList();
+}
+
+function selectSubjectFromLanding(subject) {
+  setSubject(subject);
+  document.body.classList.remove('landing-active');
+  document.getElementById('landing-page').style.display = 'none';
+  switchTab('dashboard');
+}
+
+function showLandingPage() {
+  if (state.currentTest.active) {
+    if (!confirm("Diqqat! Test hali tugamadi. Sahifadan chiqsangiz natijalar saqlanmaydi. Chiqasizmi?")) {
+      return;
+    }
+    resetTestState();
+  }
+  document.body.classList.add('landing-active');
+  document.getElementById('landing-page').style.display = 'flex';
 }
 
 // 3. UI yangilash (Profil va balans)
