@@ -448,7 +448,7 @@ function confirmPayment() {
 function showToast(message, isError = false) {
   const toast = document.getElementById('payment-toast');
   const icon = toast.querySelector('.toast-icon');
-  const text = toast.querySelector('span');
+  const text = toast.querySelector('.toast-text');
 
   text.innerText = message;
   if (isError) {
@@ -484,75 +484,80 @@ function shuffleQuestionOptions(question) {
 
 // 8. Test topshirish jarayoni
 function startStandardTest(variantId) {
-  const isMath = state.currentSubject === 'math';
-  const isFree = isMath ? (variantId === 1) : (variantId === 1 || variantId === 2);
-  
-  // Urinishlarni tekshirish
-  if (!isFree) {
-    if (isMath) {
-      if (state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
-        showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+  try {
+    const isMath = state.currentSubject === 'math';
+    const isFree = isMath ? (variantId === 1) : (variantId === 1 || variantId === 2);
+    
+    // Urinishlarni tekshirish
+    if (!isFree) {
+      if (isMath) {
+        if (state.user.attemptsLeft <= 0 && state.user.tier !== 'premium') {
+          showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+          return;
+        }
+      } else {
+        const attempts = state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2;
+        const tier = state.user.langTier || 'free';
+        if (attempts <= 0 && tier !== 'premium') {
+          showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
+          return;
+        }
+      }
+    }
+
+    // Bepul test topshirilganini statistikaga yozish
+    if (isFree) {
+      logUsage('free', 0);
+    }
+
+    // Savollarni fan bo'yicha filterlash
+    let rawQuestions = questionBank.filter(q => q.variant === variantId && (q.subject || 'math') === state.currentSubject);
+    if (rawQuestions.length === 0) {
+      const pool = questionBank.filter(q => (q.subject || 'math') === state.currentSubject);
+      if (pool.length === 0) {
+        showToast("Ushbu fan uchun savollar yaqin orada qo'shiladi!", true);
         return;
       }
-    } else {
-      const attempts = state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2;
-      const tier = state.user.langTier || 'free';
-      if (attempts <= 0 && tier !== 'premium') {
-        showToast("Urinishlaringiz tugagan. Yangi variant sotib oling.", true);
-        return;
-      }
+      const shuffledPool = pool.sort(() => 0.5 - Math.random());
+      rawQuestions = shuffledPool.slice(0, 30).map((q, idx) => ({
+        ...q,
+        id: `v${variantId}_q${idx + 1}`,
+        variant: variantId
+      }));
     }
-  }
 
-  // Bepul test topshirilganini statistikaga yozish
-  if (isFree) {
-    logUsage('free', 0);
-  }
+    // Variantlar chalkashtiriladi
+    const questions = rawQuestions.map(shuffleQuestionOptions);
 
-  // Savollarni fan bo'yicha filterlash
-  let rawQuestions = questionBank.filter(q => q.variant === variantId && (q.subject || 'math') === state.currentSubject);
-  if (rawQuestions.length === 0) {
-    const pool = questionBank.filter(q => (q.subject || 'math') === state.currentSubject);
-    if (pool.length === 0) {
-      showToast("Ushbu fan uchun savollar yaqin orada qo'shiladi!", true);
-      return;
-    }
-    const shuffledPool = pool.sort(() => 0.5 - Math.random());
-    rawQuestions = shuffledPool.slice(0, 30).map((q, idx) => ({
-      ...q,
-      id: `v${variantId}_q${idx + 1}`,
-      variant: variantId
-    }));
-  }
-
-  // Variantlar chalkashtiriladi
-  const questions = rawQuestions.map(shuffleQuestionOptions);
-
-  // Urinishni kamaytirish (faqat bepul bo'lmagan variantlar uchun)
-  if (!isFree) {
-    if (isMath) {
-      if (state.user.tier !== 'premium') {
-        state.user.attemptsLeft--;
+    // Urinishni kamaytirish (faqat bepul bo'lmagan variantlar uchun)
+    if (!isFree) {
+      if (isMath) {
+        if (state.user.tier !== 'premium') {
+          state.user.attemptsLeft--;
+        }
+      } else {
+        const tier = state.user.langTier || 'free';
+        if (tier !== 'premium') {
+          state.user.langAttemptsLeft = (state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2) - 1;
+        }
       }
-    } else {
-      const tier = state.user.langTier || 'free';
-      if (tier !== 'premium') {
-        state.user.langAttemptsLeft = (state.user.langAttemptsLeft !== undefined ? state.user.langAttemptsLeft : 2) - 1;
-      }
+      saveUserState();
+      updateUIProfile();
     }
-    saveUserState();
-    updateUIProfile();
+
+    resetTestState();
+    state.currentTest.active = true;
+    state.currentTest.isAdaptive = false;
+    state.currentTest.variantId = variantId;
+    state.currentTest.questions = questions;
+    state.currentTest.timeLeft = 5400; // 90 daqiqa (30 ta savol uchun)
+
+    document.getElementById('test-title').innerText = `${isMath ? 'Matematika' : 'Ona tili'} - Variant ${variantId} testi`;
+    showTestContainer();
+  } catch (err) {
+    showToast("Xatolik: " + err.message, true);
+    console.error(err);
   }
-
-  resetTestState();
-  state.currentTest.active = true;
-  state.currentTest.isAdaptive = false;
-  state.currentTest.variantId = variantId;
-  state.currentTest.questions = questions;
-  state.currentTest.timeLeft = 5400; // 90 daqiqa (30 ta savol uchun)
-
-  document.getElementById('test-title').innerText = `${isMath ? 'Matematika' : 'Ona tili'} - Variant ${variantId} testi`;
-  showTestContainer();
 }
 
 function startAdaptiveTest() {
