@@ -707,7 +707,7 @@ function renderNavigationDots() {
         dot.classList.add('answered');
       }
     } else {
-      const qId = state.currentTest.questions[i]?.id;
+      const qId = state.currentTest.questions[i] ? state.currentTest.questions[i].id : undefined;
       const isAnswered = state.currentTest.answers[qId] !== undefined;
 
       if (i === state.currentTest.currentIndex) {
