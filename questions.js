@@ -1,4 +1,2077 @@
 const questionBank = [
+  // ==================== MATEMATIKA SAVOLLARI (900 TA SAVOL, 30 TA VARIANT) ====================
+  {
+
+    id: "v1_q1",
+
+    variant: 1,
+
+    text: "\\(a, b, c\\) — turli raqamlar bo'lsa, \\(100a + 10b + c\\) ning eng katta qiymatini toping.",
+
+    options: ["897", "987", "999", "988"],
+
+    correctAnswer: 1,
+
+    difficulty: -1.5,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v1_q2",
+
+    variant: 1,
+
+    text: "Hisoblang: \\(\\left(2022 - \\frac{1}{2022}\\right) : \\frac{2021}{2022} \\cdot \\frac{1}{2023}\\)",
+
+    options: ["1", "2022", "\\(\\frac{1}{2023}\\)", "2023"],
+
+    correctAnswer: 0,
+
+    difficulty: -0.8,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v1_q3",
+
+    variant: 1,
+
+    text: "2 va 3 ga bo'linmaydigan barcha ikki xonali natural sonlar yig'indisini toping.",
+
+    options: ["1620", "1800", "1960", "3080"],
+
+    correctAnswer: 0,
+
+    difficulty: 0.2,
+
+    category: "Sonlar va amallar (Arifmetika)"
+
+  },
+  {
+
+    id: "v1_q4",
+
+    variant: 1,
+
+    text: "A shahardan B shaharga ikkita mashina yo'lga chiqdi. Birinchi mashina tezligi \\(v_1\\), ikkinchi mashina tezligi \\(v_2\\) \\((v_1 > v_2)\\). Birinchi mashina B shaharga borib shu zahoti qaytib ikkinchi mashina bilan uchrashdi. Ikkinchi mashina bosib o'tgan masofa A va B shaharlar orasidagi masofaning necha foizini tashkil etadi?",
+
+    options: ["\\(\\frac{2v_2}{v_1 + v_2} \\cdot 100\\%\\)", "\\(\\frac{v_2}{v_1 + v_2} \\cdot 100\\%\\)", "\\(\\frac{2v_1}{v_1 - v_2} \\cdot 100\\%\\)", "\\(\\frac{v_1}{v_1 - v_2} \\cdot 100\\%\\)"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.2,
+
+    category: "Matematik modellashtirish (Harakat)"
+
+  },
+  {
+
+    id: "v1_q5",
+
+    variant: 1,
+
+    text: "3 ta quvur berilgan. 1-quvur yolg'iz o'zi basseynni 5 soatda to'ldiradi, 2-quvur yolg'iz o'zi 3 soatda to'ldiradi, 3-quvur yolg'iz o'zi 2 soatda bo'shatadi. 3 ta quvur bir vaqtda ochilsa, basseyn necha soatda to'ladi?",
+
+    options: ["20 soatda", "30 soatda", "40 soatda", "15 soatda"],
+
+    correctAnswer: 1,
+
+    difficulty: -0.2,
+
+    category: "Matematik modellashtirish (Ish)"
+
+  },
+  {
+
+    id: "v1_q6",
+
+    variant: 1,
+
+    text: "Hisoblang: \\(\\sqrt{\\frac{12}{25} \\cdot \\sqrt[3]{\\frac{244}{15 \\cdot (38^2 - 23^2)}}}\\)",
+
+    options: ["0.8", "0.6", "0.2", "0.4"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.6,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v1_q7",
+
+    variant: 1,
+
+    text: "Ishorasi almashinuvchi geometrik progressiyada \\(b_1 = a - 5\\), \\(b_2 = a + 4\\), \\(b_3 = 5a + 8\\) bo'lsa, \\(b_4\\) ni toping.",
+
+    options: ["\\(\\frac{1}{4}\\)", "\\(-\\frac{1}{4}\\)", "4", "-4"],
+
+    correctAnswer: 0,
+
+    difficulty: 0.9,
+
+    category: "Progressiyalar"
+
+  },
+  {
+
+    id: "v1_q8",
+
+    variant: 1,
+
+    text: "Soddalashtiring: \\(\\frac{1}{(x+y)^2} \\cdot \\left(\\frac{1}{x^2} + \\frac{1}{y^2}\\right) + \\frac{2}{(x+y)^3} \\cdot \\left(\\frac{1}{x} + \\frac{1}{y}\\right)\\)",
+
+    options: ["\\(\\frac{1}{xy}\\)", "\\(\\frac{1}{x^2 y^2}\\)", "1", "\\(x + y\\)"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.8,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v1_q9",
+
+    variant: 1,
+
+    text: "Tenglama nechta haqiqiy ildizga ega: \\(2x^2 - 5x + 4 = 0\\)",
+
+    options: ["Haqiqiy ildizga ega emas", "1 ta", "2 ta", "Cheksiz ko'p yechimga ega"],
+
+    correctAnswer: 0,
+
+    difficulty: -1.2,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v1_q10",
+
+    variant: 1,
+
+    text: "Hisoblang: \\(2 \\sin \\frac{7\\pi}{6} + \\cos^2 \\frac{7\\pi}{4}\\)",
+
+    options: ["\\(-\\frac{1}{4}\\)", "\\(-\\frac{1}{2}\\)", "0", "\\(\\frac{1}{2}\\)"],
+
+    correctAnswer: 1,
+
+    difficulty: -0.4,
+
+    category: "Trigonometriya"
+
+  },
+  {
+
+    id: "v1_q11",
+
+    variant: 1,
+
+    text: "Agar \\(a > 5\\) bo'lsa, \\(\\sqrt{(3 - a)^2} - \\sqrt{(a - 5)^2}\\) ni hisoblang.",
+
+    options: ["1", "\\(-2a + 8\\)", "2", "Aniqlab bo'lmaydi"],
+
+    correctAnswer: 2,
+
+    difficulty: -0.6,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v1_q12",
+
+    variant: 1,
+
+    text: "Agar \\(\\frac{a}{b} = 4\\) va \\(\\frac{b}{c} = 10\\) bo'lsa, \\(\\frac{a^2 + b^2 + c^2}{ac} + \\frac{a}{c}\\) ni hisoblang.",
+
+    options: ["\\(81 \\frac{21}{40}\\)", "\\(82 \\frac{21}{40}\\)", "\\(80 \\frac{21}{40}\\)", "\\(81 \\frac{21}{34}\\)"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.7,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v1_q13",
+
+    variant: 1,
+
+    text: "Soddalashtiring: \\(\\frac{2\\cos\\alpha + \\cos 3\\alpha + \\cos 5\\alpha}{\\cos 3\\alpha + \\sin\\alpha \\sin 2\\alpha}\\)",
+
+    options: ["\\(\\cos 2\\alpha\\)", "\\(4\\cos^2\\alpha\\)", "\\(4\\sin^2\\alpha\\)", "\\(\\cos\\alpha\\)"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.0,
+
+    category: "Trigonometriya"
+
+  },
+  {
+
+    id: "v1_q14",
+
+    variant: 1,
+
+    text: "Tenglama nechta haqiqiy ildizga ega: \\(3 \\cdot 4^x + 2 \\cdot 25^x = 5 \\cdot 10^x\\)",
+
+    options: ["Haqiqiy ildizga ega emas", "1 ta", "2 ta", "Cheksiz ko'p"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.1,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v1_q15",
+
+    variant: 1,
+
+    text: "Quyidagilardan toq funksiyani toping.",
+
+    options: [
+
+      "\\(f(x) = \\frac{\\sin x + x^3}{\\cos x - 1}\\)",
+
+      "\\(f(x) = \\frac{\\cos x + x^3}{\\sin x - 1}\\)",
+
+      "\\(f(x) = \\frac{\\tan x + x^3}{\\sin x - 1}\\)",
+
+      "\\(f(x) = \\frac{\\cot x + x^2}{\\cos x - 1}\\)"
+
+    ],
+
+    correctAnswer: 0,
+
+    difficulty: 0.5,
+
+    category: "Funksiyalar"
+
+  },
+  {
+
+    id: "v1_q16",
+
+    variant: 1,
+
+    text: "Tenglamaning haqiqiy ildizlari yig'indisini toping: \\(x^2 + 4x + 1 = 2\\sqrt{x^2 + 4x + 4}\\)",
+
+    options: ["-4", "4", "-2", "-6"],
+
+    correctAnswer: 0,
+
+    difficulty: 0.8,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v1_q17",
+
+    variant: 1,
+
+    text: "Tengsizlikni qanoatlantiradigan butun yechimlari nechta: \\(||2x - 1| - 7| \\le 5\\)",
+
+    options: ["20 ta", "12 ta", "10 ta", "8 ta"],
+
+    correctAnswer: 2,
+
+    difficulty: 0.4,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v1_q18",
+
+    variant: 1,
+
+    text: "Tengsizlikni yeching: \\(\\frac{\\sqrt{4 - x^2}}{x + 1} \\ge 0\\)",
+
+    options: ["\\([-2; 2]\\)", "\\((-1; 2]\\)", "\\((-1; \\infty)\\)", "\\(\\{-2\\} \\cup (-1; 2]\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.7,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v1_q19",
+
+    variant: 1,
+
+    text: "Hisoblang: \\(32^3 \\cdot 8^{12} \\cdot 125^{17}\\) ko'paytma necha xonali son bo'ladi?",
+
+    options: ["52", "51", "50", "17"],
+
+    correctAnswer: 0,
+
+    difficulty: -0.2,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v1_q20",
+
+    variant: 1,
+
+    text: "Tengsizlikni yeching: \\(\\log_{\\cos 2x}(\\sin 2x) \\le 1\\)",
+
+    options: [
+
+      "\\(\\left[\\frac{\\pi}{8} + \\pi k; \\frac{\\pi}{4} + \\pi k\\right], k \\in Z\\)",
+
+      "\\(\\left[\\frac{\\pi}{8} + \\pi k; \\frac{5\\pi}{8} + \\pi k\\right], k \\in Z\\)",
+
+      "\\(\\left[\\frac{\\pi}{8} + \\pi k; \\frac{\\pi}{4} + \\pi k\\right), k \\in Z\\)",
+
+      "\\(\\left[\\frac{\\pi}{4} + 2\\pi k; \\frac{5\\pi}{4} + 2\\pi k\\right), k \\in Z\\)"
+
+    ],
+
+    correctAnswer: 2,
+
+    difficulty: 1.8,
+
+    category: "Tenglama va tengsizliklar (Logarifm)"
+
+  },
+  {
+
+    id: "v1_q21",
+
+    variant: 1,
+
+    text: "Funksiya berilgan: \\(f(g^{-1}(g(x)) + 1) = x^2 + 5x + 6\\). Bu yerda \\(g^{-1}(x)\\) — \\(g(x)\\) ning teskarisi. \\(f(-1)\\) ning qiymatini toping.",
+
+    options: ["-1", "2", "1", "0"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.9,
+
+    category: "Funksiyalar"
+
+  },
+  {
+
+    id: "v1_q22",
+
+    variant: 1,
+
+    text: "Funksiya berilgan: \\(f(x) = \\sin^2 5x - |\\cos 2x + x|\\). Hosila \\(f'\\left(-\\frac{\\pi}{6}\\right)\\) ning qiymatini toping.",
+
+    options: ["\\(\\frac{7\\sqrt{3} + 2}{2}\\)", "\\(-\\sqrt{3} + 1\\)", "\\(\\frac{3\\sqrt{3} + 4}{2}\\)", "\\(\\frac{3\\sqrt{3} - 2}{2}\\)"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.5,
+
+    category: "Matematik analiz asoslari (Hosila)"
+
+  },
+  {
+
+    id: "v1_q23",
+
+    variant: 1,
+
+    text: "Chizmadagi ma'lumotlardan foydalanib \\(x\\) ni toping. \\((AB \\parallel EF)\\)<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='240' height='160' viewBox='0 0 240 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><polygon points='20,130 110,20 220,130' fill='none' stroke='#a78bfa' stroke-width='2'/><line x1='165' y1='75' x2='120' y2='130' stroke='#22d3ee' stroke-width='2'/><text x='110' y='15' fill='#f3f4f6' font-size='12' text-anchor='middle'>B</text><text x='12' y='140' fill='#f3f4f6' font-size='12'>A</text><text x='222' y='140' fill='#f3f4f6' font-size='12'>C</text><text x='170' y='70' fill='#22d3ee' font-size='12'>E</text><text x='120' y='145' fill='#22d3ee' font-size='12'>F</text><text x='60' y='75' fill='#9ca3af' font-size='11'>16</text><text x='140' y='95' fill='#9ca3af' font-size='11'>12</text><text x='170' y='125' fill='#22d3ee' font-size='11'>x</text><line x1='20' y1='150' x2='220' y2='150' stroke='#f87171' stroke-width='1.5'/><text x='120' y='148' fill='#f87171' font-size='11' text-anchor='middle'>20</text></svg></div>",
+
+    options: ["10", "15", "12", "8"],
+
+    correctAnswer: 2,
+
+    difficulty: 0.3,
+
+    category: "Geometriya (O'xshashlik)"
+
+  },
+  {
+
+    id: "v1_q24",
+
+    variant: 1,
+
+    text: "Tekislikka ikkita \\(AB\\) va \\(BC\\) og'ma va \\(BH\\) perpendikulyar tushirilgan. Bunda \\(BH = HC\\), \\(AB = 2HC\\), \\(\\angle AHC = 90^\\circ\\) bo'lsa, \\(\\angle BAC\\) ni toping.",
+
+    options: ["\\(\\frac{3}{4}\\) (cos qiymati)", "\\(\\frac{3}{5}\\)", "\\(\\frac{2}{3}\\)", "\\(\\frac{1}{2}\\)"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.3,
+
+    category: "Geometriya (Stereometriya)"
+
+  },
+  {
+
+    id: "v1_q25",
+
+    variant: 1,
+
+    text: "Tomoni 4 ga teng bo'lgan kvadratga doira ichki chizilgan. Doiraning yuzini toping.",
+
+    options: ["\\(16\\pi\\)", "\\(\\pi\\)", "\\(2\\pi\\)", "\\(4\\pi\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: -0.8,
+
+    category: "Geometriya (Doira)"
+
+  },
+  {
+
+    id: "v1_q26",
+
+    variant: 1,
+
+    text: "ABC uchburchakda \\(\\angle BAC = 90^\\circ\\) va \\(\\angle BCA = 30^\\circ\\) bo'lib, \\(BD\\) bissektrisa \\(2\\sqrt{2}\\) ga teng bo'lsa, ABC uchburchak yuzini toping.",
+
+    options: ["\\(2\\sqrt{3}\\)", "\\(2\\sqrt{2}\\)", "\\(3\\sqrt{2}\\)", "\\(3\\sqrt{3}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.9,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v1_q27",
+
+    variant: 1,
+
+    text: "Diagonallar soni tomonlar sonidan 6 marta ko'p bo'lgan ko'pburchakning ichki burchaklar yig'indisini toping.",
+
+    options: ["2700°", "1800°", "2340°", "2400°"],
+
+    correctAnswer: 2,
+
+    difficulty: 0.4,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v1_q28",
+
+    variant: 1,
+
+    text: "Rombning katta diagonali \\(10\\sqrt{4 + 2\\sqrt{2}}\\) ga teng. O'tkir burchagi 45° bo'lsa, diagonallari kesishish nuqtasidan tomonlarigacha bo'lgan eng qisqa masofalar yig'indisini toping.",
+
+    options: ["10", "20", "15", "25"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.6,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v1_q29",
+
+    variant: 1,
+
+    text: "Hisoblang: \\(\\int_{-3}^{4} 2x^2 |2x| dx\\)",
+
+    options: ["187", "175", "337", "222"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.4,
+
+    category: "Matematik analiz asoslari (Integral)"
+
+  },
+  {
+
+    id: "v1_q30",
+
+    variant: 1,
+
+    text: "Ushbu chizmadagi Venn diagrammasidan foydalanib \\((A \\cap B) \\cup (A \\cup B)'\\) to'plam elementlar sonini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='260' height='160' viewBox='0 0 260 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><circle cx='120' cy='80' r='40' fill='none' stroke='#a78bfa' stroke-width='2'/><circle cx='170' cy='80' r='40' fill='none' stroke='#22d3ee' stroke-width='2'/><text x='110' y='35' fill='#a78bfa' font-size='12' font-weight='bold'>A</text><text x='180' y='35' fill='#22d3ee' font-size='12' font-weight='bold'>B</text><rect x='10' y='10' width='240' height='140' fill='none' stroke='#9ca3af' stroke-width='1'/><text x='235' y='140' fill='#9ca3af' font-size='12'>U</text><text x='30' y='40' fill='#f3f4f6' font-size='11'>10</text><text x='25' y='75' fill='#f3f4f6' font-size='11'>11</text><text x='35' y='105' fill='#f3f4f6' font-size='11'>4</text><text x='20' y='135' fill='#f3f4f6' font-size='11'>9</text><text x='95' y='55' fill='#f3f4f6' font-size='11'>12</text><text x='90' y='85' fill='#f3f4f6' font-size='11'>1</text><text x='100' y='115' fill='#f3f4f6' font-size='11'>8</text><text x='145' y='55' fill='#fbbf24' font-size='11'>3</text><text x='145' y='85' fill='#fbbf24' font-size='11'>5</text><text x='145' y='115' fill='#fbbf24' font-size='11'>7</text><text x='185' y='55' fill='#f3f4f6' font-size='11'>8</text><text x='190' y='85' fill='#f3f4f6' font-size='11'>14</text><text x='180' y='115' fill='#f3f4f6' font-size='11'>17</text></svg></div>",
+
+    options: ["5", "7", "6", "9"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.5,
+
+    category: "To'plamlar"
+
+  },
+  {
+
+    id: "v2_q1",
+
+    variant: 2,
+
+    text: "Natural \\(a\\) va \\(b\\) sonlar uchun \\(a + b = 111\\) tenglik bajarilsa, \\(ab - 1\\) ayirmaning eng katta qiymatini toping.",
+
+    options: ["2555", "3079", "110", "1"],
+
+    correctAnswer: 1,
+
+    difficulty: -0.8,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v2_q2",
+
+    variant: 2,
+
+    text: "Hisoblang: \\(\\frac{1-3+5-7+9-11+\\dots+2021-2023}{1-2+3-4+5-6+\\dots+2021-2022}\\)",
+
+    options: ["1", "-1", "\\(-\\frac{1012}{1011}\\)", "\\(\\frac{1012}{1011}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.4,
+
+    category: "Sonlar va amallar (Keltirish)"
+
+  },
+  {
+
+    id: "v2_q3",
+
+    variant: 2,
+
+    text: "Hisoblang: \\(\\frac{10^{55} + 10^{54} + 10^{50}}{10^{49} + 10^{53} + 10^{54}}\\)",
+
+    options: ["100", "1", "10", "1000"],
+
+    correctAnswer: 2,
+
+    difficulty: -0.6,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v2_q4",
+
+    variant: 2,
+
+    text: "Ikki ishchi bir ishning \\(\\frac{2}{3}\\) qismini 4 kunda bajara oladi. Agar ular alohida ishlasa, birinchi ishchi ishni ikkinchisidan 5 kun oldinroq bajarib tugatadi. Yolg'iz ishlaganda birinchi ishchi ishni necha kunda tugatadi?",
+
+    options: ["10", "12", "15", "20"],
+
+    correctAnswer: 0,
+
+    difficulty: 0.8,
+
+    category: "Matematik modellashtirish (Ish)"
+
+  },
+  {
+
+    id: "v2_q5",
+
+    variant: 2,
+
+    text: "500 kg ruda tarkibidan 12.5% temir bo'lgan 200 kg ruda ajratib olindi. Qolgan rudada temir ulushi dastlabkidan 20% ga ortdi. Dastlab ruda tarkibida necha kg temir bo'lgan?",
+
+    options: ["212.5 kg", "202.5 kg", "45 kg", "205 kg"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.2,
+
+    category: "Matematik modellashtirish (Foizlar)"
+
+  },
+  {
+
+    id: "v2_q6",
+
+    variant: 2,
+
+    text: "Hisoblang: \\(\\sqrt{\\frac{2022 \\cdot 2024 + 1}{2024 \\cdot 2030 + 9} \\cdot \\frac{2026 \\cdot 2028 + 1}{2020 \\cdot 2026 + 9}} - 1 + \\sqrt{25}\\)",
+
+    options: ["2021", "2022", "6", "5"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.5,
+
+    category: "Sonlar va amallar"
+
+  },
+  {
+
+    id: "v2_q7",
+
+    variant: 2,
+
+    text: "Arifmetik progressiyada \\(a_5 + a_{n-4} = 24\\) va \\(S_n = 96\\) bo'lsa, \\(n\\) ni toping.",
+
+    options: ["7", "9", "4", "8"],
+
+    correctAnswer: 3,
+
+    difficulty: -0.3,
+
+    category: "Progressiyalar"
+
+  },
+  {
+
+    id: "v2_q8",
+
+    variant: 2,
+
+    text: "Birinchi hadi 5 dan katta bo'lgan geometrik progressiyada \\(b_1 + b_2 + b_3 = 21\\) va \\(b_3 + b_4 + b_5 = 84\\) bo'lsa, uning dastlabki olti hadi yig'indisini toping.",
+
+    options: ["25", "-174", "20", "-147"],
+
+    correctAnswer: 3,
+
+    difficulty: 1.0,
+
+    category: "Progressiyalar"
+
+  },
+  {
+
+    id: "v2_q9",
+
+    variant: 2,
+
+    text: "Soddalashtiring: \\(\\frac{a^2 + b^2}{a + b} : \\left(\\frac{a^2 + b^2}{ab} + \\frac{b^2}{a^2 - ab} - \\frac{a^2}{ab + b^2}\\right)\\)",
+
+    options: ["1", "\\(a^2 + b^2\\)", "\\(a + b\\)", "\\(a - b\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.9,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v2_q10",
+
+    variant: 2,
+
+    text: "Tenglamani yeching: \\(x + \\frac{x}{1 + 2} + \\frac{x}{1 + 2 + 3} + \\dots + \\frac{x}{1 + 2 + 3 + \\dots + 7} = 7\\)",
+
+    options: ["5", "4", "3", "2"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.6,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q11",
+
+    variant: 2,
+
+    text: "Agar \\(a < a^3 < a^2\\), \\(b^3 < b < b^2\\), \\(c^3 < c^2 < c\\) bo'lsa, \\(\\frac{ab|b-c-1|}{|ab|} + \\frac{bc|a+c+1|}{|bc|} + \\frac{ac|a+1+b|}{|ac|}\\) ni soddalashtiring.",
+
+    options: ["1", "-1", "\\(-2a - 2b - 2c - 3\\)", "\\(a + b\\)"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.7,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v2_q12",
+
+    variant: 2,
+
+    text: "Soddalashtiring: \\(2 \\tan 53^\\circ \\left(\\frac{1}{\\sin 106^\\circ} + \\frac{1}{\\tan 106^\\circ}\\right)\\)",
+
+    options: ["\\(\\tan^2 53^\\circ\\)", "1", "2", "\\(\\tan 53^\\circ\\)"],
+
+    correctAnswer: 2,
+
+    difficulty: 0.8,
+
+    category: "Trigonometriya"
+
+  },
+  {
+
+    id: "v2_q13",
+
+    variant: 2,
+
+    text: "Agar \\(a - b = 4\\) bo'lsa, \\(\\frac{a^2 - b^2 + 3a - 3b}{a^2 - b^2 + 6a + 9}\\) ni hisoblang.",
+
+    options: ["\\(\\frac{1}{4}\\)", "\\(\\frac{7}{4}\\)", "1", "\\(\\frac{4}{7}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: -0.1,
+
+    category: "Algebraik shakl almashtirishlar"
+
+  },
+  {
+
+    id: "v2_q14",
+
+    variant: 2,
+
+    text: "Tengsizlikning \\([2; 2023]\\) oraliqda nechta natural yechimi bor: \\(2^x + 3^x + 4^x + 5^x > 54\\)",
+
+    options: ["2021", "2023", "0", "2022"],
+
+    correctAnswer: 3,
+
+    difficulty: -0.5,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q15",
+
+    variant: 2,
+
+    text: "Quyidagi funksiyalardan nechtasi toq?<br>1) \\(y = 2^x + 2^{-x}\\)<br>2) \\(y = x\\sqrt{1 + x^2}\\)<br>3) \\(y = 1 + \\sin 2x\\)<br>4) \\(y = \\log_2(x + \\sqrt{1 + x^2})\\)",
+
+    options: ["1 tasi", "2 tasi", "3 tasi", "4 tasi"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.4,
+
+    category: "Funksiyalar"
+
+  },
+  {
+
+    id: "v2_q16",
+
+    variant: 2,
+
+    text: "Tenglamaning haqiqiy ildizlari sonini toping: \\(x^2 + \\frac{4x^2}{(5x + 2)^2} = \\frac{9}{5}\\)",
+
+    options: ["4", "3", "2", "1"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.9,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q17",
+
+    variant: 2,
+
+    text: "Tenglama ildizlari \\(x\\) va \\(y\\) bo'lsa, \\(x \\cdot y\\) ni toping: \\(|x + y - 12| + (x - y - 2)^2 = 0\\)",
+
+    options: ["25", "28", "35", "30"],
+
+    correctAnswer: 2,
+
+    difficulty: -0.7,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q18",
+
+    variant: 2,
+
+    text: "Tengsizlikning \\([1; 2023]\\) kesmada nechta natural yechimi bor: \\(\\frac{\\pi x - \\sqrt{10}}{\\pi - \\sqrt{10}} < 0\\)",
+
+    options: ["2023", "2021", "1", "2022"],
+
+    correctAnswer: 2,
+
+    difficulty: -0.9,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q19",
+
+    variant: 2,
+
+    text: "Aholining elektr energiyasiga bo'lgan talabi har yili 2.5% ortsa, necha yilda 9 marta ortadi?",
+
+    options: ["\\(\\log_9 1.025\\)", "\\(\\log_9 0.025\\)", "\\(\\log_{1.025} 9\\)", "\\(\\log_{0.025} 9\\)"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.1,
+
+    category: "Logarifm"
+
+  },
+  {
+
+    id: "v2_q20",
+
+    variant: 2,
+
+    text: "Tengsizlikning butun yechimlari nechta: \\(3^{\\log_3\\sqrt{x - 6}} > 3^{\\log_3(x - 4)}\\)",
+
+    options: ["3", "2", "4", "0"],
+
+    correctAnswer: 3,
+
+    difficulty: 0.8,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q21",
+
+    variant: 2,
+
+    text: "Tengsizlikning \\([-4; 5]\\) oraliqdagi butun yechimlari yig'indisini toping: \\((2x + 3)(x^2 + 3x) - \\frac{16(2x + 3)}{x^2 + 3x} \\ge 0\\)",
+
+    options: ["15", "9", "8", "10"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.5,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v2_q22",
+
+    variant: 2,
+
+    text: "Agar \\(y = \\cos^n x \\cdot \\cos nx\\) bo'lsa, hosilasi \\(y'(x)\\) ni toping.",
+
+    options: [
+
+      "\\(n \\cdot \\cos^{n-1} x \\cdot \\sin(nx - x)\\)",
+
+      "\\(-n \\cdot \\cos^{n-1} x \\cdot \\cos(nx + x)\\)",
+
+      "\\(-n \\cdot \\cos^{n-1} x \\cdot \\sin(nx + x)\\)",
+
+      "\\(n \\cdot \\cos^{n-1} x \\cdot \\sin(nx + x)\\)"
+
+    ],
+
+    correctAnswer: 2,
+
+    difficulty: 2.0,
+
+    category: "Matematik analiz asoslari (Hosila)"
+
+  },
+  {
+
+    id: "v2_q23",
+
+    variant: 2,
+
+    text: "Soddalashtiring: \\(\\frac{1}{\\cos x \\cos 2x} + \\frac{1}{\\cos 2x \\cos 3x} + \\frac{1}{\\cos 3x \\cos 4x} + \\dots + \\frac{1}{\\cos 2022x \\cos 2023x}\\)",
+
+    options: [
+
+      "\\(\\frac{\\sin 2022x}{\\sin 2x \\cos 2023x}\\)",
+
+      "\\(\\frac{\\sin 2023x}{\\cos x \\cos 2022x}\\)",
+
+      "\\(\\frac{2\\sin 2022x}{\\sin 2x \\cos 2023x}\\)",
+
+      "\\(\\frac{2\\sin 2022x}{\\cos x \\cos 2023x}\\)"
+
+    ],
+
+    correctAnswer: 3,
+
+    difficulty: 2.2,
+
+    category: "Trigonometriya"
+
+  },
+  {
+
+    id: "v2_q24",
+
+    variant: 2,
+
+    text: "Aylanada A, B, C, D nuqtalar olingan. O — aylana markazi. A va D nuqtalar bilan bir to'g'ri chiziqda yotadi. Agar \\(\\angle ABC = 30^\\circ\\) va \\(OD = 3\\) bo'lsa, CD ni toping.",
+
+    options: ["3", "4", "\\(\\sqrt{3}\\)", "3\\(\\sqrt{3}\\)"],
+
+    correctAnswer: 0,
+
+    difficulty: 0.7,
+
+    category: "Geometriya (Aylana)"
+
+  },
+  {
+
+    id: "v2_q25",
+
+    variant: 2,
+
+    text: "ABC uchburchakda AD, BN, CM medianalar kesishgan nuqtasi G nuqta bo'lsin. Agar ABC uchburchak yuzasi 48 ga teng bo'lsa, GDN uchburchak yuzini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='240' height='160' viewBox='0 0 240 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><polygon points='30,130 120,20 210,130' fill='none' stroke='#a78bfa' stroke-width='2'/><polygon points='120,130 165,75 120,93' fill='rgba(34,211,238,0.25)' stroke='#22d3ee' stroke-width='1.5'/><line x1='30' y1='130' x2='165' y2='75' stroke='#9ca3af' stroke-dasharray='2'/><line x1='120' y1='20' x2='120' y2='130' stroke='#9ca3af' stroke-dasharray='2'/><line x1='210' y1='130' x2='75' y2='75' stroke='#9ca3af' stroke-dasharray='2'/><text x='120' y='15' fill='#f3f4f6' font-size='11' text-anchor='middle'>B</text><text x='20' y='140' fill='#f3f4f6' font-size='11'>A</text><text x='215' y='140' fill='#f3f4f6' font-size='11'>C</text><text x='168' y='71' fill='#9ca3af' font-size='10'>D</text><text x='120' y='143' fill='#9ca3af' font-size='10' text-anchor='middle'>N</text><text x='68' y='71' fill='#9ca3af' font-size='10'>M</text><text x='112' y='92' fill='#fbbf24' font-size='10'>G</text></svg></div>",
+
+    options: ["5", "4", "3", "12"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.6,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v2_q26",
+
+    variant: 2,
+
+    text: "A(-10; -3), B(-4; 5), C(5; 5) va D(11; -3) nuqtalardan o'tuvchi aylana radiusini toping.",
+
+    options: ["10 5/8", "11 5/8", "8 6/7", "7 6/7"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.4,
+
+    category: "Geometriya (Koordinatalar)"
+
+  },
+  {
+
+    id: "v2_q27",
+
+    variant: 2,
+
+    text: "Tomoni 4 bo'lgan muntazam oltiburchakning uchta tomonining o'rtalarini tutashtirib muntazam uchburchak yasalgan. Hosil bo'lgan bo'yalgan soha yuzini toping.",
+
+    options: ["1", "6\\(\\sqrt{3}\\)", "2\\(\\sqrt{3}\\)", "\\(\\sqrt{3}\\)"],
+
+    correctAnswer: 2,
+
+    difficulty: 1.6,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v2_q28",
+
+    variant: 2,
+
+    text: "Tekis burchagi 60° bo'lgan ikki yoqli burchakning qirrasida A va B nuqtalar olingan. Ikki yoqli burchakning turli yoqlarida A1, B1 nuqtalardan qirraga perpendikulyar tushirilib, AA1=16 va BB1=13 hosil qilingan. Agar A1B1 = 17 bo'lsa, AB masofani toping.",
+
+    options: ["\\(\\sqrt{202}\\)", "\\(\\sqrt{53}\\)", "6\\(\\sqrt{2}\\)", "\\(\\sqrt{506}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 1.8,
+
+    category: "Geometriya (Stereometriya)"
+
+  },
+  {
+
+    id: "v2_q29",
+
+    variant: 2,
+
+    text: "Agar \\(y = ax^2 + bx + c\\) funksiya uchun \\(f'(1) = 0\\), \\(f(2) - f'(2) = 1\\) va \\(\\int_0^1 f(x)dx = \\frac{2}{3}\\) bo'lsa, \\(b - a - c\\) ning qiymatini toping.",
+
+    options: ["\\(\\frac{1}{4}\\)", "\\(\\frac{3}{4}\\)", "1", "0"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.3,
+
+    category: "Matematik analiz asoslari"
+
+  },
+  {
+
+    id: "v2_q30",
+
+    variant: 2,
+
+    text: "\\(ABCDA_1B_1C_1D_1\\) kubda \\(\\vec{BC} + \\vec{CD}\\) va \\(\\vec{D_1A_1} + \\vec{A_1B}\\) vektorlar orasidagi burchak kosinusini toping.",
+
+    options: ["\\(\\frac{\\sqrt{6}}{3}\\)", "\\(\\frac{\\sqrt{3}}{2}\\)", "\\(\\frac{\\sqrt{3}}{4}\\)", "\\(-\\frac{\\sqrt{6}}{3}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 1.1,
+
+    category: "Geometriya (Vektorlar)"
+
+  },
+  {
+
+    id: "v3_q1",
+
+    variant: 3,
+
+    text: "A to'plamning elementlar soni 9 ta, B to'plamning elementlar soni 7 ta, U universal to'plam elementlar soni 16 ta. \\((A \\cup B)'\\) to'plam elementlar soni eng ko'pi bilan nechaga teng bo'la oladi?",
+
+    options: ["7", "13", "17", "11"],
+
+    correctAnswer: 0,
+
+    difficulty: -0.3,
+
+    category: "To'plamlar"
+
+  },
+  {
+
+    id: "v3_q2",
+
+    variant: 3,
+
+    text: "10 kishidan 1 ta boshliq, 2 ta yordamchi va 2 ta mutaxassisni necha xil usulda tanlash mumkin?",
+
+    options: ["7850", "7560", "3780", "3840"],
+
+    correctAnswer: 1,
+
+    difficulty: 0.9,
+
+    category: "Kombinatorika"
+
+  },
+  {
+
+    id: "v3_q3",
+
+    variant: 3,
+
+    text: "Gipotenuzasi \\(4\\sqrt{2}\\) bo'lgan to'g'ri burchakli uchburchakning to'g'ri burchagi bissektrisasi uni ikkita teng yonli uchburchakka ajratadi. Ushbu uchburchak gipotenuza atrofida 360° ga aylantirildi. Hosil bo'lgan jismning to'la sirti yuzini toping. \\((\\pi \\approx 3)\\)",
+
+    options: ["\\(16\\sqrt{2}\\)", "32", "\\(32\\sqrt{2}\\)", "\\(48\\sqrt{2}\\)"],
+
+    correctAnswer: 3,
+
+    difficulty: 1.7,
+
+    category: "Geometriya (Stereometriya)"
+
+  },
+  {
+
+    id: "v3_q4",
+
+    variant: 3,
+
+    text: "Tenglamani yeching: \\((x^2 - x - 1)^3 + (x^2 - 3x + 2)^3 = (2x^2 - 4x + 1)^3\\)",
+
+    options: ["3 ta haqiqiy ildizga ega", "4 ta haqiqiy ildizga ega", "5 ta", "Ildizga ega emas"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.4,
+
+    category: "Tenglama va tengsizliklar"
+
+  },
+  {
+
+    id: "v3_q5",
+
+    variant: 3,
+
+    text: "Tenglamani yeching: \\(\\frac{\\sin 2^x}{\\sin 2^{x-2} \\cos 2^{x-2}} = 2\\sqrt{3}\\)",
+
+    options: ["(0; 5) oraliqda 2 ta ildizga ega", "(0; 5) oraliqda 3 ta ildizga ega", "(0; 5) oraliqda ildizi yo'q", "Cheksiz ko'p"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.6,
+
+    category: "Trigonometriya"
+
+  },
+  {
+
+    id: "v3_q6",
+
+    variant: 3,
+
+    text: "Parabola \\(y = g'(x)\\) funksiya grafigi bo'lib, (2;7), (4; 3) va (6; -9) nuqtalardan o'tishi ma'lum. \\(y = g(x)\\) funksiya grafigining \\(x_0 = -2\\) nuqtasiga o'tkazilgan urinmaning burchak koeffitsientini toping.",
+
+    options: ["-9", "9", "-12", "-25"],
+
+    correctAnswer: 3,
+
+    difficulty: 1.5,
+
+    category: "Matematik analiz asoslari (Urinma)"
+
+  },
+  {
+
+    id: "v3_q7",
+
+    variant: 3,
+
+    text: "ABCD kvadrat. \\(BD\\) diagonalning D uchi davomida E nuqta olingan va \\(DE = 3\\). Agar kvadratning diagonali 18 bo'lsa, \\(CE\\) kesma uzunligini toping.",
+
+    options: ["\\(3\\sqrt{7}\\)", "15", "\\(3\\sqrt{37}\\)", "21"],
+
+    correctAnswer: 2,
+
+    difficulty: 0.9,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v3_q8",
+
+    variant: 3,
+
+    text: "Grafigi OY o'qiga nisbatan simmetrik bo'lgan \\(y = n\\sqrt[3]{x^2 + m} + d\\) funksiya grafigi (0; 4) va (1; 3) nuqtalardan o'tadi. \\(n + m + d\\) ning qiymatini toping.",
+
+    options: ["4", "5", "6", "3"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.2,
+
+    category: "Funksiyalar"
+
+  },
+  {
+
+    id: "v3_q9",
+
+    variant: 3,
+
+    text: "O'tkir burchakli ABC uchburchakning BH va AD balandliklari mos ravishda F va E nuqtalarni \\(\\angle EFC = \\angle BEC = 90^\\circ\\) bo'ladigan qilib kesib o'tadi. Agar \\(AH = 5\\), \\(HC = 3\\) va \\(BD = 2\\) bo'lsa, CE kesma uzunligini toping.",
+
+    options: ["4", "\\(\\sqrt{15}\\)", "3", "5"],
+
+    correctAnswer: 1,
+
+    difficulty: 1.8,
+
+    category: "Geometriya (Planimetriya)"
+
+  },
+  {
+
+    id: "v3_q10",
+
+    variant: 3,
+
+    text: "Qirrasi \\(6\\sqrt{2}\\) bo'lgan muntazam tetraedrga shar ichki chizilgan. Tetraedrning hajmini toping.",
+
+    options: ["72", "36", "\\(72\\sqrt{2}\\)", "\\(36\\sqrt{2}\\)"],
+
+    correctAnswer: 0,
+
+    difficulty: 1.1,
+
+    category: "Geometriya (Stereometriya)"
+
+  },
+  { id: "v3_q11", variant: 3, text: "Uchburchak tomonlari 5, 6, 7 sm bo'lsa, uning eng kichik burchagi kosinusini toping.", options: ["\\(\\frac{5}{7}\\)", "\\(\\frac{19}{35}\\)", "\\(\\frac{25}{35}\\)", "\\(\\frac{9}{14}\\)"], correctAnswer: 0, difficulty: 0.2, category: "Geometriya (Planimetriya)" },
+  { id: "v3_q12", variant: 3, text: "Tenglamani yeching: \\(2^{x+2} - 2^x = 12\\)", options: ["2", "3", "1", "0"], correctAnswer: 0, difficulty: -0.9, category: "Algebra (Tenglamalar)" },
+  { id: "v3_q13", variant: 3, text: "Hisoblang: \\(\\int_{0}^{\\pi/2} \\cos x dx\\)", options: ["1", "0", "\\(\\pi\\)", "0.5"], correctAnswer: 0, difficulty: -0.4, category: "Matematik tahlil (Integral)" },
+  { id: "v3_q14", variant: 3, text: "Aylana uzunligi \\(10\\pi\\) sm bo'lsa, uning yuzi necha sm² bo'ladi?", options: ["\\(25\\pi\\)", "\\(100\\pi\\)", "\\(50\\pi\\)", "\\(20\\pi\\)"], correctAnswer: 0, difficulty: -1.4, category: "Geometriya (Planimetriya)" },
+  { id: "v3_q15", variant: 3, text: "Hosilani toping: \\(f(x) = \\ln(3x - 2)\\)", options: ["\\(\\frac{3}{3x - 2}\\)", "\\(\\frac{1}{3x - 2}\\)", "\\(\\frac{3x}{3x - 2}\\)", "\\(3 \\ln(3x-2)\\)"], correctAnswer: 0, difficulty: -0.2, category: "Matematik tahlil (Hosila)" },
+  { id: "v3_q16", variant: 3, text: "Determinantni hisoblang: \\(\\begin{vmatrix} 4 & 2 \\\\ 5 & 3 \\end{vmatrix}\\)", options: ["2", "4", "6", "0"], correctAnswer: 0, difficulty: -1.1, category: "Algebra (Matrisalar)" },
+  { id: "v3_q17", variant: 3, text: "Tenglamani yeching: \\(|x - 4| = 5\\)", options: ["9 va -1", "9", "-1", "Yechimga ega emas"], correctAnswer: 0, difficulty: -1.3, category: "Algebra (Tenglamalar)" },
+  { id: "v3_q18", variant: 3, text: "Progressiya uchun \\(a_1 = 3\\), \\(d = 2\\) bo'lsa, \\(a_{15}\\) ni toping.", options: ["31", "29", "33", "30"], correctAnswer: 0, difficulty: -1.5, category: "Progressiyalar" },
+  { id: "v3_q19", variant: 3, text: "Vektor uzunligini toping: \\(\\vec{a}(3; 4)\\)", options: ["5", "7", "25", "4.5"], correctAnswer: 0, difficulty: -1.8, category: "Geometriya (Vektorlar)" },
+  { id: "v3_q20", variant: 3, text: "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 3}\\)", options: ["\\([3; \\infty)\\)", "\\((3; \\infty)\\)", "\\((-\\infty; 3]\\)", "\\([0; \\infty)\\)"], correctAnswer: 0, difficulty: -1.6, category: "Algebra (Funksiyalar)" },
+  { id: "v3_q21", variant: 3, text: "Doiradagi vatarning uzunligi 8, aylana radiusi 5. Vatardan markazgacha bo'lgan masofani toping.", options: ["3", "4", "2", "2.5"], correctAnswer: 0, difficulty: -0.8, category: "Geometriya (Planimetriya)" },
+  { id: "v3_q22", variant: 3, text: "Hisoblang: \\(\\log_2 32 + \\log_3 27\\)", options: ["8", "6", "15", "5"], correctAnswer: 0, difficulty: -1.2, category: "Algebra (Logarifm)" },
+  { id: "v3_q23", variant: 3, text: "Ikki tanga tashlanganda kamida bitta gerb tushish ehtimolini toping.", options: ["0.75", "0.5", "0.25", "0.66"], correctAnswer: 0, difficulty: -0.9, category: "Ehtimollar nazariyasi" },
+  { id: "v3_q24", variant: 3, text: "Tenglamani yeching: \\(3^x = 243\\)", options: ["5", "4", "6", "3"], correctAnswer: 0, difficulty: -1.9, category: "Algebra (Tenglamalar)" },
+  { id: "v3_q25", variant: 3, text: "Qutida 5 ta qizil va 3 ta ko'k to'p bor. Tavakkal olingan to'pning qizil bo'lish ehtimolini toping.", options: ["0.625", "0.375", "0.5", "0.6"], correctAnswer: 0, difficulty: -1.0, category: "Ehtimollar nazariyasi" },
+  { id: "v3_q26", variant: 3, text: "Hosilani toping: \\(f(x) = \\sin(2x)\\)", options: ["\\(2 \\cos(2x)\\)", "\\(\\cos(2x)\\)", "\\(-2 \\cos(2x)\\)", "\\(2\\sin(x)\\)"], correctAnswer: 0, difficulty: -0.7, category: "Matematik tahlil (Hosila)" },
+  { id: "v3_q27", variant: 3, text: "Funksiyaning eng kichik qiymatini toping: \\(y = x^2 - 4x + 7\\)", options: ["3", "7", "4", "2"], correctAnswer: 0, difficulty: -0.5, category: "Algebra (Funksiyalar)" },
+  { id: "v3_q28", variant: 3, text: "Prizmaning asosi tomoni 6 sm bo'lgan kvadrat. Balandligi 10 sm bo'lsa, yon sirtini toping.", options: ["240 sm²", "360 sm²", "120 sm²", "180 sm²"], correctAnswer: 0, difficulty: -1.0, category: "Geometriya (Stereometriya)" },
+  { id: "v3_q29", variant: 3, text: "Burchak bissektrisasi uni 20° li burchakka ajratdi. Burchakning o'zini toping.", options: ["40°", "20°", "80°", "10°"], correctAnswer: 0, difficulty: -2.0, category: "Geometriya (Burchaklar)" },
+  { id: "v3_q30", variant: 3, text: "Hisoblang: \\(C_5^2\\)", options: ["10", "20", "5", "15"], correctAnswer: 0, difficulty: -1.3, category: "Kombinatorika" },
+  { id: "v4_q1", variant: 4, text: "Hisoblang: \\(\\frac{\\text{EKUK}(12;6) + \\text{EKUB}(6;12)}{\\sqrt{\\text{EKUK}(12;3) \\cdot \\text{EKUB}(3;12)}}\\)", options: ["3", "9", "6", "1"], correctAnswer: 0, difficulty: -0.6, category: "Sonlar va amallar" },
+  { id: "v4_q2", variant: 4, text: "Hisoblang: \\(\\frac{18}{65} \\cdot \\left(\\frac{41}{18} - \\frac{17}{36}\\right) + \\frac{7}{6} + \\left(\\frac{4}{7} + \\frac{5}{49}\\right) : \\frac{99}{49}\\)", options: ["\\(\\frac{16}{3}\\)", "6", "2", "\\(\\frac{5}{6}\\)"], correctAnswer: 2, difficulty: 0.4, category: "Sonlar va amallar" },
+  { id: "v4_q3", variant: 4, text: "Oltin va kumush qotishmasining massasi 1.06 kg. Qotishmani suvga solganda 70 gr massasini yo'qotdi. Oltin suvda o'z massasining \\(\\frac{1}{19}\\) qismini, kumush esa \\(\\frac{1}{10}\\) qismini yo'qotsa, oltin va kumushning dastlabki massalarini aniqlang.", options: ["Oltin 760g, kumush 300g", "Oltin 490g, kumush 570g", "Oltin 630g, kumush 430g", "Oltin 570g, kumush 490g"], correctAnswer: 0, difficulty: 1.2, category: "Matematik modellashtirish" },
+  { id: "v4_q4", variant: 4, text: "O'qishga qabul qilish uchun 5000 nafar talabaga kvota ajratilgan. Ketma-ket uch yil bir xil foizga qabul kvotasi oshirildi va kvota soni 6655 taga yetdi. Qabul kvotasi har yili necha foizga oshirilgan?", options: ["11%", "10%", "12%", "15%"], correctAnswer: 1, difficulty: 0.9, category: "Matematik modellashtirish" },
+  { id: "v4_q5", variant: 4, text: "Hisoblang: \\(\\sqrt{\\sqrt{47} - \\sqrt{31}} \\cdot \\sqrt{\\sqrt{47} + \\sqrt{31}}\\)", options: ["7", "5", "6", "4"], correctAnswer: 3, difficulty: -0.3, category: "Algebraik shakl almashtirishlar" },
+  { id: "v4_q6", variant: 4, text: "Agar \\(m, n \\in N\\) uchun \\(3^8 \\cdot 2^{10} \\cdot 3^{-4} \\cdot 2^{-4} = 2^m \\cdot 3^n\\) bo'lsa, \\(m+n\\) ni toping.", options: ["11", "9", "10", "8"], correctAnswer: 2, difficulty: -0.5, category: "Algebraik shakl almashtirishlar" },
+  { id: "v4_q7", variant: 4, text: "Arifmetik progressiyaning birinchi hadi 8, oxirgi hadi esa 74 ga teng. Ayirmasi butun son bo'lib u 3 va 9 sonlari orasida yotsa, progressiya yig'indisini toping.", options: ["462", "492", "512", "382"], correctAnswer: 1, difficulty: 0.8, category: "Progressiyalar" },
+  { id: "v4_q8", variant: 4, text: "Ketma-ketlik berilgan: \\(b_n = \\frac{2^n}{3^{n-1}}\\). Ushbu ketma-ketlikning barcha hadlari yig'indisini toping.", options: ["6", "1", "2", "3"], options: ["6", "1", "2", "3"], correctAnswer: 0, difficulty: 1.1, category: "Progressiyalar" },
+  { id: "v4_q9", variant: 4, text: "Agar \\(x > 3\\) bo'lsa, \\(\\frac{\\sqrt{9+6x+x^2} - \\sqrt{9-6x+x^2}}{\\sqrt{9+6x+x^2} + \\sqrt{9-6x+x^2}}\\) ni hisoblang.", options: ["\\(-\\frac{3}{x}\\)", "\\(\\frac{x}{3}\\)", "\\(\\frac{3}{x}\\)", "1"], correctAnswer: 2, difficulty: 0.7, category: "Algebraik shakl almashtirishlar" },
+  { id: "v4_q10", variant: 4, text: "Hisoblang: \\(\\arccos\\left(-\\frac{1}{2}\\right) + \\arcsin\\left(-\\frac{1}{2}\\right)\\)", options: ["\\(\\frac{\\pi}{4}\\)", "\\(\\frac{\\pi}{2}\\)", "\\(\\frac{\\pi}{3}\\)", "1"], correctAnswer: 1, difficulty: 0.2, category: "Trigonometriya" },
+  { id: "v4_q11", variant: 4, text: "Soddalashtiring: \\(\\frac{2\cos^2 2\alpha + \cos 6\alpha - 1}{0.5\sin 6\alpha + \sin 2\alpha \cos 2\alpha}\\)", options: ["2ctg5\\(\\alpha\\)", "2tg5\\(\\alpha\\)", "ctg5\\(\\alpha\\)", "tg5\\(\\alpha\\)"], correctAnswer: 0, difficulty: 1.3, category: "Trigonometriya" },
+  { id: "v4_q12", variant: 4, text: "Soddalashtiring: \\(\\frac{r^2 + 5r}{r^3 - 27} - \\frac{2r - 9}{r^3 - 27}\\)", options: ["\\(\\frac{1}{3-r}\\)", "\\(\\frac{1}{r+3}\\)", "\\(\\frac{r}{r-3}\\)", "\\(\\frac{1}{r-3}\\)"], correctAnswer: 3, difficulty: 0.3, category: "Algebraik shakl almashtirishlar" },
+  { id: "v4_q13", variant: 4, text: "Agar \\(2^a = 5\\), \\(2^b = 3\\) bo'lsa, \\(\\left(\\frac{25}{3}\\right)^c = 405\\) tenglikdan foydalanib \\(c\\) ni \\(a\\) va \\(b\\) orqali ifodalang.", options: ["\\(\\frac{b+4a}{2a-b}\\)", "\\(\\frac{4b+a}{2a+b}\\)", "\\(\\frac{2a+b}{4b+a}\\)", "\\(\\frac{2a-b}{4b-a}\\)"], correctAnswer: 0, difficulty: 1.6, category: "Algebraic Expressions" },
+  { id: "v4_q14", variant: 4, text: "Tengsizlikni qanoatlantiradigan butun sonlar nechta: \\(x^2 - 6|x| + 5 \\le 0\\)", options: ["8", "9", "10", "11"], correctAnswer: 0, difficulty: 0.4, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q15", variant: 4, text: "Tenglama nechta haqiqiy ildizga ega: \\(5^{\\frac{x}{x-3}} - 5 \\cdot 5^{\\frac{3}{x-3}} = 0\\)", options: ["0", "1", "2", "Cheksiz ko'p"], correctAnswer: 1, difficulty: 0.5, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q16", variant: 4, text: "Tenglama ildizlari yig'indisini toping: \\(2x^2 - 4x - 6 = 0\\)", options: ["-4", "2", "4", "-2"], correctAnswer: 1, difficulty: -0.8, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q17", variant: 4, text: "Tenglama ildizlari ko'paytmasini toping: \\(\\left(\\frac{1}{\\sqrt{3+2\\sqrt{2}}}\\right)^x + \\left(\\frac{1}{\\sqrt{3-2\\sqrt{2}}}\\right)^x = 6\\)", options: ["-4", "4", "-2", "2"], correctAnswer: 2, difficulty: 1.5, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q18", variant: 4, text: "Tengsizlikning natural yechimlari nechta: \\(\\frac{25 - 4x}{\\sqrt[3]{10} - 2} \\ge 0\\)", options: ["10", "4", "8", "6"], correctAnswer: 3, difficulty: -0.4, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q19", variant: 4, text: "Tenglamaning ildizlari yig'indisini toping: \\(\\sqrt{\\log_3(36 - 12x + x^2)^8} + 6\\log_9\\sqrt{18 - 3x} = 7\\)", options: ["-3", "3", "17", "-7"], correctAnswer: 1, difficulty: 1.7, category: "Tenglama va tengsizliklar" },
+  { id: "v4_q20", variant: 4, text: "Quyidagi funksiyalardan nechtasi toq emas, juft ham emas?<br>a) \\(\\frac{x^4+x^2+1}{(x+1)^2+1}\\)<br>b) \\(\\frac{x \\sin x}{x^2+1}\\)<br>c) \\(\\frac{\\cos x}{x + \\tan x}\\)<br>d) \\(\\frac{(x+1)^3+1}{\\sin x + x}\\)", options: ["1", "2", "3", "4"], correctAnswer: 1, difficulty: 0.9, category: "Funksiyalar" },
+  { id: "v4_q21", variant: 4, text: "Funksiyaning eng kichik musbat davrini toping: \\(f(x) = 2\\cos^2 x + \\sin \\frac{x}{2} + \\tan \\frac{x}{3}\\)", options: ["\\(12\\pi\\)", "\\(6\\pi\\)", "\\(4\\pi\\)", "\\(9\\pi\\)"], correctAnswer: 0, difficulty: 0.8, category: "Trigonometriya" },
+  { id: "v4_q22", variant: 4, text: "Funksiyaning (1; 0) nuqtadan o'tuvchi boshlang'ich funksiyasini toping: \\(f(x) = \\frac{1}{x^2 + 3}\\)", options: ["\\(\\frac{3}{\\sqrt{3}}\\left(\\arctan\\frac{x}{\\sqrt{3}} - \\frac{\\pi}{6}\\right)\\)", "\\(\\frac{1}{3\\sqrt{3}}\\left(\\arctan\\frac{x}{\\sqrt{3}} + \\frac{\\pi}{6}\\right)\\)", "\\(\\frac{1}{\\sqrt{3}}\\left(\\arctan\\frac{x}{\\sqrt{3}} - \\frac{\\pi}{6}\\right)\\)", "\\(\\frac{\\sqrt{3}}{3}\\left(\\arctan\\frac{x}{\\sqrt{3}} + \\frac{\\pi}{6}\\right)\\)"], correctAnswer: 2, difficulty: 1.2, category: "Matematik analiz asoslari" },
+  { id: "v4_q23", variant: 4, text: "Funksiya berilgan: \\(f(x) = |x - \\sin^2 x - \\cos x|\\). Hosila \\(f'\\left(\\frac{\\pi}{3}\\right)\\) ni hisoblang.", options: ["-1", "1", "0", "Mavjud emas"], correctAnswer: 0, difficulty: 1.4, category: "Matematik analiz asoslari" },
+  { id: "v4_q24", variant: 4, text: "Aylana uzunligi 12 sm. Uzunligi 3 sm bo'lgan yoyning burchak o'lchovini toping.", options: ["\\(\\frac{\\pi}{3}\\)", "\\(\\frac{\\pi}{2}\\)", "\\(\\frac{\\pi}{4}\\)", "\\(\\frac{\\pi}{6}\\)"], correctAnswer: 1, difficulty: -0.6, category: "Geometriya (Planimetriya)" },
+  { id: "v4_q25", variant: 4, text: "Rasmda AB || ED bo'lsa, x burchak qiymatini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='240' height='160' viewBox='0 0 240 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><line x1='30' y1='120' x2='120' y2='20' stroke='#a78bfa' stroke-width='2'/><line x1='120' y1='20' x2='210' y2='120' stroke='#a78bfa' stroke-width='2'/><line x1='120' y1='40' x2='180' y2='140' stroke='#22d3ee' stroke-width='2'/><text x='115' y='18' fill='#f3f4f6' font-size='11'>A</text><text x='140' y='35' fill='#f3f4f6' font-size='11'>D</text><text x='215' y='125' fill='#f3f4f6' font-size='11'>C</text><text x='25' y='125' fill='#f3f4f6' font-size='11'>B</text><text x='138' y='75' fill='#fbbf24' font-size='10'>x</text></svg></div>",
+
+  options: ["50°", "30°", "35°", "20°"],
+
+  correctAnswer: 3,
+
+  difficulty: 0.6,
+
+  category: "Geometriya (Burchaklar)"
+
+  },
+  { id: "v4_q26", variant: 4, text: "Muntazam beshburchak berilgan. Bunga ko'ra alpha burchak qiymatini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='200' height='160' viewBox='0 0 200 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><polygon points='100,10 190,75 155,150 45,150 10,75' fill='none' stroke='#a78bfa' stroke-width='2'/><line x1='100' y1='10' x2='120' y2='130' stroke='#f87171' stroke-width='1.5'/><line x1='45' y1='150' x2='120' y2='130' stroke='#f87171' stroke-width='1.5'/><text x='48' y='142' fill='#fbbf24' font-size='12'>α</text></svg></div>", options: ["45°", "55°", "35°", "40°"], correctAnswer: 2, difficulty: 0.9, category: "Geometriya (Burchaklar)" },
+  { id: "v4_q27", variant: 4, text: "ABC uchburchak yuzi 60 ga teng. \\(\\vec{BE} = -\\frac{1}{2} \\vec{BA}\\) bo'lsa, BEC uchburchak yuzini toping.", options: ["60", "120", "30", "90"], correctAnswer: 2, difficulty: 0.5, category: "Geometriya (Planimetriya)" },
+  { id: "v4_q28", variant: 4, text: "ABC teng yonli AB=AC uchburchakka aylana ichki chizilgan va yon tomonini urinish nuqtasidan 2 va 5 ga teng kesmalarga ajratgan. AB < BC bo'lsa, uchburchak yuzini toping.", options: ["\\(10\\sqrt{3}\\)", "\\(5\\sqrt{6}\\)", "\\(5\\sqrt{3}\\)", "\\(10\\sqrt{6}\\)"], correctAnswer: 1, difficulty: 1.4, category: "Geometriya (Planimetriya)" },
+  { id: "v4_q29", variant: 4, text: "ABCD to'g'ri burchakli trapetsiyaning asoslari BC = 8 va AD = 24. Diagonallar kesishgan nuqtadan kichik yon tomonigacha bo'lgan eng qisqa masofani toping.", options: ["3", "6", "4.5", "5.8"], correctAnswer: 1, difficulty: 1.1, category: "Geometriya (Planimetriya)" },
+  { id: "v4_q30", variant: 4, text: "Tekislikda yotmagan O nuqtadan tekislikka ikkita OA va OB og'malar tushirilgan. OA og'ma uzunligi OB og'madan 14 sm ga ortiq. Ularning proyeksiyalari mos ravishda 36 va 20 bo'lsa, O nuqtadan tekislikkacha bo'lgan eng qisqa masofani toping.", options: ["25", "20", "15", "12"], correctAnswer: 2, difficulty: 1.2, category: "Geometriya (Stereometriya)" },
+  { id: "v5_q1", variant: 5, text: "Natural \\(x, y, z\\) sonlar uchun \\(\\frac{2x+3y}{6} = z\\) bo'lsa, \\(x\\) quyidagi sonlardan qaysi biriga qoldiqsiz bo'linadi?", options: ["2", "3", "4", "6"], correctAnswer: 1, difficulty: -0.5, category: "Sonlar va amallar" },
+  { id: "v5_q2", variant: 5, text: "Hisoblang: \\((1 - (1 - (1 - (1 - 2^{-2})^{-1})^{-3})^{-1})^{-1}\\)", options: ["27", "28", "\\(\\frac{28}{27}\\)", "\\(\\frac{27}{28}\\)"], correctAnswer: 2, difficulty: 0.8, category: "Sonlar va amallar" },
+  { id: "v5_q3", variant: 5, text: "Oltin va kumush qotishmasi massasi 1.06 kg. Qotishmani suvga solganda 70 gr yo'qotdi. Oltin suvda o'z massasining \\(\\frac{1}{19}\\) qismini, kumush esa \\(\\frac{1}{10}\\) qismini yo'qotsa, oltin va kumushning dastlabki massalarini toping.", options: ["Oltin 760 gr, kumush 300 gr", "Oltin 560 gr, kumush 500 gr", "Oltin 300 gr, kumush 760 gr", "Oltin 500 gr, kumush 560 gr"], correctAnswer: 0, difficulty: 1.1, category: "Matematik modellashtirish" },
+  { id: "v5_q4", variant: 5, text: "Avtomobilning narxi 10000$ edi. Narxi ketma-ket ikki marta 15% ga oshirilgandan keyin qancha bo'ladi?", options: ["12000$", "11500$", "12225$", "13225$"], correctAnswer: 2, difficulty: -0.3, category: "Foizlar" },
+  { id: "v5_q5", variant: 5, text: "Agar \\(3^8 \\cdot 3^{-2} \\cdot 2^{-4} \\cdot 2^8 = 2^m \\cdot 3^n\\) bo'lsa, \\(m + n\\) ni toping.", options: ["6", "8", "10", "12"], correctAnswer: 2, difficulty: -0.6, category: "Algebraik shakl almashtirishlar" },
+  { id: "v5_q6", variant: 5, text: "Hisoblang: \\(\\sqrt{22 - 30\\sqrt{4 - 2\\sqrt{3}}} + 5 + 3\\sqrt{3}\\)", options: ["10", "6\\(\\sqrt{3}\\)", "12", "5 - 3\\(\\sqrt{3}\\)"], correctAnswer: 1, difficulty: 0.9, category: "Sonlar va amallar" },
+  { id: "v5_q7", variant: 5, text: "Hisoblang: \\(\\frac{3}{2\\sqrt[3]{2} + 2\\sqrt[3]{4}} - \\frac{3}{2\\sqrt[3]{2} - 2\\sqrt[3]{4}} + \\sqrt[3]{4}\\)", options: ["\\(\\sqrt[3]{4} + 1\\)", "\\(\\sqrt[3]{16} + 1\\)", "\\((\\sqrt[3]{4} + 1)^2\\)", "\\(-(\\sqrt[3]{4} + 1)^2\\)"], correctAnswer: 2, difficulty: 1.4, category: "Sonlar va amallar" },
+  { id: "v5_q8", variant: 5, text: "Agar \\(a = 1.9\\), \\(b = 0.55\\) bo'lsa, \\(\\frac{a^2 - 4b^2 - 5a + 10b}{(a+2b)^2 - 25}\\) ning qiymatini toping.", options: ["10", "0.1", "0.01", "1"], correctAnswer: 1, difficulty: 0.5, category: "Algebraik shakl almashtirishlar" },
+  { id: "v5_q9", variant: 5, text: "Kamayuvchi arifmetik progressiyada \\(a_3 = 1\\) va \\(a_5^2 = 25\\) bo'lsa, \\(a_1 \\cdot d\\) ni toping.", options: ["-14", "-21", "-6", "4"], correctAnswer: 0, difficulty: 1.0, category: "Progressiyalar" },
+  { id: "v5_q10", variant: 5, text: "Ushbu ketma-ketlikning barcha hadlari yig'indisini toping: \\(b_n = \\frac{2^n}{3^{n-1}}\\)", options: ["2", "4", "6", "8"], correctAnswer: 2, difficulty: 0.2, category: "Progressiyalar" },
+  { id: "v5_q11", variant: 5, text: "Tenglama nechta haqiqiy ildizga ega: \\(\\sqrt{x - 2} + \\sqrt{1 - x} = 2\\)", options: ["1 ta", "2 ta", "Cheksiz ko'p", "Yechimga ega emas"], correctAnswer: 3, difficulty: 0.5, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q12", variant: 5, text: "Tengsizlikning musbat butun yechimlari nechta: \\((\\sqrt{5} + 2)^{x-1} \\le (\\sqrt{5} - 2)^{\\frac{x-1}{x+1}}\\)", options: ["1 ta", "2 ta", "3 ta", "4 ta"], correctAnswer: 0, difficulty: 1.3, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q13", variant: 5, text: "Tenglama nechta ildizga ega: \\(2^{\\ln x} - 3^{\\frac{1}{2}\\ln x} = 1\\)", options: ["Cheksiz ko'p", "1 ta", "2 ta", "Yechimga ega emas"], correctAnswer: 1, difficulty: 1.2, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q14", variant: 5, text: "Nechta natural son \\(|x^2 - x - 6| > 0\\) tengsizlikning yechimi bo'la olmaydi?", options: ["0", "1", "2", "3"], correctAnswer: 1, difficulty: 0.3, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q15", variant: 5, text: "Agar \\(2^a = 3\\), \\(2^b = 5\\) bo'lsa, \\(\\left(\\frac{25}{3}\\right)^c = 405\\) bo'lsa, \\(c\\) ni \\(a\\) va \\(b\\) orqali ifodalang.", options: ["\\(\\frac{2a-b}{2b-a}\\)", "\\(\\frac{4a-b}{2b+a}\\)", "\\(\\frac{2b+a}{4b+a}\\)", "\\(\\frac{2b-a}{4a-2b}\\)"], correctAnswer: 0, difficulty: 1.6, category: "Algebraik shakl almashtirishlar" },
+  { id: "v5_q16", variant: 5, text: "Ifodani soddalashtiring: \\(\\frac{(\\sin x - \\cos x)^2}{\\sin^2\\left(\\frac{\\pi}{4} - x\\right)}\\)", options: ["2", "\\(\\frac{1-\\sin 2x}{1+\\sin 2x}\\)", "\\(\\frac{2(1-\\sin 2x)}{1-\\cos 2x}\\)", "1"], correctAnswer: 0, difficulty: 0.8, category: "Trigonometriya" },
+  { id: "v5_q17", variant: 5, text: "Tenglama \\((0; 5\\pi)\\) oraliqda nechta ildizga ega: \\(\\sqrt{3}\\sin 2x - \\cos 2x = \\sqrt{3}\\)", options: ["20 ta", "18 ta", "10 ta", "8 ta"], correctAnswer: 2, difficulty: 1.4, category: "Trigonometriya" },
+  { id: "v5_q18", variant: 5, text: "Tengsizlikni qanoatlantiruvchi butun yechimlar sonini toping: \\(\\frac{-2}{|x|+1} \\ge |x| - 2\\)", options: ["0", "1", "2", "3"], correctAnswer: 3, difficulty: 0.6, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q19", variant: 5, text: "Agar \\(g(x) = 3x^3 - x^2 - x + 4\\) bo'lsa, \\(g\\left(\\frac{1+\\sqrt{13}}{6}\right)\\) ning qiymatini toping.", options: ["0", "3", "4", "5"], correctAnswer: 3, difficulty: 1.5, category: "Funksiyalar" },
+  { id: "v5_q20", variant: 5, text: "Chizmadagi grafiklardan foydalanib \\(f'(x) \\cdot g(x) \\ge 0\\) tengsizlik \\(x_1, x_2, x_3, x_4, x_5, x_6\\) nuqtalarning nechtasida o'rinli bo'lishini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='240' height='160' viewBox='0 0 240 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><line x1='20' y1='80' x2='220' y2='80' stroke='#9ca3af' stroke-width='1.5'/><line x1='120' y1='10' x2='120' y2='150' stroke='#9ca3af' stroke-width='1.5'/><path d='M30,100 C50,20 80,140 120,20 C160,140 190,20 210,100' fill='none' stroke='#f87171' stroke-width='2'/><line x1='20' y1='40' x2='220' y2='120' stroke='#22d3ee' stroke-width='2'/></svg></div>", options: ["5 ta", "3 ta", "4 ta", "6 ta"], correctAnswer: 2, difficulty: 1.7, category: "Matematik analiz asoslari" },
+  { id: "v5_q21", variant: 5, text: "Aniq integralni hisoblang: \\(\\int_{\\pi/3}^{2\\pi/3} x \\cdot \\sin x dx\\)", options: ["0", "\\(\\frac{\\pi}{2}\\)", "\\(\\frac{\\pi}{4}\\)", "\\(\\pi\\)"], correctAnswer: 1, difficulty: 1.5, category: "Matematik analiz asoslari" },
+  { id: "v5_q22", variant: 5, text: "Tenglamaning haqiqiy ildizlari ko'paytmasini toping: \\(\\sqrt{3x - 2} + 15\\sqrt[4]{3x - 2} = 16\\)", options: ["1", "2", "4", "16"], correctAnswer: 0, difficulty: 0.9, category: "Tenglama va tengsizliklar" },
+  { id: "v5_q23", variant: 5, text: "Kvadrat funksiya \\(f(x) = ax^2 + bx + c\\) berilgan. Agar \\(|a| \\cdot f(1) < 0\\), \\(f(1) \\cdot f(2) < 0\\) va \\(a \\cdot f(2) > 0\\) bo'lsa, uning ildizlari \\(x_1\\) va \\(x_2\\) uchun qaysi munosabat to'g'ri?", options: ["\\(x_1 < 1 < x_2 < 2\\)", "\\(1 < x_1 < 2 < x_2\\)", "\\(1 < x_1 < x_2 < 2\\)", "\\(x_1 < x_2 < 1 < 2\\)"], correctAnswer: 1, difficulty: 1.8, category: "Funksiyalar" },
+  { id: "v5_q24", variant: 5, text: "Aylananing uzunligi 12. Ushbu aylananing uzunligi 3 ga teng bo'lgan yoyining gradus o'lchovini toping.", options: ["90°", "60°", "45°", "30°"], correctAnswer: 0, difficulty: -0.4, category: "Geometriya (Planimetriya)" },
+  { id: "v5_q25", variant: 5, text: "Muntazam sakkizburchak ABCDEFGH berilgan. GHCD to'rtburchak yuzi 12 bo'lsa, sakkizburchak yuzini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='180' height='160' viewBox='0 0 180 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><polygon points='35,57 67,25 113,25 145,57 145,103 113,135 67,135 35,103' fill='none' stroke='#a78bfa' stroke-width='2'/><rect x='35' y='57' width='110' height='46' fill='rgba(34,211,238,0.2)' stroke='#22d3ee' stroke-width='1.5'/><text x='67' y='147' fill='#f3f4f6' font-size='10' text-anchor='middle'>A</text><text x='113' y='147' fill='#f3f4f6' font-size='10' text-anchor='middle'>B</text><text x='153' y='107' fill='#f3f4f6' font-size='10'>C</text><text x='153' y='61' fill='#f3f4f6' font-size='10'>D</text><text x='113' y='20' fill='#f3f4f6' font-size='10' text-anchor='middle'>E</text><text x='67' y='20' fill='#f3f4f6' font-size='10' text-anchor='middle'>F</text><text x='25' y='61' fill='#f3f4f6' font-size='10'>G</text><text x='25' y='107' fill='#f3f4f6' font-size='10'>H</text></svg></div>", options: ["18", "24", "28", "36"], correctAnswer: 1, difficulty: 1.1, category: "Geometriya (Planimetriya)" },
+  { id: "v5_q26", variant: 5, text: "Uchburchak tomonlari \\(x\\), 5 va \\(3x - 5\\). \\(x\\) ning qabul qilishi mumkin bo'lgan eng katta natural qiymatini toping.", options: ["5", "4", "3", "2"], correctAnswer: 1, difficulty: 0.6, category: "Geometriya (Uchburchak)" },
+  { id: "v5_q27", variant: 5, text: "Aylana vatar kesmalari berilgan: \\(CF = 6\\), \\(CG = 7\\), \\(GE = 5\\) va \\(ED = 6\\) bo'lsa, FG kesma uzunligini toping.", options: ["2", "3", "4", "5"], correctAnswer: 1, difficulty: 1.0, category: "Geometriya (Aylana)" },
+  { id: "v5_q28", variant: 5, text: "ABC to'g'ri burchakli uchburchakning katetlaridan kvadratlar hosil qilingan. M nuqta AC ning o'rtasi. Agar katetlar 2 va 4 bo'lsa, MN kesma uzunligini toping.<br><div class='svg-container' style='display:flex; justify-content:center; margin:1rem 0;'><svg width='200' height='160' viewBox='0 0 200 160' style='background:rgba(255,255,255,0.02); border:1px solid var(--panel-border); border-radius:8px;'><polygon points='60,60 60,20 140,60' fill='none' stroke='#a78bfa' stroke-width='2'/><rect x='20' y='20' width='40' height='40' fill='none' stroke='#9ca3af'/><rect x='60' y='60' width='80' height='80' fill='none' stroke='#9ca3af'/><line x1='20' y1='60' x2='100' y2='60' stroke='#f87171' stroke-width='1.5'/><text x='63' y='57' fill='#f3f4f6' font-size='10'>C</text><text x='63' y='18' fill='#f3f4f6' font-size='10'>B</text><text x='142' y='57' fill='#f3f4f6' font-size='10'>A</text><text x='98' y='54' fill='#fbbf24' font-size='10'>M</text><text x='10' y='64' fill='#f3f4f6' font-size='10'>N</text></svg></div>", options: ["\\(\\frac{2}{\\sqrt{5}}\\)", "\\(\\frac{3}{\\sqrt{5}}\\)", "\\(\\frac{9}{\\sqrt{5}}\\)", "\\(\\frac{7}{\\sqrt{5}}\\)"], correctAnswer: 2, difficulty: 1.5, category: "Geometriya (Planimetriya)" },
+  { id: "v5_q29", variant: 5, text: "Chizmada tomoni 4 bo'lgan muntazam oltiburchak berilgan. \\(\\vec{AB} + (\\vec{FE} + \\vec{ED})\\) vektorning qiymatini toping.", options: ["8", "8\\(\\sqrt{7}\\)", "4", "4\\(\\sqrt{7}\\)"], correctAnswer: 1, difficulty: 1.3, category: "Geometriya (Vektorlar)" },
+  { id: "v5_q30", variant: 5, text: "ABC to'g'ri burchakli uchburchakning C to'g'ri burchak uchidan AB gipotenuzaga parallel tekislik o'tkazilgan. Tekislikdan gipotenuzagacha masofa 12 ga teng. Katetlarning tekislikdagi proyeksiyalari 16 va 9 bo'lsa, AB gipotenuza uzunligini toping.", options: ["25", "30", "24", "32"], correctAnswer: 0, difficulty: 1.2, category: "Geometriya (Planimetriya)" },
+  {"id": "v6_q1", "variant": 6, "text": "Hisoblang: \\(34 + 97\\)", "options": ["141", "131", "127", "130"], "correctAnswer": 1, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v6_q2", "variant": 6, "text": "Hisoblang: \\(61 \\cdot 7\\)", "options": ["433", "437", "427", "422"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v6_q3", "variant": 6, "text": "Soddalashtiring: \\(\\left(\\frac{1}{31} + \\frac{1}{80}\\right) \\cdot 2480\\)", "options": ["116", "111", "109", "222"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v6_q4", "variant": 6, "text": "\\(180\\) ning \\(8\\%\\) ini toping.", "options": ["16", "13", "14", "19"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v6_q5", "variant": 6, "text": "Tenglamani yeching: \\(x + 32 = 83\\)", "options": ["57", "48", "51", "102"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v6_q6", "variant": 6, "text": "Soddalashtiring: \\((2x + 7y)^2 - 28xy\\)", "options": ["\\(4x^2 - 49y^2\\)", "\\(4x^2 + 49y^2\\)", "\\(2x^2 + 7y^2\\)", "\\(4x^2 + 28xy + 49y^2\\)"], "correctAnswer": 0, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v6_q7", "variant": 6, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 9\\)", "options": ["\\((x + 3)^2\\)", "\\((x - 3)(x + 3)\\)", "\\(x(x - 9)\\)", "\\((x - 3)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v6_q8", "variant": 6, "text": "Hisoblang: \\(\\sqrt{16 \\cdot 25}\\)", "options": ["18", "23", "20", "40"], "correctAnswer": 0, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v6_q9", "variant": 6, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{6}{3}\\)", "options": ["12", "24", "13", "9"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v6_q10", "variant": 6, "text": "Ifodani qiymatini toping: \\(9a + 8b\\), bunda \\(a=3, b=2\\)", "options": ["43", "44", "41", "47"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v6_q11", "variant": 6, "text": "Tengsizlikni yeching: \\(x + 4 < 15\\)", "options": ["\\((11; \\infty)\\)", "\\([11; \\infty)\\)", "\\((-\\infty; 11]\\)", "\\((-\\infty; 11\\)\\)"], "correctAnswer": 0, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q12", "variant": 6, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 10x + 21 = 0\\)", "options": ["3", "7", "21", "10"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q13", "variant": 6, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["64", "39", "32", "25"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q14", "variant": 6, "text": "Geometrik progressiyada \\(b_1 = 4\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["32", "20", "16", "14"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q15", "variant": 6, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 12 \\\\ x - y = -6 \\end{cases}\\)", "options": ["27", "37", "22", "29"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q16", "variant": 6, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(\\sqrt{3}\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v6_q17", "variant": 6, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\sin^2 x\\)", "\\(0\\)", "\\(1\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 0, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v6_q18", "variant": 6, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["20", "14", "32", "16"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q19", "variant": 6, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["3", "4", "6", "2"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q20", "variant": 6, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\((9; \\infty)\\)", "\\([0; 9]\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v6_q21", "variant": 6, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{4}\\)", "options": ["\\(x^{3}\\)", "\\(\\frac{x^{5}}{5}\\)", "\\(4x^{4}\\)", "\\(4x^{3}\\)"], "correctAnswer": 0, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v6_q22", "variant": 6, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["8", "32", "16", "14"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v6_q23", "variant": 6, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 2}\\)", "options": ["\\((-\\infty; 2]\\)", "\\([2; \\infty)\\)", "\\((2; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v6_q24", "variant": 6, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["8", "16", "22", "11"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v6_q25", "variant": 6, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 1, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v6_q26", "variant": 6, "text": "To'g'ri burchakli uchburchakning katetlari 5 va 10 ga teng. Uning yuzini toping.", "options": ["50", "22", "30", "25"], "correctAnswer": 3, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v6_q27", "variant": 6, "text": "To'g'ri to'rtburchakning tomonlari 5 va 9 ga teng. Uning perimetrini toping.", "options": ["30", "28", "56", "24"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v6_q28", "variant": 6, "text": "Kubning qirrasi 6 ga teng. Uning hajmini toping.", "options": ["236", "36", "216", "206"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v6_q29", "variant": 6, "text": "Radiusi 3 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(9\\pi\\)", "\\(6\\pi\\)", "\\(27\\pi\\)", "\\(3\\pi\\)"], "correctAnswer": 1, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v6_q30", "variant": 6, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 6 ga teng. Uning hajmini toping.", "options": ["\\(36\\pi\\)", "\\(24\\pi\\)", "\\(48\\pi\\)", "\\(12\\pi\\)"], "correctAnswer": 3, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v7_q1", "variant": 7, "text": "Hisoblang: \\(45 + 73\\)", "options": ["124", "118", "117", "114"], "correctAnswer": 1, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v7_q2", "variant": 7, "text": "Hisoblang: \\(23 \\cdot 2\\)", "options": ["56", "46", "54", "41"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v7_q3", "variant": 7, "text": "Soddalashtiring: \\(\\left(\\frac{1}{16} + \\frac{1}{50}\\right) \\cdot 800\\)", "options": ["71", "64", "66", "132"], "correctAnswer": 1, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v7_q4", "variant": 7, "text": "\\(890\\) ning \\(6\\%\\) ini toping.", "options": ["58", "55", "52", "53"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v7_q5", "variant": 7, "text": "Tenglamani yeching: \\(x + 43 = 11\\)", "options": ["-32", "-35", "-28", "-64"], "correctAnswer": 0, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v7_q6", "variant": 7, "text": "Soddalashtiring: \\((6x + 9y)^2 - 108xy\\)", "options": ["\\(36x^2 + 108xy + 81y^2\\)", "\\(36x^2 + 81y^2\\)", "\\(6x^2 + 9y^2\\)", "\\(36x^2 - 81y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v7_q7", "variant": 7, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\((x - 2)^2\\)", "\\((x - 2)(x + 2)\\)", "\\((x + 2)^2\\)", "\\(x(x - 4)\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v7_q8", "variant": 7, "text": "Hisoblang: \\(\\sqrt{9 \\cdot 49}\\)", "options": ["42", "24", "19", "21"], "correctAnswer": 2, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v7_q9", "variant": 7, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{6}{3}\\)", "options": ["9", "24", "12", "13"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v7_q10", "variant": 7, "text": "Ifodani qiymatini toping: \\(8a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["42", "46", "43", "40"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v7_q11", "variant": 7, "text": "Tengsizlikni yeching: \\(x + 5 < 14\\)", "options": ["\\((-\\infty; 9]\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9\\)\\)", "\\([9; \\infty)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q12", "variant": 7, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 14x + 40 = 0\\)", "options": ["4", "40", "14", "10"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q13", "variant": 7, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 11\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["38", "98", "60", "49"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q14", "variant": 7, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "6", "8", "12"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q15", "variant": 7, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 9 \\\\ x - y = -5 \\end{cases}\\)", "options": ["24", "9", "16", "14"], "correctAnswer": 2, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q16", "variant": 7, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(\\sqrt{3}\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v7_q17", "variant": 7, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(0\\)", "\\(1\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v7_q18", "variant": 7, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["14", "20", "32", "16"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q19", "variant": 7, "text": "Tenglamani yeching: \\(2^x = 32\\)", "options": ["4", "10", "5", "6"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q20", "variant": 7, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v7_q21", "variant": 7, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(3x^{2}\\)", "\\(3x^{3}\\)", "\\(x^{2}\\)", "\\(\\frac{x^{4}}{4}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v7_q22", "variant": 7, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 3x^{2} dx\\)", "options": ["6", "16", "6", "8"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v7_q23", "variant": 7, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 3}\\)", "options": ["\\([3; \\infty)\\)", "\\((3; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 3]\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v7_q24", "variant": 7, "text": "Funksiya berilgan: \\(f(x) = 4x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["10", "26", "18", "13"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v7_q25", "variant": 7, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(-\\sin x + C\\)", "\\(\\tan x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v7_q26", "variant": 7, "text": "To'g'ri burchakli uchburchakning katetlari 5 va 10 ga teng. Uning yuzini toping.", "options": ["30", "25", "50", "22"], "correctAnswer": 1, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v7_q27", "variant": 7, "text": "To'g'ri to'rtburchakning tomonlari 7 va 5 ga teng. Uning perimetrini toping.", "options": ["48", "26", "24", "20"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v7_q28", "variant": 7, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["27", "9", "47", "17"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v7_q29", "variant": 7, "text": "Radiusi 8 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(64\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)", "\\(512\\pi\\)"], "correctAnswer": 1, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v7_q30", "variant": 7, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 5 ga teng. Uning hajmini toping.", "options": ["\\(10\\pi\\)", "\\(20\\pi\\)", "\\(25\\pi\\)", "\\(40\\pi\\)"], "correctAnswer": 0, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v8_q1", "variant": 8, "text": "Hisoblang: \\(23 + 36\\)", "options": ["69", "58", "55", "59"], "correctAnswer": 3, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v8_q2", "variant": 8, "text": "Hisoblang: \\(80 \\cdot 7\\)", "options": ["570", "560", "564", "555"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v8_q3", "variant": 8, "text": "Soddalashtiring: \\(\\left(\\frac{1}{23} + \\frac{1}{33}\\right) \\cdot 759\\)", "options": ["61", "56", "54", "112"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v8_q4", "variant": 8, "text": "\\(710\\) ning \\(9\\%\\) ini toping.", "options": ["68", "63", "62", "65"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v8_q5", "variant": 8, "text": "Tenglamani yeching: \\(x + 73 = 38\\)", "options": ["-70", "-38", "-31", "-35"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v8_q6", "variant": 8, "text": "Soddalashtiring: \\((9x + 2y)^2 - 36xy\\)", "options": ["\\(81x^2 - 4y^2\\)", "\\(81x^2 + 4y^2\\)", "\\(81x^2 + 36xy + 4y^2\\)", "\\(9x^2 + 2y^2\\)"], "correctAnswer": 0, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v8_q7", "variant": 8, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 49\\)", "options": ["\\((x + 7)^2\\)", "\\(x(x - 49)\\)", "\\((x - 7)(x + 7)\\)", "\\((x - 7)^2\\)"], "correctAnswer": 2, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v8_q8", "variant": 8, "text": "Hisoblang: \\(\\sqrt{49 \\cdot 81}\\)", "options": ["66", "61", "126", "63"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v8_q9", "variant": 8, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{2} = \\frac{24}{3}\\)", "options": ["17", "13", "16", "32"], "correctAnswer": 0, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v8_q10", "variant": 8, "text": "Ifodani qiymatini toping: \\(9a + 2b\\), bunda \\(a=3, b=2\\)", "options": ["31", "32", "35", "29"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v8_q11", "variant": 8, "text": "Tengsizlikni yeching: \\(x + 2 < 9\\)", "options": ["\\((-\\infty; 7\\)\\)", "\\((-\\infty; 7]\\)", "\\((7; \\infty)\\)", "\\([7; \\infty)\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q12", "variant": 8, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 18 = 0\\)", "options": ["18", "9", "11", "2"], "correctAnswer": 0, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q13", "variant": 8, "text": "Arifmetik progressiyada \\(a_1 = 3\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["21", "27", "33", "54"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q14", "variant": 8, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["24", "16", "12", "10"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q15", "variant": 8, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 10 \\\\ x - y = -6 \\end{cases}\\)", "options": ["26", "16", "11", "18"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q16", "variant": 8, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\sqrt{3}\\)", "\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v8_q17", "variant": 8, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(1\\)", "\\(0\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v8_q18", "variant": 8, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["14", "16", "32", "20"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q19", "variant": 8, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["4", "3", "6", "2"], "correctAnswer": 0, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q20", "variant": 8, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\([0; 9]\\)", "\\((9; \\infty)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v8_q21", "variant": 8, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(\\frac{x^{6}}{6}\\)", "\\(x^{4}\\)", "\\(5x^{5}\\)", "\\(5x^{4}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v8_q22", "variant": 8, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 2x^{1} dx\\)", "options": ["8", "2", "4", "4"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v8_q23", "variant": 8, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\((-\\infty; \\infty)\\)", "\\([4; \\infty)\\)", "\\((4; \\infty)\\)", "\\((-\\infty; 4]\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v8_q24", "variant": 8, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["8", "22", "11", "16"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v8_q25", "variant": 8, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 1, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v8_q26", "variant": 8, "text": "To'g'ri burchakli uchburchakning katetlari 7 va 10 ga teng. Uning yuzini toping.", "options": ["35", "40", "70", "32"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v8_q27", "variant": 8, "text": "To'g'ri to'rtburchakning tomonlari 5 va 10 ga teng. Uning perimetrini toping.", "options": ["60", "26", "32", "30"], "correctAnswer": 1, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v8_q28", "variant": 8, "text": "Kubning qirrasi 4 ga teng. Uning hajmini toping.", "options": ["64", "84", "16", "54"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v8_q29", "variant": 8, "text": "Radiusi 4 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(16\\pi\\)", "\\(64\\pi\\)", "\\(8\\pi\\)", "\\(4\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v8_q30", "variant": 8, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(6\\pi\\)", "\\(24\\pi\\)", "\\(9\\pi\\)", "\\(12\\pi\\)"], "correctAnswer": 0, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v9_q1", "variant": 9, "text": "Hisoblang: \\(65 + 94\\)", "options": ["159", "164", "155", "158"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v9_q2", "variant": 9, "text": "Hisoblang: \\(44 \\cdot 8\\)", "options": ["352", "362", "347", "357"], "correctAnswer": 3, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v9_q3", "variant": 9, "text": "Soddalashtiring: \\(\\left(\\frac{1}{15} + \\frac{1}{96}\\right) \\cdot 1440\\)", "options": ["222", "109", "116", "111"], "correctAnswer": 1, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v9_q4", "variant": 9, "text": "\\(870\\) ning \\(8\\%\\) ini toping.", "options": ["69", "74", "68", "71"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v9_q5", "variant": 9, "text": "Tenglamani yeching: \\(x + 97 = 54\\)", "options": ["-37", "-43", "-46", "-86"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v9_q6", "variant": 9, "text": "Soddalashtiring: \\((2x + 6y)^2 - 24xy\\)", "options": ["\\(4x^2 + 24xy + 36y^2\\)", "\\(4x^2 + 36y^2\\)", "\\(4x^2 - 36y^2\\)", "\\(2x^2 + 6y^2\\)"], "correctAnswer": 2, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v9_q7", "variant": 9, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 64\\)", "options": ["\\((x - 8)(x + 8)\\)", "\\((x + 8)^2\\)", "\\(x(x - 64)\\)", "\\((x - 8)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v9_q8", "variant": 9, "text": "Hisoblang: \\(\\sqrt{4 \\cdot 64}\\)", "options": ["16", "32", "14", "19"], "correctAnswer": 2, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v9_q9", "variant": 9, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{5} = \\frac{24}{3}\\)", "options": ["80", "40", "41", "37"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v9_q10", "variant": 9, "text": "Ifodani qiymatini toping: \\(9a + 3b\\), bunda \\(a=3, b=2\\)", "options": ["34", "33", "31", "37"], "correctAnswer": 1, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v9_q11", "variant": 9, "text": "Tengsizlikni yeching: \\(x + 5 < 14\\)", "options": ["\\((-\\infty; 9\\)\\)", "\\((-\\infty; 9]\\)", "\\((9; \\infty)\\)", "\\([9; \\infty)\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q12", "variant": 9, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 28 = 0\\)", "options": ["11", "28", "4", "7"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q13", "variant": 9, "text": "Arifmetik progressiyada \\(a_1 = 2\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["20", "32", "26", "52"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q14", "variant": 9, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["6", "16", "12", "8"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q15", "variant": 9, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 11 \\\\ x - y = -5 \\end{cases}\\)", "options": ["34", "26", "24", "19"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q16", "variant": 9, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\sqrt{3}\\)", "\\(1\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v9_q17", "variant": 9, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(1\\)", "\\(0\\)", "\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v9_q18", "variant": 9, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["16", "14", "20", "32"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q19", "variant": 9, "text": "Tenglamani yeching: \\(2^x = 32\\)", "options": ["10", "6", "4", "5"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q20", "variant": 9, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\((9; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v9_q21", "variant": 9, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{4}\\)", "options": ["\\(\\frac{x^{5}}{5}\\)", "\\(x^{3}\\)", "\\(4x^{4}\\)", "\\(4x^{3}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v9_q22", "variant": 9, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 2x^{1} dx\\)", "options": ["4", "8", "2", "4"], "correctAnswer": 2, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v9_q23", "variant": 9, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\((5; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\([5; \\infty)\\)", "\\((-\\infty; 5]\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v9_q24", "variant": 9, "text": "Funksiya berilgan: \\(f(x) = 4x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["18", "10", "13", "26"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v9_q25", "variant": 9, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(-\\sin x + C\\)"], "correctAnswer": 3, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v9_q26", "variant": 9, "text": "To'g'ri burchakli uchburchakning katetlari 8 va 7 ga teng. Uning yuzini toping.", "options": ["28", "33", "25", "56"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v9_q27", "variant": 9, "text": "To'g'ri to'rtburchakning tomonlari 8 va 5 ga teng. Uning perimetrini toping.", "options": ["28", "26", "52", "22"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v9_q28", "variant": 9, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["145", "25", "115", "125"], "correctAnswer": 2, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v9_q29", "variant": 9, "text": "Radiusi 4 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(64\\pi\\)", "\\(4\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v9_q30", "variant": 9, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 7 ga teng. Uning hajmini toping.", "options": ["\\(49\\pi\\)", "\\(56\\pi\\)", "\\(28\\pi\\)", "\\(14\\pi\\)"], "correctAnswer": 3, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v10_q1", "variant": 10, "text": "Hisoblang: \\(17 + 35\\)", "options": ["52", "43", "57", "51"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v10_q2", "variant": 10, "text": "Hisoblang: \\(76 \\cdot 8\\)", "options": ["603", "618", "611", "608"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v10_q3", "variant": 10, "text": "Soddalashtiring: \\(\\left(\\frac{1}{73} + \\frac{1}{81}\\right) \\cdot 5913\\)", "options": ["152", "308", "154", "159"], "correctAnswer": 0, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v10_q4", "variant": 10, "text": "\\(630\\) ning \\(5\\%\\) ini toping.", "options": ["36", "33", "31", "30"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v10_q5", "variant": 10, "text": "Tenglamani yeching: \\(x + 71 = 61\\)", "options": ["-20", "-10", "-4", "-13"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v10_q6", "variant": 10, "text": "Soddalashtiring: \\((7x + 2y)^2 - 28xy\\)", "options": ["\\(7x^2 + 2y^2\\)", "\\(49x^2 - 4y^2\\)", "\\(49x^2 + 28xy + 4y^2\\)", "\\(49x^2 + 4y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v10_q7", "variant": 10, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\((x - 2)^2\\)", "\\((x - 2)(x + 2)\\)", "\\(x(x - 4)\\)", "\\((x + 2)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v10_q8", "variant": 10, "text": "Hisoblang: \\(\\sqrt{81 \\cdot 49}\\)", "options": ["66", "126", "63", "61"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v10_q9", "variant": 10, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{4} = \\frac{10}{5}\\)", "options": ["8", "5", "16", "9"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v10_q10", "variant": 10, "text": "Ifodani qiymatini toping: \\(5a + 3b\\), bunda \\(a=3, b=2\\)", "options": ["21", "25", "19", "22"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v10_q11", "variant": 10, "text": "Tengsizlikni yeching: \\(x + 4 < 12\\)", "options": ["\\((-\\infty; 8]\\)", "\\([8; \\infty)\\)", "\\((-\\infty; 8\\)\\)", "\\((8; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q12", "variant": 10, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 28 = 0\\)", "options": ["4", "28", "7", "11"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q13", "variant": 10, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 12\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["65", "41", "106", "53"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q14", "variant": 10, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "6", "8", "12"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q15", "variant": 10, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 14 \\\\ x - y = -10 \\end{cases}\\)", "options": ["26", "34", "24", "19"], "correctAnswer": 0, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q16", "variant": 10, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{\\sqrt{2}}{2}\\)", "\\(\\sqrt{2}\\)", "\\(2\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v10_q17", "variant": 10, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(1\\)", "\\(0\\)", "\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v10_q18", "variant": 10, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["16", "14", "20", "32"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q19", "variant": 10, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["8", "4", "5", "3"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q20", "variant": 10, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)"], "correctAnswer": 3, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v10_q21", "variant": 10, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(x^{2}\\)", "\\(3x^{2}\\)", "\\(\\frac{x^{4}}{4}\\)", "\\(3x^{3}\\)"], "correctAnswer": 0, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v10_q22", "variant": 10, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 3x^{2} dx\\)", "options": ["6", "8", "16", "6"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v10_q23", "variant": 10, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v10_q24", "variant": 10, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["9", "14", "6", "18"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v10_q25", "variant": 10, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(-\\sin x + C\\)"], "correctAnswer": 3, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v10_q26", "variant": 10, "text": "To'g'ri burchakli uchburchakning katetlari 3 va 7 ga teng. Uning yuzini toping.", "options": ["10", "15", "20", "7"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v10_q27", "variant": 10, "text": "To'g'ri to'rtburchakning tomonlari 3 va 4 ga teng. Uning perimetrini toping.", "options": ["28", "16", "14", "10"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v10_q28", "variant": 10, "text": "Kubning qirrasi 6 ga teng. Uning hajmini toping.", "options": ["206", "216", "236", "36"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v10_q29", "variant": 10, "text": "Radiusi 7 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(14\\pi\\)", "\\(7\\pi\\)", "\\(343\\pi\\)", "\\(49\\pi\\)"], "correctAnswer": 0, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v10_q30", "variant": 10, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(9\\pi\\)", "\\(6\\pi\\)", "\\(24\\pi\\)", "\\(12\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v11_q1", "variant": 11, "text": "Hisoblang: \\(55 + 62\\)", "options": ["116", "122", "117", "111"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v11_q2", "variant": 11, "text": "Hisoblang: \\(56 \\cdot 8\\)", "options": ["443", "458", "453", "448"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v11_q3", "variant": 11, "text": "Soddalashtiring: \\(\\left(\\frac{1}{61} + \\frac{1}{94}\\right) \\cdot 5734\\)", "options": ["160", "155", "153", "310"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v11_q4", "variant": 11, "text": "\\(420\\) ning \\(7\\%\\) ini toping.", "options": ["29", "34", "28", "31"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v11_q5", "variant": 11, "text": "Tenglamani yeching: \\(x + 12 = 21\\)", "options": ["15", "6", "18", "9"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v11_q6", "variant": 11, "text": "Soddalashtiring: \\((9x + 8y)^2 - 144xy\\)", "options": ["\\(81x^2 + 144xy + 64y^2\\)", "\\(81x^2 + 64y^2\\)", "\\(81x^2 - 64y^2\\)", "\\(9x^2 + 8y^2\\)"], "correctAnswer": 2, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v11_q7", "variant": 11, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 16\\)", "options": ["\\((x - 4)^2\\)", "\\((x - 4)(x + 4)\\)", "\\(x(x - 16)\\)", "\\((x + 4)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v11_q8", "variant": 11, "text": "Hisoblang: \\(\\sqrt{25 \\cdot 36}\\)", "options": ["33", "28", "30", "60"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v11_q9", "variant": 11, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{8} = \\frac{15}{5}\\)", "options": ["21", "24", "48", "25"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v11_q10", "variant": 11, "text": "Ifodani qiymatini toping: \\(9a + 5b\\), bunda \\(a=3, b=2\\)", "options": ["41", "35", "38", "37"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v11_q11", "variant": 11, "text": "Tengsizlikni yeching: \\(x + 3 < 10\\)", "options": ["\\((-\\infty; 7\\)\\)", "\\((7; \\infty)\\)", "\\([7; \\infty)\\)", "\\((-\\infty; 7]\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q12", "variant": 11, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 10x + 24 = 0\\)", "options": ["10", "24", "6", "4"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q13", "variant": 11, "text": "Arifmetik progressiyada \\(a_1 = 2\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["52", "26", "20", "32"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q14", "variant": 11, "text": "Geometrik progressiyada \\(b_1 = 4\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "14", "20", "32"], "correctAnswer": 0, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q15", "variant": 11, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 12 \\\\ x - y = -4 \\end{cases}\\)", "options": ["32", "27", "42", "34"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q16", "variant": 11, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(0\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v11_q17", "variant": 11, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(1\\)", "\\(0\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v11_q18", "variant": 11, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["16", "20", "32", "14"], "correctAnswer": 3, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q19", "variant": 11, "text": "Tenglamani yeching: \\(2^x = 32\\)", "options": ["5", "10", "4", "6"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q20", "variant": 11, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\([0; 9]\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)"], "correctAnswer": 3, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v11_q21", "variant": 11, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(3x^{2}\\)", "\\(\\frac{x^{4}}{4}\\)", "\\(3x^{3}\\)", "\\(x^{2}\\)"], "correctAnswer": 3, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v11_q22", "variant": 11, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["10", "32", "64", "30"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v11_q23", "variant": 11, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\((-\\infty; 4]\\)", "\\((4; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\([4; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v11_q24", "variant": 11, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["9", "6", "18", "14"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v11_q25", "variant": 11, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(-\\sin x + C\\)", "\\(\\cos x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 1, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v11_q26", "variant": 11, "text": "To'g'ri burchakli uchburchakning katetlari 5 va 4 ga teng. Uning yuzini toping.", "options": ["7", "15", "10", "20"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v11_q27", "variant": 11, "text": "To'g'ri to'rtburchakning tomonlari 6 va 5 ga teng. Uning perimetrini toping.", "options": ["24", "44", "18", "22"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v11_q28", "variant": 11, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["47", "17", "9", "27"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v11_q29", "variant": 11, "text": "Radiusi 8 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(64\\pi\\)", "\\(8\\pi\\)", "\\(16\\pi\\)", "\\(512\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v11_q30", "variant": 11, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 7 ga teng. Uning hajmini toping.", "options": ["\\(14\\pi\\)", "\\(56\\pi\\)", "\\(28\\pi\\)", "\\(49\\pi\\)"], "correctAnswer": 0, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v12_q1", "variant": 12, "text": "Hisoblang: \\(34 + 33\\)", "options": ["76", "62", "67", "66"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v12_q2", "variant": 12, "text": "Hisoblang: \\(49 \\cdot 8\\)", "options": ["387", "402", "399", "392"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v12_q3", "variant": 12, "text": "Soddalashtiring: \\(\\left(\\frac{1}{36} + \\frac{1}{56}\\right) \\cdot 2016\\)", "options": ["90", "184", "97", "92"], "correctAnswer": 0, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v12_q4", "variant": 12, "text": "\\(580\\) ning \\(8\\%\\) ini toping.", "options": ["46", "45", "48", "51"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v12_q5", "variant": 12, "text": "Tenglamani yeching: \\(x + 93 = 62\\)", "options": ["-62", "-26", "-31", "-34"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v12_q6", "variant": 12, "text": "Soddalashtiring: \\((7x + 9y)^2 - 126xy\\)", "options": ["\\(49x^2 + 126xy + 81y^2\\)", "\\(49x^2 - 81y^2\\)", "\\(49x^2 + 81y^2\\)", "\\(7x^2 + 9y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v12_q7", "variant": 12, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\((x - 2)^2\\)", "\\(x(x - 4)\\)", "\\((x - 2)(x + 2)\\)", "\\((x + 2)^2\\)"], "correctAnswer": 2, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v12_q8", "variant": 12, "text": "Hisoblang: \\(\\sqrt{4 \\cdot 9}\\)", "options": ["4", "6", "9", "12"], "correctAnswer": 0, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v12_q9", "variant": 12, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{2} = \\frac{24}{4}\\)", "options": ["24", "13", "9", "12"], "correctAnswer": 1, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v12_q10", "variant": 12, "text": "Ifodani qiymatini toping: \\(3a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["31", "25", "28", "27"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v12_q11", "variant": 12, "text": "Tengsizlikni yeching: \\(x + 4 < 15\\)", "options": ["\\((11; \\infty)\\)", "\\((-\\infty; 11]\\)", "\\((-\\infty; 11\\)\\)", "\\([11; \\infty)\\)"], "correctAnswer": 0, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q12", "variant": 12, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 16x + 48 = 0\\)", "options": ["48", "16", "12", "4"], "correctAnswer": 0, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q13", "variant": 12, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 10\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["35", "45", "90", "55"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q14", "variant": 12, "text": "Geometrik progressiyada \\(b_1 = 4\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["20", "14", "32", "16"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q15", "variant": 12, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 16 \\\\ x - y = -6 \\end{cases}\\)", "options": ["50", "55", "57", "65"], "correctAnswer": 2, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q16", "variant": 12, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(0\\)", "\\(\\sqrt{3}\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v12_q17", "variant": 12, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(0\\)", "\\(1\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v12_q18", "variant": 12, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["4", "8", "8", "2"], "correctAnswer": 3, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q19", "variant": 12, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["4", "5", "8", "3"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q20", "variant": 12, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)", "\\((9; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v12_q21", "variant": 12, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{1}\\)", "\\(x^{1}\\)", "\\(2x^{2}\\)", "\\(\\frac{x^{3}}{3}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v12_q22", "variant": 12, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["32", "30", "64", "10"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v12_q23", "variant": 12, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((5; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v12_q24", "variant": 12, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["9", "18", "14", "6"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v12_q25", "variant": 12, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(-\\sin x + C\\)", "\\(\\cos x + C\\)", "\\(\\tan x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 0, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v12_q26", "variant": 12, "text": "To'g'ri burchakli uchburchakning katetlari 6 va 10 ga teng. Uning yuzini toping.", "options": ["30", "27", "35", "60"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v12_q27", "variant": 12, "text": "To'g'ri to'rtburchakning tomonlari 7 va 10 ga teng. Uning perimetrini toping.", "options": ["36", "34", "68", "30"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v12_q28", "variant": 12, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["17", "47", "9", "27"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v12_q29", "variant": 12, "text": "Radiusi 4 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(4\\pi\\)", "\\(64\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v12_q30", "variant": 12, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 7 ga teng. Uning hajmini toping.", "options": ["\\(56\\pi\\)", "\\(28\\pi\\)", "\\(14\\pi\\)", "\\(49\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v13_q1", "variant": 13, "text": "Hisoblang: \\(64 + 73\\)", "options": ["136", "137", "133", "140"], "correctAnswer": 1, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v13_q2", "variant": 13, "text": "Hisoblang: \\(71 \\cdot 9\\)", "options": ["649", "644", "634", "639"], "correctAnswer": 1, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v13_q3", "variant": 13, "text": "Soddalashtiring: \\(\\left(\\frac{1}{56} + \\frac{1}{46}\\right) \\cdot 2576\\)", "options": ["107", "102", "204", "100"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v13_q4", "variant": 13, "text": "\\(600\\) ning \\(2\\%\\) ini toping.", "options": ["14", "11", "17", "12"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v13_q5", "variant": 13, "text": "Tenglamani yeching: \\(x + 31 = 70\\)", "options": ["39", "36", "43", "78"], "correctAnswer": 0, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v13_q6", "variant": 13, "text": "Soddalashtiring: \\((9x + 3y)^2 - 54xy\\)", "options": ["\\(81x^2 - 9y^2\\)", "\\(9x^2 + 3y^2\\)", "\\(81x^2 + 54xy + 9y^2\\)", "\\(81x^2 + 9y^2\\)"], "correctAnswer": 0, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v13_q7", "variant": 13, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 16\\)", "options": ["\\((x - 4)(x + 4)\\)", "\\(x(x - 16)\\)", "\\((x - 4)^2\\)", "\\((x + 4)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v13_q8", "variant": 13, "text": "Hisoblang: \\(\\sqrt{81 \\cdot 16}\\)", "options": ["72", "34", "36", "39"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v13_q9", "variant": 13, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{9} = \\frac{36}{4}\\)", "options": ["81", "82", "162", "78"], "correctAnswer": 1, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v13_q10", "variant": 13, "text": "Ifodani qiymatini toping: \\(5a + 6b\\), bunda \\(a=3, b=2\\)", "options": ["28", "25", "31", "27"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v13_q11", "variant": 13, "text": "Tengsizlikni yeching: \\(x + 3 < 11\\)", "options": ["\\([8; \\infty)\\)", "\\((-\\infty; 8\\)\\)", "\\((8; \\infty)\\)", "\\((-\\infty; 8]\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q12", "variant": 13, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 16x + 48 = 0\\)", "options": ["12", "48", "4", "16"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q13", "variant": 13, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["26", "66", "40", "33"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q14", "variant": 13, "text": "Geometrik progressiyada \\(b_1 = 5\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["20", "18", "24", "40"], "correctAnswer": 0, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q15", "variant": 13, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 13 \\\\ x - y = -3 \\end{cases}\\)", "options": ["40", "42", "35", "50"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q16", "variant": 13, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v13_q17", "variant": 13, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(1\\)", "\\(0\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v13_q18", "variant": 13, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["6", "8", "12", "16"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q19", "variant": 13, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["4", "3", "5", "8"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q20", "variant": 13, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((-\\infty; 9)\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)"], "correctAnswer": 1, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v13_q21", "variant": 13, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(5x^{4}\\)", "\\(\\frac{x^{6}}{6}\\)", "\\(x^{4}\\)", "\\(5x^{5}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v13_q22", "variant": 13, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["10", "30", "32", "64"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v13_q23", "variant": 13, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v13_q24", "variant": 13, "text": "Funksiya berilgan: \\(f(x) = 5x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["15", "20", "12", "30"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v13_q25", "variant": 13, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v13_q26", "variant": 13, "text": "To'g'ri burchakli uchburchakning katetlari 6 va 4 ga teng. Uning yuzini toping.", "options": ["24", "17", "9", "12"], "correctAnswer": 3, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v13_q27", "variant": 13, "text": "To'g'ri to'rtburchakning tomonlari 4 va 8 ga teng. Uning perimetrini toping.", "options": ["26", "20", "48", "24"], "correctAnswer": 1, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v13_q28", "variant": 13, "text": "Kubning qirrasi 4 ga teng. Uning hajmini toping.", "options": ["54", "84", "64", "16"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v13_q29", "variant": 13, "text": "Radiusi 6 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(12\\pi\\)", "\\(6\\pi\\)", "\\(216\\pi\\)", "\\(36\\pi\\)"], "correctAnswer": 0, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v13_q30", "variant": 13, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 5 ga teng. Uning hajmini toping.", "options": ["\\(40\\pi\\)", "\\(25\\pi\\)", "\\(10\\pi\\)", "\\(20\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v14_q1", "variant": 14, "text": "Hisoblang: \\(66 + 15\\)", "options": ["81", "90", "80", "71"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v14_q2", "variant": 14, "text": "Hisoblang: \\(89 \\cdot 2\\)", "options": ["173", "188", "178", "184"], "correctAnswer": 3, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v14_q3", "variant": 14, "text": "Soddalashtiring: \\(\\left(\\frac{1}{50} + \\frac{1}{67}\\right) \\cdot 3350\\)", "options": ["115", "117", "234", "122"], "correctAnswer": 0, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v14_q4", "variant": 14, "text": "\\(250\\) ning \\(3\\%\\) ini toping.", "options": ["7", "9", "6", "12"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v14_q5", "variant": 14, "text": "Tenglamani yeching: \\(x + 64 = 40\\)", "options": ["-27", "-48", "-24", "-21"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v14_q6", "variant": 14, "text": "Soddalashtiring: \\((4x + 9y)^2 - 72xy\\)", "options": ["\\(4x^2 + 9y^2\\)", "\\(16x^2 - 81y^2\\)", "\\(16x^2 + 81y^2\\)", "\\(16x^2 + 72xy + 81y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v14_q7", "variant": 14, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 9\\)", "options": ["\\((x - 3)^2\\)", "\\(x(x - 9)\\)", "\\((x + 3)^2\\)", "\\((x - 3)(x + 3)\\)"], "correctAnswer": 3, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v14_q8", "variant": 14, "text": "Hisoblang: \\(\\sqrt{81 \\cdot 36}\\)", "options": ["54", "57", "108", "52"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v14_q9", "variant": 14, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{2} = \\frac{10}{5}\\)", "options": ["5", "1", "8", "4"], "correctAnswer": 0, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v14_q10", "variant": 14, "text": "Ifodani qiymatini toping: \\(6a + 7b\\), bunda \\(a=3, b=2\\)", "options": ["30", "32", "36", "33"], "correctAnswer": 1, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v14_q11", "variant": 14, "text": "Tengsizlikni yeching: \\(x + 2 < 13\\)", "options": ["\\((-\\infty; 11]\\)", "\\([11; \\infty)\\)", "\\((-\\infty; 11\\)\\)", "\\((11; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q12", "variant": 14, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 30 = 0\\)", "options": ["6", "11", "30", "5"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q13", "variant": 14, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 9\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["82", "50", "41", "32"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q14", "variant": 14, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "24", "12", "10"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q15", "variant": 14, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 16 \\\\ x - y = -6 \\end{cases}\\)", "options": ["55", "57", "65", "50"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q16", "variant": 14, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v14_q17", "variant": 14, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(2\\cos^2 x\\)", "\\(1\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v14_q18", "variant": 14, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["6", "8", "12", "16"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q19", "variant": 14, "text": "Tenglamani yeching: \\(2^x = 32\\)", "options": ["4", "5", "10", "6"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q20", "variant": 14, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 1, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v14_q21", "variant": 14, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{1}\\)", "\\(\\frac{x^{3}}{3}\\)", "\\(x^{1}\\)", "\\(2x^{2}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v14_q22", "variant": 14, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 3x^{2} dx\\)", "options": ["6", "16", "8", "6"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v14_q23", "variant": 14, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\((-\\infty; 5]\\)", "\\([5; \\infty)\\)", "\\((5; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v14_q24", "variant": 14, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["9", "6", "14", "18"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v14_q25", "variant": 14, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)"], "correctAnswer": 3, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v14_q26", "variant": 14, "text": "To'g'ri burchakli uchburchakning katetlari 3 va 10 ga teng. Uning yuzini toping.", "options": ["20", "12", "15", "30"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v14_q27", "variant": 14, "text": "To'g'ri to'rtburchakning tomonlari 3 va 5 ga teng. Uning perimetrini toping.", "options": ["12", "18", "16", "32"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v14_q28", "variant": 14, "text": "Kubning qirrasi 7 ga teng. Uning hajmini toping.", "options": ["363", "49", "333", "343"], "correctAnswer": 2, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v14_q29", "variant": 14, "text": "Radiusi 3 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(3\\pi\\)", "\\(27\\pi\\)", "\\(6\\pi\\)", "\\(9\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v14_q30", "variant": 14, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 5 ga teng. Uning hajmini toping.", "options": ["\\(20\\pi\\)", "\\(10\\pi\\)", "\\(40\\pi\\)", "\\(25\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v15_q1", "variant": 15, "text": "Hisoblang: \\(91 + 38\\)", "options": ["129", "128", "124", "132"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v15_q2", "variant": 15, "text": "Hisoblang: \\(31 \\cdot 9\\)", "options": ["283", "279", "274", "289"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v15_q3", "variant": 15, "text": "Soddalashtiring: \\(\\left(\\frac{1}{69} + \\frac{1}{26}\\right) \\cdot 1794\\)", "options": ["190", "95", "100", "93"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v15_q4", "variant": 15, "text": "\\(630\\) ning \\(4\\%\\) ini toping.", "options": ["27", "24", "30", "25"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v15_q5", "variant": 15, "text": "Tenglamani yeching: \\(x + 25 = 90\\)", "options": ["62", "71", "65", "130"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v15_q6", "variant": 15, "text": "Soddalashtiring: \\((4x + 9y)^2 - 72xy\\)", "options": ["\\(16x^2 + 81y^2\\)", "\\(4x^2 + 9y^2\\)", "\\(16x^2 + 72xy + 81y^2\\)", "\\(16x^2 - 81y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v15_q7", "variant": 15, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\((x + 2)^2\\)", "\\((x - 2)(x + 2)\\)", "\\(x(x - 4)\\)", "\\((x - 2)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v15_q8", "variant": 15, "text": "Hisoblang: \\(\\sqrt{36 \\cdot 25}\\)", "options": ["28", "60", "30", "33"], "correctAnswer": 0, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v15_q9", "variant": 15, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{16}{4}\\)", "options": ["21", "48", "24", "25"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v15_q10", "variant": 15, "text": "Ifodani qiymatini toping: \\(8a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["42", "40", "46", "43"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v15_q11", "variant": 15, "text": "Tengsizlikni yeching: \\(x + 3 < 14\\)", "options": ["\\((-\\infty; 11\\)\\)", "\\((11; \\infty)\\)", "\\((-\\infty; 11]\\)", "\\([11; \\infty)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q12", "variant": 15, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 15x + 50 = 0\\)", "options": ["5", "10", "50", "15"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q13", "variant": 15, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["28", "22", "56", "34"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q14", "variant": 15, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["8", "12", "6", "16"], "correctAnswer": 0, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q15", "variant": 15, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 10 \\\\ x - y = -2 \\end{cases}\\)", "options": ["26", "24", "19", "34"], "correctAnswer": 0, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q16", "variant": 15, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v15_q17", "variant": 15, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(1\\)", "\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v15_q18", "variant": 15, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["8", "16", "6", "12"], "correctAnswer": 2, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q19", "variant": 15, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["4", "5", "3", "8"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q20", "variant": 15, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v15_q21", "variant": 15, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(\\frac{x^{3}}{3}\\)", "\\(x^{1}\\)", "\\(2x^{2}\\)", "\\(2x^{1}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v15_q22", "variant": 15, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 3x^{2} dx\\)", "options": ["6", "16", "6", "8"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v15_q23", "variant": 15, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 3}\\)", "options": ["\\((-\\infty; 3]\\)", "\\((3; \\infty)\\)", "\\([3; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v15_q24", "variant": 15, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["6", "18", "9", "14"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v15_q25", "variant": 15, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\tan x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v15_q26", "variant": 15, "text": "To'g'ri burchakli uchburchakning katetlari 7 va 8 ga teng. Uning yuzini toping.", "options": ["33", "28", "25", "56"], "correctAnswer": 1, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v15_q27", "variant": 15, "text": "To'g'ri to'rtburchakning tomonlari 7 va 8 ga teng. Uning perimetrini toping.", "options": ["26", "60", "32", "30"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v15_q28", "variant": 15, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["115", "145", "25", "125"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v15_q29", "variant": 15, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(10\\pi\\)", "\\(125\\pi\\)", "\\(5\\pi\\)", "\\(25\\pi\\)"], "correctAnswer": 0, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v15_q30", "variant": 15, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(9\\pi\\)", "\\(6\\pi\\)", "\\(12\\pi\\)", "\\(24\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v16_q1", "variant": 16, "text": "Hisoblang: \\(60 + 72\\)", "options": ["132", "131", "127", "137"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v16_q2", "variant": 16, "text": "Hisoblang: \\(44 \\cdot 9\\)", "options": ["391", "406", "403", "396"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v16_q3", "variant": 16, "text": "Soddalashtiring: \\(\\left(\\frac{1}{76} + \\frac{1}{16}\\right) \\cdot 1216\\)", "options": ["184", "97", "92", "90"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v16_q4", "variant": 16, "text": "\\(130\\) ning \\(9\\%\\) ini toping.", "options": ["11", "10", "13", "16"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v16_q5", "variant": 16, "text": "Tenglamani yeching: \\(x + 27 = 20\\)", "options": ["-10", "-4", "-14", "-7"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v16_q6", "variant": 16, "text": "Soddalashtiring: \\((9x + 3y)^2 - 54xy\\)", "options": ["\\(81x^2 + 54xy + 9y^2\\)", "\\(81x^2 - 9y^2\\)", "\\(9x^2 + 3y^2\\)", "\\(81x^2 + 9y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v16_q7", "variant": 16, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 9\\)", "options": ["\\((x - 3)^2\\)", "\\((x + 3)^2\\)", "\\((x - 3)(x + 3)\\)", "\\(x(x - 9)\\)"], "correctAnswer": 2, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v16_q8", "variant": 16, "text": "Hisoblang: \\(\\sqrt{16 \\cdot 49}\\)", "options": ["31", "56", "26", "28"], "correctAnswer": 2, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v16_q9", "variant": 16, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{8} = \\frac{10}{2}\\)", "options": ["41", "40", "80", "37"], "correctAnswer": 0, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v16_q10", "variant": 16, "text": "Ifodani qiymatini toping: \\(6a + 8b\\), bunda \\(a=3, b=2\\)", "options": ["38", "34", "35", "32"], "correctAnswer": 1, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v16_q11", "variant": 16, "text": "Tengsizlikni yeching: \\(x + 4 < 14\\)", "options": ["\\((10; \\infty)\\)", "\\((-\\infty; 10\\)\\)", "\\([10; \\infty)\\)", "\\((-\\infty; 10]\\)"], "correctAnswer": 0, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q12", "variant": 16, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 12x + 27 = 0\\)", "options": ["27", "9", "3", "12"], "correctAnswer": 0, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q13", "variant": 16, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 11\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["48", "96", "59", "37"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q14", "variant": 16, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "12", "24", "10"], "correctAnswer": 1, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q15", "variant": 16, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 15 \\\\ x - y = -7 \\end{cases}\\)", "options": ["46", "44", "54", "39"], "correctAnswer": 0, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q16", "variant": 16, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v16_q17", "variant": 16, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)", "\\(1\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v16_q18", "variant": 16, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["2", "4", "8", "8"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q19", "variant": 16, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["6", "4", "2", "3"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q20", "variant": 16, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\([0; 9]\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v16_q21", "variant": 16, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(3x^{3}\\)", "\\(\\frac{x^{4}}{4}\\)", "\\(x^{2}\\)", "\\(3x^{2}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v16_q22", "variant": 16, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["64", "30", "32", "10"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v16_q23", "variant": 16, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 3}\\)", "options": ["\\((-\\infty; 3]\\)", "\\((3; \\infty)\\)", "\\([3; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v16_q24", "variant": 16, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["22", "16", "8", "11"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v16_q25", "variant": 16, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(-\\sin x + C\\)", "\\(\\cos x + C\\)", "\\(\\tan x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 0, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v16_q26", "variant": 16, "text": "To'g'ri burchakli uchburchakning katetlari 5 va 5 ga teng. Uning yuzini toping.", "options": ["9", "17", "12", "24"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v16_q27", "variant": 16, "text": "To'g'ri to'rtburchakning tomonlari 5 va 7 ga teng. Uning perimetrini toping.", "options": ["48", "20", "26", "24"], "correctAnswer": 1, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v16_q28", "variant": 16, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["9", "27", "17", "47"], "correctAnswer": 2, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v16_q29", "variant": 16, "text": "Radiusi 7 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(49\\pi\\)", "\\(343\\pi\\)", "\\(7\\pi\\)", "\\(14\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v16_q30", "variant": 16, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(12\\pi\\)", "\\(6\\pi\\)", "\\(9\\pi\\)", "\\(24\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v17_q1", "variant": 17, "text": "Hisoblang: \\(72 + 58\\)", "options": ["129", "134", "130", "120"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v17_q2", "variant": 17, "text": "Hisoblang: \\(63 \\cdot 6\\)", "options": ["373", "388", "381", "378"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v17_q3", "variant": 17, "text": "Soddalashtiring: \\(\\left(\\frac{1}{76} + \\frac{1}{61}\\right) \\cdot 4636\\)", "options": ["274", "137", "135", "142"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v17_q4", "variant": 17, "text": "\\(770\\) ning \\(5\\%\\) ini toping.", "options": ["38", "37", "43", "40"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v17_q5", "variant": 17, "text": "Tenglamani yeching: \\(x + 87 = 22\\)", "options": ["-68", "-60", "-130", "-65"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v17_q6", "variant": 17, "text": "Soddalashtiring: \\((9x + 9y)^2 - 162xy\\)", "options": ["\\(81x^2 + 162xy + 81y^2\\)", "\\(9x^2 + 9y^2\\)", "\\(81x^2 + 81y^2\\)", "\\(81x^2 - 81y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v17_q7", "variant": 17, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 16\\)", "options": ["\\((x - 4)^2\\)", "\\(x(x - 16)\\)", "\\((x + 4)^2\\)", "\\((x - 4)(x + 4)\\)"], "correctAnswer": 3, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v17_q8", "variant": 17, "text": "Hisoblang: \\(\\sqrt{49 \\cdot 9}\\)", "options": ["21", "24", "19", "42"], "correctAnswer": 2, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v17_q9", "variant": 17, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{2} = \\frac{18}{2}\\)", "options": ["15", "18", "36", "19"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v17_q10", "variant": 17, "text": "Ifodani qiymatini toping: \\(8a + 2b\\), bunda \\(a=3, b=2\\)", "options": ["28", "29", "32", "26"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v17_q11", "variant": 17, "text": "Tengsizlikni yeching: \\(x + 5 < 13\\)", "options": ["\\((-\\infty; 8]\\)", "\\((-\\infty; 8\\)\\)", "\\([8; \\infty)\\)", "\\((8; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q12", "variant": 17, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 12x + 35 = 0\\)", "options": ["7", "35", "5", "12"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q13", "variant": 17, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["32", "64", "25", "39"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q14", "variant": 17, "text": "Geometrik progressiyada \\(b_1 = 5\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["40", "18", "24", "20"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q15", "variant": 17, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 13 \\\\ x - y = -7 \\end{cases}\\)", "options": ["30", "25", "40", "32"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q16", "variant": 17, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v17_q17", "variant": 17, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(0\\)", "\\(2\\sin^2 x\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v17_q18", "variant": 17, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["20", "32", "14", "16"], "correctAnswer": 2, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q19", "variant": 17, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["8", "3", "4", "5"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q20", "variant": 17, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\((9; \\infty)\\)", "\\([0; 9]\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v17_q21", "variant": 17, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(x^{2}\\)", "\\(3x^{3}\\)", "\\(3x^{2}\\)", "\\(\\frac{x^{4}}{4}\\)"], "correctAnswer": 0, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v17_q22", "variant": 17, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["30", "32", "64", "10"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v17_q23", "variant": 17, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\((-\\infty; \\infty)\\)", "\\([4; \\infty)\\)", "\\((4; \\infty)\\)", "\\((-\\infty; 4]\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v17_q24", "variant": 17, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["14", "9", "6", "18"], "correctAnswer": 1, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v17_q25", "variant": 17, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(-\\sin x + C\\)"], "correctAnswer": 3, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v17_q26", "variant": 17, "text": "To'g'ri burchakli uchburchakning katetlari 4 va 6 ga teng. Uning yuzini toping.", "options": ["12", "9", "24", "17"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v17_q27", "variant": 17, "text": "To'g'ri to'rtburchakning tomonlari 8 va 4 ga teng. Uning perimetrini toping.", "options": ["20", "48", "24", "26"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v17_q28", "variant": 17, "text": "Kubning qirrasi 6 ga teng. Uning hajmini toping.", "options": ["206", "216", "236", "36"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v17_q29", "variant": 17, "text": "Radiusi 8 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(16\\pi\\)", "\\(64\\pi\\)", "\\(512\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 0, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v17_q30", "variant": 17, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(16\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)", "\\(32\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v18_q1", "variant": 18, "text": "Hisoblang: \\(23 + 93\\)", "options": ["123", "113", "116", "115"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v18_q2", "variant": 18, "text": "Hisoblang: \\(95 \\cdot 8\\)", "options": ["755", "765", "760", "770"], "correctAnswer": 1, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v18_q3", "variant": 18, "text": "Soddalashtiring: \\(\\left(\\frac{1}{76} + \\frac{1}{48}\\right) \\cdot 3648\\)", "options": ["129", "124", "248", "122"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v18_q4", "variant": 18, "text": "\\(910\\) ning \\(7\\%\\) ini toping.", "options": ["68", "63", "65", "62"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v18_q5", "variant": 18, "text": "Tenglamani yeching: \\(x + 52 = 83\\)", "options": ["31", "37", "28", "62"], "correctAnswer": 0, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v18_q6", "variant": 18, "text": "Soddalashtiring: \\((3x + 6y)^2 - 36xy\\)", "options": ["\\(9x^2 + 36xy + 36y^2\\)", "\\(9x^2 + 36y^2\\)", "\\(9x^2 - 36y^2\\)", "\\(3x^2 + 6y^2\\)"], "correctAnswer": 2, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v18_q7", "variant": 18, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 16\\)", "options": ["\\((x + 4)^2\\)", "\\((x - 4)^2\\)", "\\(x(x - 16)\\)", "\\((x - 4)(x + 4)\\)"], "correctAnswer": 3, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v18_q8", "variant": 18, "text": "Hisoblang: \\(\\sqrt{4 \\cdot 4}\\)", "options": ["2", "4", "8", "7"], "correctAnswer": 0, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v18_q9", "variant": 18, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{9}{3}\\)", "options": ["18", "15", "19", "36"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v18_q10", "variant": 18, "text": "Ifodani qiymatini toping: \\(3a + 2b\\), bunda \\(a=3, b=2\\)", "options": ["14", "17", "13", "11"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v18_q11", "variant": 18, "text": "Tengsizlikni yeching: \\(x + 4 < 16\\)", "options": ["\\((-\\infty; 12\\)\\)", "\\((-\\infty; 12]\\)", "\\([12; \\infty)\\)", "\\((12; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q12", "variant": 18, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 16x + 48 = 0\\)", "options": ["48", "4", "16", "12"], "correctAnswer": 0, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q13", "variant": 18, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 11\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["60", "49", "38", "98"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q14", "variant": 18, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "10", "12", "24"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q15", "variant": 18, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 9 \\\\ x - y = -5 \\end{cases}\\)", "options": ["16", "24", "9", "14"], "correctAnswer": 0, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q16", "variant": 18, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(2\\)", "\\(\\sqrt{2}\\)", "\\(\\frac{\\sqrt{2}}{2}\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v18_q17", "variant": 18, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\sin^2 x\\)", "\\(1\\)", "\\(0\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 0, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v18_q18", "variant": 18, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["16", "12", "6", "8"], "correctAnswer": 2, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q19", "variant": 18, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["4", "2", "6", "3"], "correctAnswer": 0, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q20", "variant": 18, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v18_q21", "variant": 18, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{4}\\)", "options": ["\\(4x^{4}\\)", "\\(x^{3}\\)", "\\(\\frac{x^{5}}{5}\\)", "\\(4x^{3}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v18_q22", "variant": 18, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["8", "32", "14", "16"], "correctAnswer": 2, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v18_q23", "variant": 18, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\((-\\infty; 4]\\)", "\\((-\\infty; \\infty)\\)", "\\((4; \\infty)\\)", "\\([4; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v18_q24", "variant": 18, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["16", "22", "8", "11"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v18_q25", "variant": 18, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\tan x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v18_q26", "variant": 18, "text": "To'g'ri burchakli uchburchakning katetlari 8 va 5 ga teng. Uning yuzini toping.", "options": ["20", "40", "17", "25"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v18_q27", "variant": 18, "text": "To'g'ri to'rtburchakning tomonlari 5 va 10 ga teng. Uning perimetrini toping.", "options": ["26", "60", "30", "32"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v18_q28", "variant": 18, "text": "Kubning qirrasi 8 ga teng. Uning hajmini toping.", "options": ["512", "64", "532", "502"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v18_q29", "variant": 18, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(125\\pi\\)", "\\(5\\pi\\)", "\\(10\\pi\\)", "\\(25\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v18_q30", "variant": 18, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 7 ga teng. Uning hajmini toping.", "options": ["\\(14\\pi\\)", "\\(56\\pi\\)", "\\(28\\pi\\)", "\\(49\\pi\\)"], "correctAnswer": 0, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v19_q1", "variant": 19, "text": "Hisoblang: \\(77 + 23\\)", "options": ["108", "99", "90", "100"], "correctAnswer": 3, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v19_q2", "variant": 19, "text": "Hisoblang: \\(13 \\cdot 9\\)", "options": ["112", "117", "123", "127"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v19_q3", "variant": 19, "text": "Soddalashtiring: \\(\\left(\\frac{1}{98} + \\frac{1}{33}\\right) \\cdot 3234\\)", "options": ["131", "262", "129", "136"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v19_q4", "variant": 19, "text": "\\(710\\) ning \\(4\\%\\) ini toping.", "options": ["30", "28", "33", "27"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v19_q5", "variant": 19, "text": "Tenglamani yeching: \\(x + 23 = 96\\)", "options": ["70", "146", "73", "75"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v19_q6", "variant": 19, "text": "Soddalashtiring: \\((5x + 8y)^2 - 80xy\\)", "options": ["\\(5x^2 + 8y^2\\)", "\\(25x^2 - 64y^2\\)", "\\(25x^2 + 80xy + 64y^2\\)", "\\(25x^2 + 64y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v19_q7", "variant": 19, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 25\\)", "options": ["\\((x - 5)(x + 5)\\)", "\\((x - 5)^2\\)", "\\((x + 5)^2\\)", "\\(x(x - 25)\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v19_q8", "variant": 19, "text": "Hisoblang: \\(\\sqrt{25 \\cdot 81}\\)", "options": ["90", "43", "45", "48"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v19_q9", "variant": 19, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{12}{3}\\)", "options": ["25", "24", "48", "21"], "correctAnswer": 0, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v19_q10", "variant": 19, "text": "Ifodani qiymatini toping: \\(2a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["25", "28", "24", "22"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v19_q11", "variant": 19, "text": "Tengsizlikni yeching: \\(x + 4 < 15\\)", "options": ["\\((-\\infty; 11]\\)", "\\([11; \\infty)\\)", "\\((-\\infty; 11\\)\\)", "\\((11; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q12", "variant": 19, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 13x + 22 = 0\\)", "options": ["13", "22", "11", "2"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q13", "variant": 19, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["26", "33", "66", "40"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q14", "variant": 19, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["6", "8", "16", "12"], "correctAnswer": 1, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q15", "variant": 19, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 10 \\\\ x - y = -6 \\end{cases}\\)", "options": ["26", "11", "16", "18"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q16", "variant": 19, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v19_q17", "variant": 19, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(1\\)", "\\(0\\)", "\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v19_q18", "variant": 19, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["14", "32", "20", "16"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q19", "variant": 19, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["3", "2", "4", "6"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q20", "variant": 19, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((9; \\infty)\\)", "\\([0; 9]\\)", "\\((0; 9)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v19_q21", "variant": 19, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{1}\\)", "\\(2x^{2}\\)", "\\(x^{1}\\)", "\\(\\frac{x^{3}}{3}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v19_q22", "variant": 19, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 2x^{1} dx\\)", "options": ["4", "8", "4", "2"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v19_q23", "variant": 19, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 1, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v19_q24", "variant": 19, "text": "Funksiya berilgan: \\(f(x) = 4x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["26", "10", "13", "18"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v19_q25", "variant": 19, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\sin x + C\\)", "\\(-\\sin x + C\\)", "\\(\\cos x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v19_q26", "variant": 19, "text": "To'g'ri burchakli uchburchakning katetlari 8 va 9 ga teng. Uning yuzini toping.", "options": ["36", "41", "72", "33"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v19_q27", "variant": 19, "text": "To'g'ri to'rtburchakning tomonlari 8 va 9 ga teng. Uning perimetrini toping.", "options": ["30", "68", "36", "34"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v19_q28", "variant": 19, "text": "Kubning qirrasi 4 ga teng. Uning hajmini toping.", "options": ["64", "54", "84", "16"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v19_q29", "variant": 19, "text": "Radiusi 7 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(7\\pi\\)", "\\(49\\pi\\)", "\\(343\\pi\\)", "\\(14\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v19_q30", "variant": 19, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(16\\pi\\)", "\\(8\\pi\\)", "\\(32\\pi\\)", "\\(16\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v20_q1", "variant": 20, "text": "Hisoblang: \\(85 + 12\\)", "options": ["94", "96", "101", "97"], "correctAnswer": 3, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v20_q2", "variant": 20, "text": "Hisoblang: \\(10 \\cdot 7\\)", "options": ["80", "65", "70", "78"], "correctAnswer": 3, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v20_q3", "variant": 20, "text": "Soddalashtiring: \\(\\left(\\frac{1}{24} + \\frac{1}{81}\\right) \\cdot 1944\\)", "options": ["103", "210", "110", "105"], "correctAnswer": 0, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v20_q4", "variant": 20, "text": "\\(770\\) ning \\(5\\%\\) ini toping.", "options": ["37", "38", "40", "43"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v20_q5", "variant": 20, "text": "Tenglamani yeching: \\(x + 67 = 11\\)", "options": ["-56", "-59", "-112", "-51"], "correctAnswer": 0, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v20_q6", "variant": 20, "text": "Soddalashtiring: \\((8x + 3y)^2 - 48xy\\)", "options": ["\\(8x^2 + 3y^2\\)", "\\(64x^2 + 48xy + 9y^2\\)", "\\(64x^2 + 9y^2\\)", "\\(64x^2 - 9y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v20_q7", "variant": 20, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 25\\)", "options": ["\\((x - 5)(x + 5)\\)", "\\((x - 5)^2\\)", "\\((x + 5)^2\\)", "\\(x(x - 25)\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v20_q8", "variant": 20, "text": "Hisoblang: \\(\\sqrt{16 \\cdot 64}\\)", "options": ["32", "35", "64", "30"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v20_q9", "variant": 20, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{20}{5}\\)", "options": ["24", "21", "48", "25"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v20_q10", "variant": 20, "text": "Ifodani qiymatini toping: \\(4a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["34", "28", "30", "31"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v20_q11", "variant": 20, "text": "Tengsizlikni yeching: \\(x + 3 < 15\\)", "options": ["\\([12; \\infty)\\)", "\\((-\\infty; 12\\)\\)", "\\((12; \\infty)\\)", "\\((-\\infty; 12]\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q12", "variant": 20, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 18 = 0\\)", "options": ["9", "11", "18", "2"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q13", "variant": 20, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 12\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["106", "53", "65", "41"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q14", "variant": 20, "text": "Geometrik progressiyada \\(b_1 = 4\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["20", "14", "16", "32"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q15", "variant": 20, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 13 \\\\ x - y = -9 \\end{cases}\\)", "options": ["22", "17", "32", "24"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q16", "variant": 20, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(0\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v20_q17", "variant": 20, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\sin^2 x\\)", "\\(0\\)", "\\(1\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 0, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v20_q18", "variant": 20, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["8", "8", "4", "2"], "correctAnswer": 3, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q19", "variant": 20, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["2", "3", "4", "6"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q20", "variant": 20, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v20_q21", "variant": 20, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(5x^{5}\\)", "\\(\\frac{x^{6}}{6}\\)", "\\(x^{4}\\)", "\\(5x^{4}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v20_q22", "variant": 20, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["14", "16", "32", "8"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v20_q23", "variant": 20, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\((5; \\infty)\\)", "\\([5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v20_q24", "variant": 20, "text": "Funksiya berilgan: \\(f(x) = 5x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["15", "30", "20", "12"], "correctAnswer": 0, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v20_q25", "variant": 20, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(-\\sin x + C\\)", "\\(\\tan x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v20_q26", "variant": 20, "text": "To'g'ri burchakli uchburchakning katetlari 3 va 6 ga teng. Uning yuzini toping.", "options": ["6", "18", "14", "9"], "correctAnswer": 3, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v20_q27", "variant": 20, "text": "To'g'ri to'rtburchakning tomonlari 3 va 7 ga teng. Uning perimetrini toping.", "options": ["20", "22", "40", "16"], "correctAnswer": 3, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v20_q28", "variant": 20, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["25", "115", "145", "125"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v20_q29", "variant": 20, "text": "Radiusi 8 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(64\\pi\\)", "\\(512\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v20_q30", "variant": 20, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 5 ga teng. Uning hajmini toping.", "options": ["\\(20\\pi\\)", "\\(10\\pi\\)", "\\(25\\pi\\)", "\\(40\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v21_q1", "variant": 21, "text": "Hisoblang: \\(99 + 56\\)", "options": ["154", "155", "162", "152"], "correctAnswer": 1, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v21_q2", "variant": 21, "text": "Hisoblang: \\(48 \\cdot 3\\)", "options": ["149", "144", "154", "139"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v21_q3", "variant": 21, "text": "Soddalashtiring: \\(\\left(\\frac{1}{20} + \\frac{1}{75}\\right) \\cdot 1500\\)", "options": ["190", "100", "95", "93"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v21_q4", "variant": 21, "text": "\\(330\\) ning \\(5\\%\\) ini toping.", "options": ["18", "15", "21", "16"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v21_q5", "variant": 21, "text": "Tenglamani yeching: \\(x + 28 = 87\\)", "options": ["59", "61", "56", "118"], "correctAnswer": 0, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v21_q6", "variant": 21, "text": "Soddalashtiring: \\((8x + 5y)^2 - 80xy\\)", "options": ["\\(64x^2 + 25y^2\\)", "\\(64x^2 + 80xy + 25y^2\\)", "\\(64x^2 - 25y^2\\)", "\\(8x^2 + 5y^2\\)"], "correctAnswer": 2, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v21_q7", "variant": 21, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\(x(x - 4)\\)", "\\((x - 2)(x + 2)\\)", "\\((x - 2)^2\\)", "\\((x + 2)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v21_q8", "variant": 21, "text": "Hisoblang: \\(\\sqrt{36 \\cdot 16}\\)", "options": ["27", "48", "22", "24"], "correctAnswer": 2, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v21_q9", "variant": 21, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{8} = \\frac{32}{4}\\)", "options": ["64", "128", "61", "65"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v21_q10", "variant": 21, "text": "Ifodani qiymatini toping: \\(3a + 5b\\), bunda \\(a=3, b=2\\)", "options": ["19", "17", "23", "20"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v21_q11", "variant": 21, "text": "Tengsizlikni yeching: \\(x + 4 < 13\\)", "options": ["\\([9; \\infty)\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9\\)\\)", "\\((-\\infty; 9]\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q12", "variant": 21, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 18 = 0\\)", "options": ["9", "18", "11", "2"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q13", "variant": 21, "text": "Arifmetik progressiyada \\(a_1 = 2\\), \\(d = 8\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["42", "26", "68", "34"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q14", "variant": 21, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "10", "12", "24"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q15", "variant": 21, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 14 \\\\ x - y = -6 \\end{cases}\\)", "options": ["50", "42", "40", "35"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q16", "variant": 21, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\sqrt{3}\\)", "\\(1\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v21_q17", "variant": 21, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(2\\sin^2 x\\)", "\\(1\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 1, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v21_q18", "variant": 21, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["16", "6", "12", "8"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q19", "variant": 21, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["8", "3", "4", "5"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q20", "variant": 21, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((0; 9)\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v21_q21", "variant": 21, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{3}\\)", "options": ["\\(\\frac{x^{4}}{4}\\)", "\\(3x^{2}\\)", "\\(3x^{3}\\)", "\\(x^{2}\\)"], "correctAnswer": 3, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v21_q22", "variant": 21, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["32", "64", "30", "10"], "correctAnswer": 2, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v21_q23", "variant": 21, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((5; \\infty)\\)"], "correctAnswer": 3, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v21_q24", "variant": 21, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["14", "6", "18", "9"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v21_q25", "variant": 21, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)"], "correctAnswer": 3, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v21_q26", "variant": 21, "text": "To'g'ri burchakli uchburchakning katetlari 4 va 4 ga teng. Uning yuzini toping.", "options": ["13", "8", "16", "5"], "correctAnswer": 1, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v21_q27", "variant": 21, "text": "To'g'ri to'rtburchakning tomonlari 3 va 8 ga teng. Uning perimetrini toping.", "options": ["24", "44", "18", "22"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v21_q28", "variant": 21, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["27", "17", "47", "9"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v21_q29", "variant": 21, "text": "Radiusi 4 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(8\\pi\\)", "\\(16\\pi\\)", "\\(4\\pi\\)", "\\(64\\pi\\)"], "correctAnswer": 0, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v21_q30", "variant": 21, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(16\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)", "\\(32\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v22_q1", "variant": 22, "text": "Hisoblang: \\(30 + 63\\)", "options": ["102", "88", "92", "93"], "correctAnswer": 3, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v22_q2", "variant": 22, "text": "Hisoblang: \\(12 \\cdot 4\\)", "options": ["58", "43", "56", "48"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v22_q3", "variant": 22, "text": "Soddalashtiring: \\(\\left(\\frac{1}{78} + \\frac{1}{76}\\right) \\cdot 5928\\)", "options": ["159", "154", "152", "308"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v22_q4", "variant": 22, "text": "\\(160\\) ning \\(6\\%\\) ini toping.", "options": ["14", "11", "9", "8"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v22_q5", "variant": 22, "text": "Tenglamani yeching: \\(x + 82 = 25\\)", "options": ["-60", "-54", "-57", "-114"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v22_q6", "variant": 22, "text": "Soddalashtiring: \\((9x + 8y)^2 - 144xy\\)", "options": ["\\(9x^2 + 8y^2\\)", "\\(81x^2 - 64y^2\\)", "\\(81x^2 + 144xy + 64y^2\\)", "\\(81x^2 + 64y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v22_q7", "variant": 22, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 36\\)", "options": ["\\((x - 6)(x + 6)\\)", "\\(x(x - 36)\\)", "\\((x + 6)^2\\)", "\\((x - 6)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v22_q8", "variant": 22, "text": "Hisoblang: \\(\\sqrt{9 \\cdot 25}\\)", "options": ["15", "18", "30", "13"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v22_q9", "variant": 22, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{3} = \\frac{45}{5}\\)", "options": ["27", "54", "28", "24"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v22_q10", "variant": 22, "text": "Ifodani qiymatini toping: \\(3a + 7b\\), bunda \\(a=3, b=2\\)", "options": ["23", "27", "21", "24"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v22_q11", "variant": 22, "text": "Tengsizlikni yeching: \\(x + 2 < 13\\)", "options": ["\\([11; \\infty)\\)", "\\((-\\infty; 11\\)\\)", "\\((11; \\infty)\\)", "\\((-\\infty; 11]\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q12", "variant": 22, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 10x + 21 = 0\\)", "options": ["3", "21", "10", "7"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q13", "variant": 22, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 12\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["52", "64", "40", "104"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q14", "variant": 22, "text": "Geometrik progressiyada \\(b_1 = 4\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["20", "14", "16", "32"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q15", "variant": 22, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 14 \\\\ x - y = -8 \\end{cases}\\)", "options": ["35", "28", "43", "33"], "correctAnswer": 0, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q16", "variant": 22, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v22_q17", "variant": 22, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(1\\)", "\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(0\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v22_q18", "variant": 22, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["16", "6", "8", "12"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q19", "variant": 22, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["3", "6", "4", "2"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q20", "variant": 22, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v22_q21", "variant": 22, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(\\frac{x^{6}}{6}\\)", "\\(5x^{4}\\)", "\\(5x^{5}\\)", "\\(x^{4}\\)"], "correctAnswer": 3, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v22_q22", "variant": 22, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 3x^{2} dx\\)", "options": ["8", "6", "6", "16"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v22_q23", "variant": 22, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\([4; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 4]\\)", "\\((4; \\infty)\\)"], "correctAnswer": 3, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v22_q24", "variant": 22, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["22", "8", "16", "11"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v22_q25", "variant": 22, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v22_q26", "variant": 22, "text": "To'g'ri burchakli uchburchakning katetlari 3 va 8 ga teng. Uning yuzini toping.", "options": ["17", "9", "24", "12"], "correctAnswer": 3, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v22_q27", "variant": 22, "text": "To'g'ri to'rtburchakning tomonlari 8 va 6 ga teng. Uning perimetrini toping.", "options": ["56", "24", "30", "28"], "correctAnswer": 1, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v22_q28", "variant": 22, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["25", "125", "115", "145"], "correctAnswer": 2, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v22_q29", "variant": 22, "text": "Radiusi 6 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(216\\pi\\)", "\\(6\\pi\\)", "\\(12\\pi\\)", "\\(36\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v22_q30", "variant": 22, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(32\\pi\\)", "\\(8\\pi\\)", "\\(16\\pi\\)", "\\(16\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v23_q1", "variant": 23, "text": "Hisoblang: \\(48 + 38\\)", "options": ["80", "86", "92", "85"], "correctAnswer": 1, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v23_q2", "variant": 23, "text": "Hisoblang: \\(19 \\cdot 7\\)", "options": ["133", "128", "137", "143"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v23_q3", "variant": 23, "text": "Soddalashtiring: \\(\\left(\\frac{1}{25} + \\frac{1}{17}\\right) \\cdot 425\\)", "options": ["84", "42", "47", "40"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v23_q4", "variant": 23, "text": "\\(800\\) ning \\(9\\%\\) ini toping.", "options": ["71", "77", "74", "72"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v23_q5", "variant": 23, "text": "Tenglamani yeching: \\(x + 33 = 59\\)", "options": ["31", "23", "52", "26"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v23_q6", "variant": 23, "text": "Soddalashtiring: \\((9x + 3y)^2 - 54xy\\)", "options": ["\\(81x^2 + 54xy + 9y^2\\)", "\\(9x^2 + 3y^2\\)", "\\(81x^2 + 9y^2\\)", "\\(81x^2 - 9y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v23_q7", "variant": 23, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 36\\)", "options": ["\\((x - 6)(x + 6)\\)", "\\(x(x - 36)\\)", "\\((x - 6)^2\\)", "\\((x + 6)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v23_q8", "variant": 23, "text": "Hisoblang: \\(\\sqrt{81 \\cdot 4}\\)", "options": ["36", "21", "18", "16"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v23_q9", "variant": 23, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{6} = \\frac{28}{4}\\)", "options": ["84", "42", "43", "39"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v23_q10", "variant": 23, "text": "Ifodani qiymatini toping: \\(6a + 8b\\), bunda \\(a=3, b=2\\)", "options": ["32", "38", "34", "35"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v23_q11", "variant": 23, "text": "Tengsizlikni yeching: \\(x + 3 < 12\\)", "options": ["\\((9; \\infty)\\)", "\\((-\\infty; 9\\)\\)", "\\([9; \\infty)\\)", "\\((-\\infty; 9]\\)"], "correctAnswer": 0, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q12", "variant": 23, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 30 = 0\\)", "options": ["6", "11", "30", "5"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q13", "variant": 23, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 9\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["82", "41", "50", "32"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q14", "variant": 23, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["12", "16", "10", "24"], "correctAnswer": 0, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q15", "variant": 23, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 11 \\\\ x - y = -3 \\end{cases}\\)", "options": ["38", "23", "28", "30"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q16", "variant": 23, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)", "\\(0\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v23_q17", "variant": 23, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(1\\)", "\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v23_q18", "variant": 23, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["8", "16", "12", "6"], "correctAnswer": 3, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q19", "variant": 23, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["6", "3", "2", "4"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q20", "variant": 23, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v23_q21", "variant": 23, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{4}\\)", "options": ["\\(\\frac{x^{5}}{5}\\)", "\\(4x^{4}\\)", "\\(x^{3}\\)", "\\(4x^{3}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v23_q22", "variant": 23, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 2x^{1} dx\\)", "options": ["2", "8", "4", "4"], "correctAnswer": 0, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v23_q23", "variant": 23, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((-\\infty; \\infty)\\)", "\\((5; \\infty)\\)"], "correctAnswer": 3, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v23_q24", "variant": 23, "text": "Funksiya berilgan: \\(f(x) = 5x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["30", "12", "15", "20"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v23_q25", "variant": 23, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\sin x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\tan x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v23_q26", "variant": 23, "text": "To'g'ri burchakli uchburchakning katetlari 6 va 9 ga teng. Uning yuzini toping.", "options": ["54", "27", "24", "32"], "correctAnswer": 1, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v23_q27", "variant": 23, "text": "To'g'ri to'rtburchakning tomonlari 4 va 4 ga teng. Uning perimetrini toping.", "options": ["18", "32", "12", "16"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v23_q28", "variant": 23, "text": "Kubning qirrasi 4 ga teng. Uning hajmini toping.", "options": ["84", "54", "64", "16"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v23_q29", "variant": 23, "text": "Radiusi 7 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(49\\pi\\)", "\\(343\\pi\\)", "\\(14\\pi\\)", "\\(7\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v23_q30", "variant": 23, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 5 ga teng. Uning hajmini toping.", "options": ["\\(40\\pi\\)", "\\(10\\pi\\)", "\\(25\\pi\\)", "\\(20\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v24_q1", "variant": 24, "text": "Hisoblang: \\(16 + 36\\)", "options": ["52", "61", "43", "51"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v24_q2", "variant": 24, "text": "Hisoblang: \\(96 \\cdot 6\\)", "options": ["581", "586", "576", "571"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v24_q3", "variant": 24, "text": "Soddalashtiring: \\(\\left(\\frac{1}{20} + \\frac{1}{73}\\right) \\cdot 1460\\)", "options": ["186", "93", "91", "98"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v24_q4", "variant": 24, "text": "\\(650\\) ning \\(3\\%\\) ini toping.", "options": ["18", "19", "24", "21"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v24_q5", "variant": 24, "text": "Tenglamani yeching: \\(x + 41 = 71\\)", "options": ["60", "30", "27", "35"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v24_q6", "variant": 24, "text": "Soddalashtiring: \\((8x + 7y)^2 - 112xy\\)", "options": ["\\(64x^2 - 49y^2\\)", "\\(64x^2 + 49y^2\\)", "\\(64x^2 + 112xy + 49y^2\\)", "\\(8x^2 + 7y^2\\)"], "correctAnswer": 0, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v24_q7", "variant": 24, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 64\\)", "options": ["\\((x - 8)(x + 8)\\)", "\\(x(x - 64)\\)", "\\((x - 8)^2\\)", "\\((x + 8)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v24_q8", "variant": 24, "text": "Hisoblang: \\(\\sqrt{64 \\cdot 4}\\)", "options": ["32", "14", "19", "16"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v24_q9", "variant": 24, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{8} = \\frac{24}{4}\\)", "options": ["45", "48", "49", "96"], "correctAnswer": 2, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v24_q10", "variant": 24, "text": "Ifodani qiymatini toping: \\(3a + 4b\\), bunda \\(a=3, b=2\\)", "options": ["17", "18", "15", "21"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v24_q11", "variant": 24, "text": "Tengsizlikni yeching: \\(x + 2 < 12\\)", "options": ["\\([10; \\infty)\\)", "\\((10; \\infty)\\)", "\\((-\\infty; 10]\\)", "\\((-\\infty; 10\\)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q12", "variant": 24, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 13x + 36 = 0\\)", "options": ["13", "9", "4", "36"], "correctAnswer": 3, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q13", "variant": 24, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 11\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["49", "38", "98", "60"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q14", "variant": 24, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "10", "12", "24"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q15", "variant": 24, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 10 \\\\ x - y = -4 \\end{cases}\\)", "options": ["16", "23", "31", "21"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q16", "variant": 24, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\sqrt{3}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(1\\)"], "correctAnswer": 1, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v24_q17", "variant": 24, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(0\\)", "\\(1\\)", "\\(2\\sin^2 x\\)"], "correctAnswer": 3, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v24_q18", "variant": 24, "text": "Tenglamani yeching: \\(\\log_2 x = 4\\)", "options": ["14", "20", "32", "16"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q19", "variant": 24, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["6", "3", "2", "4"], "correctAnswer": 3, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q20", "variant": 24, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\((9; \\infty)\\)", "\\([0; 9]\\)", "\\((0; 9)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v24_q21", "variant": 24, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{2}\\)", "\\(2x^{1}\\)", "\\(\\frac{x^{3}}{3}\\)", "\\(x^{1}\\)"], "correctAnswer": 3, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v24_q22", "variant": 24, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["10", "64", "32", "30"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v24_q23", "variant": 24, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 3}\\)", "options": ["\\((-\\infty; 3]\\)", "\\((-\\infty; \\infty)\\)", "\\([3; \\infty)\\)", "\\((3; \\infty)\\)"], "correctAnswer": 3, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v24_q24", "variant": 24, "text": "Funksiya berilgan: \\(f(x) = 4x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["18", "26", "10", "13"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v24_q25", "variant": 24, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(\\tan x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v24_q26", "variant": 24, "text": "To'g'ri burchakli uchburchakning katetlari 7 va 10 ga teng. Uning yuzini toping.", "options": ["70", "32", "35", "40"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v24_q27", "variant": 24, "text": "To'g'ri to'rtburchakning tomonlari 8 va 9 ga teng. Uning perimetrini toping.", "options": ["36", "34", "30", "68"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v24_q28", "variant": 24, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["125", "145", "25", "115"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v24_q29", "variant": 24, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(5\\pi\\)", "\\(125\\pi\\)", "\\(25\\pi\\)", "\\(10\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v24_q30", "variant": 24, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(24\\pi\\)", "\\(9\\pi\\)", "\\(6\\pi\\)", "\\(12\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v25_q1", "variant": 25, "text": "Hisoblang: \\(32 + 50\\)", "options": ["79", "85", "81", "82"], "correctAnswer": 3, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v25_q2", "variant": 25, "text": "Hisoblang: \\(28 \\cdot 3\\)", "options": ["94", "92", "84", "79"], "correctAnswer": 1, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v25_q3", "variant": 25, "text": "Soddalashtiring: \\(\\left(\\frac{1}{50} + \\frac{1}{76}\\right) \\cdot 3800\\)", "options": ["252", "126", "124", "131"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v25_q4", "variant": 25, "text": "\\(250\\) ning \\(4\\%\\) ini toping.", "options": ["10", "15", "12", "9"], "correctAnswer": 2, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v25_q5", "variant": 25, "text": "Tenglamani yeching: \\(x + 48 = 72\\)", "options": ["30", "48", "21", "24"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v25_q6", "variant": 25, "text": "Soddalashtiring: \\((9x + 7y)^2 - 126xy\\)", "options": ["\\(9x^2 + 7y^2\\)", "\\(81x^2 - 49y^2\\)", "\\(81x^2 + 126xy + 49y^2\\)", "\\(81x^2 + 49y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v25_q7", "variant": 25, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 9\\)", "options": ["\\((x - 3)(x + 3)\\)", "\\((x - 3)^2\\)", "\\(x(x - 9)\\)", "\\((x + 3)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v25_q8", "variant": 25, "text": "Hisoblang: \\(\\sqrt{16 \\cdot 4}\\)", "options": ["8", "6", "16", "11"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v25_q9", "variant": 25, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{9} = \\frac{4}{2}\\)", "options": ["15", "36", "18", "19"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v25_q10", "variant": 25, "text": "Ifodani qiymatini toping: \\(6a + 8b\\), bunda \\(a=3, b=2\\)", "options": ["35", "38", "34", "32"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v25_q11", "variant": 25, "text": "Tengsizlikni yeching: \\(x + 5 < 17\\)", "options": ["\\([12; \\infty)\\)", "\\((12; \\infty)\\)", "\\((-\\infty; 12]\\)", "\\((-\\infty; 12\\)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q12", "variant": 25, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 10x + 16 = 0\\)", "options": ["16", "10", "2", "8"], "correctAnswer": 0, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q13", "variant": 25, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["25", "32", "39", "64"], "correctAnswer": 0, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q14", "variant": 25, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "12", "6", "8"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q15", "variant": 25, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 9 \\\\ x - y = -3 \\end{cases}\\)", "options": ["28", "20", "18", "13"], "correctAnswer": 1, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q16", "variant": 25, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{\\sqrt{2}}{2}\\)", "\\(2\\)", "\\(\\sqrt{2}\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v25_q17", "variant": 25, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)", "\\(1\\)", "\\(0\\)"], "correctAnswer": 0, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v25_q18", "variant": 25, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["2", "8", "4", "8"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q19", "variant": 25, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["5", "8", "3", "4"], "correctAnswer": 0, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q20", "variant": 25, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((0; 9)\\)", "\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v25_q21", "variant": 25, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{4}\\)", "options": ["\\(\\frac{x^{5}}{5}\\)", "\\(x^{3}\\)", "\\(4x^{3}\\)", "\\(4x^{4}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v25_q22", "variant": 25, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["32", "8", "16", "14"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v25_q23", "variant": 25, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 2}\\)", "options": ["\\((2; \\infty)\\)", "\\((-\\infty; 2]\\)", "\\((-\\infty; \\infty)\\)", "\\([2; \\infty)\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v25_q24", "variant": 25, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["6", "14", "18", "9"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v25_q25", "variant": 25, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(-\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\sin x + C\\)", "\\(\\cos x + C\\)"], "correctAnswer": 0, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v25_q26", "variant": 25, "text": "To'g'ri burchakli uchburchakning katetlari 4 va 7 ga teng. Uning yuzini toping.", "options": ["28", "11", "14", "19"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v25_q27", "variant": 25, "text": "To'g'ri to'rtburchakning tomonlari 8 va 9 ga teng. Uning perimetrini toping.", "options": ["30", "34", "68", "36"], "correctAnswer": 0, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v25_q28", "variant": 25, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["145", "115", "25", "125"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v25_q29", "variant": 25, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(5\\pi\\)", "\\(25\\pi\\)", "\\(10\\pi\\)", "\\(125\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v25_q30", "variant": 25, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 7 ga teng. Uning hajmini toping.", "options": ["\\(14\\pi\\)", "\\(49\\pi\\)", "\\(56\\pi\\)", "\\(28\\pi\\)"], "correctAnswer": 0, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v26_q1", "variant": 26, "text": "Hisoblang: \\(98 + 10\\)", "options": ["113", "99", "108", "107"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v26_q2", "variant": 26, "text": "Hisoblang: \\(21 \\cdot 8\\)", "options": ["178", "163", "168", "173"], "correctAnswer": 3, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v26_q3", "variant": 26, "text": "Soddalashtiring: \\(\\left(\\frac{1}{48} + \\frac{1}{45}\\right) \\cdot 2160\\)", "options": ["93", "186", "98", "91"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v26_q4", "variant": 26, "text": "\\(100\\) ning \\(3\\%\\) ini toping.", "options": ["2", "5", "3", "8"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v26_q5", "variant": 26, "text": "Tenglamani yeching: \\(x + 77 = 10\\)", "options": ["-62", "-134", "-70", "-67"], "correctAnswer": 3, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v26_q6", "variant": 26, "text": "Soddalashtiring: \\((8x + 2y)^2 - 32xy\\)", "options": ["\\(8x^2 + 2y^2\\)", "\\(64x^2 - 4y^2\\)", "\\(64x^2 + 4y^2\\)", "\\(64x^2 + 32xy + 4y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v26_q7", "variant": 26, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 25\\)", "options": ["\\((x - 5)(x + 5)\\)", "\\((x + 5)^2\\)", "\\(x(x - 25)\\)", "\\((x - 5)^2\\)"], "correctAnswer": 0, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v26_q8", "variant": 26, "text": "Hisoblang: \\(\\sqrt{36 \\cdot 25}\\)", "options": ["28", "33", "30", "60"], "correctAnswer": 0, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v26_q9", "variant": 26, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{2} = \\frac{45}{5}\\)", "options": ["15", "19", "36", "18"], "correctAnswer": 1, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v26_q10", "variant": 26, "text": "Ifodani qiymatini toping: \\(9a + 8b\\), bunda \\(a=3, b=2\\)", "options": ["44", "41", "47", "43"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v26_q11", "variant": 26, "text": "Tengsizlikni yeching: \\(x + 5 < 13\\)", "options": ["\\([8; \\infty)\\)", "\\((-\\infty; 8\\)\\)", "\\((-\\infty; 8]\\)", "\\((8; \\infty)\\)"], "correctAnswer": 3, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q12", "variant": 26, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 14x + 33 = 0\\)", "options": ["14", "3", "33", "11"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q13", "variant": 26, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 9\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["40", "31", "80", "49"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q14", "variant": 26, "text": "Geometrik progressiyada \\(b_1 = 3\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "24", "12", "10"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q15", "variant": 26, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 13 \\\\ x - y = -5 \\end{cases}\\)", "options": ["46", "36", "31", "38"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q16", "variant": 26, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(2\\)", "\\(\\frac{\\sqrt{2}}{2}\\)", "\\(\\sqrt{2}\\)", "\\(1\\)"], "correctAnswer": 3, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v26_q17", "variant": 26, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(2\\cos^2 x\\)", "\\(2\\sin^2 x\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v26_q18", "variant": 26, "text": "Tenglamani yeching: \\(\\log_2 x = 3\\)", "options": ["6", "12", "16", "8"], "correctAnswer": 0, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q19", "variant": 26, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["5", "3", "4", "8"], "correctAnswer": 0, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q20", "variant": 26, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v26_q21", "variant": 26, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(5x^{5}\\)", "\\(\\frac{x^{6}}{6}\\)", "\\(x^{4}\\)", "\\(5x^{4}\\)"], "correctAnswer": 2, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v26_q22", "variant": 26, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["8", "16", "14", "32"], "correctAnswer": 2, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v26_q23", "variant": 26, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 2}\\)", "options": ["\\((2; \\infty)\\)", "\\([2; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 2]\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v26_q24", "variant": 26, "text": "Funksiya berilgan: \\(f(x) = 2x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["18", "6", "14", "9"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v26_q25", "variant": 26, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\sin x + C\\)", "\\(-\\sin x + C\\)", "\\(\\cos x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v26_q26", "variant": 26, "text": "To'g'ri burchakli uchburchakning katetlari 8 va 6 ga teng. Uning yuzini toping.", "options": ["24", "29", "48", "21"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v26_q27", "variant": 26, "text": "To'g'ri to'rtburchakning tomonlari 8 va 7 ga teng. Uning perimetrini toping.", "options": ["30", "60", "26", "32"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v26_q28", "variant": 26, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["25", "125", "145", "115"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v26_q29", "variant": 26, "text": "Radiusi 6 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(36\\pi\\)", "\\(216\\pi\\)", "\\(12\\pi\\)", "\\(6\\pi\\)"], "correctAnswer": 2, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v26_q30", "variant": 26, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(16\\pi\\)", "\\(32\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 3, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v27_q1", "variant": 27, "text": "Hisoblang: \\(72 + 92\\)", "options": ["163", "154", "164", "173"], "correctAnswer": 2, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v27_q2", "variant": 27, "text": "Hisoblang: \\(31 \\cdot 9\\)", "options": ["274", "279", "283", "289"], "correctAnswer": 2, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v27_q3", "variant": 27, "text": "Soddalashtiring: \\(\\left(\\frac{1}{62} + \\frac{1}{59}\\right) \\cdot 3658\\)", "options": ["121", "242", "119", "126"], "correctAnswer": 2, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v27_q4", "variant": 27, "text": "\\(840\\) ning \\(3\\%\\) ini toping.", "options": ["27", "24", "25", "30"], "correctAnswer": 0, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v27_q5", "variant": 27, "text": "Tenglamani yeching: \\(x + 32 = 68\\)", "options": ["40", "36", "33", "72"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v27_q6", "variant": 27, "text": "Soddalashtiring: \\((5x + 7y)^2 - 70xy\\)", "options": ["\\(25x^2 + 49y^2\\)", "\\(25x^2 + 70xy + 49y^2\\)", "\\(5x^2 + 7y^2\\)", "\\(25x^2 - 49y^2\\)"], "correctAnswer": 3, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v27_q7", "variant": 27, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 49\\)", "options": ["\\(x(x - 49)\\)", "\\((x - 7)(x + 7)\\)", "\\((x + 7)^2\\)", "\\((x - 7)^2\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v27_q8", "variant": 27, "text": "Hisoblang: \\(\\sqrt{25 \\cdot 4}\\)", "options": ["20", "8", "13", "10"], "correctAnswer": 1, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v27_q9", "variant": 27, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{4} = \\frac{14}{2}\\)", "options": ["56", "28", "25", "29"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v27_q10", "variant": 27, "text": "Ifodani qiymatini toping: \\(5a + 9b\\), bunda \\(a=3, b=2\\)", "options": ["33", "31", "34", "37"], "correctAnswer": 0, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v27_q11", "variant": 27, "text": "Tengsizlikni yeching: \\(x + 4 < 12\\)", "options": ["\\([8; \\infty)\\)", "\\((-\\infty; 8\\)\\)", "\\((8; \\infty)\\)", "\\((-\\infty; 8]\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q12", "variant": 27, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 12x + 32 = 0\\)", "options": ["12", "8", "32", "4"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q13", "variant": 27, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 7\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["66", "40", "26", "33"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q14", "variant": 27, "text": "Geometrik progressiyada \\(b_1 = 5\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["40", "18", "24", "20"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q15", "variant": 27, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 12 \\\\ x - y = -2 \\end{cases}\\)", "options": ["35", "30", "45", "37"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q16", "variant": 27, "text": "Hisoblang: \\(\\sin 30^\\circ + \\cos 30^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\frac{1 - \\sqrt{3}}{2}\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v27_q17", "variant": 27, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\cos^2 x\\)", "\\(0\\)", "\\(2\\sin^2 x\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v27_q18", "variant": 27, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["8", "2", "4", "8"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q19", "variant": 27, "text": "Tenglamani yeching: \\(2^x = 32\\)", "options": ["5", "10", "6", "4"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q20", "variant": 27, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((-\\infty; 9)\\)", "\\([0; 9]\\)", "\\((9; \\infty)\\)", "\\((0; 9)\\)"], "correctAnswer": 0, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v27_q21", "variant": 27, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(5x^{4}\\)", "\\(x^{4}\\)", "\\(\\frac{x^{6}}{6}\\)", "\\(5x^{5}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v27_q22", "variant": 27, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 4x^{3} dx\\)", "options": ["16", "14", "8", "32"], "correctAnswer": 1, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v27_q23", "variant": 27, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 2}\\)", "options": ["\\((2; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 2]\\)", "\\([2; \\infty)\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v27_q24", "variant": 27, "text": "Funksiya berilgan: \\(f(x) = 5x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["12", "20", "15", "30"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v27_q25", "variant": 27, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)", "\\(\\tan x + C\\)"], "correctAnswer": 1, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v27_q26", "variant": 27, "text": "To'g'ri burchakli uchburchakning katetlari 4 va 4 ga teng. Uning yuzini toping.", "options": ["16", "13", "8", "5"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v27_q27", "variant": 27, "text": "To'g'ri to'rtburchakning tomonlari 5 va 7 ga teng. Uning perimetrini toping.", "options": ["26", "24", "20", "48"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v27_q28", "variant": 27, "text": "Kubning qirrasi 3 ga teng. Uning hajmini toping.", "options": ["17", "27", "9", "47"], "correctAnswer": 0, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v27_q29", "variant": 27, "text": "Radiusi 4 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(4\\pi\\)", "\\(16\\pi\\)", "\\(64\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v27_q30", "variant": 27, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 3 ga teng. Uning hajmini toping.", "options": ["\\(24\\pi\\)", "\\(9\\pi\\)", "\\(6\\pi\\)", "\\(12\\pi\\)"], "correctAnswer": 2, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v28_q1", "variant": 28, "text": "Hisoblang: \\(69 + 14\\)", "options": ["83", "74", "92", "82"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v28_q2", "variant": 28, "text": "Hisoblang: \\(51 \\cdot 5\\)", "options": ["257", "265", "255", "250"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v28_q3", "variant": 28, "text": "Soddalashtiring: \\(\\left(\\frac{1}{48} + \\frac{1}{19}\\right) \\cdot 912\\)", "options": ["72", "134", "67", "65"], "correctAnswer": 3, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v28_q4", "variant": 28, "text": "\\(470\\) ning \\(2\\%\\) ini toping.", "options": ["9", "11", "14", "8"], "correctAnswer": 1, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v28_q5", "variant": 28, "text": "Tenglamani yeching: \\(x + 27 = 56\\)", "options": ["34", "29", "58", "26"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v28_q6", "variant": 28, "text": "Soddalashtiring: \\((2x + 2y)^2 - 8xy\\)", "options": ["\\(4x^2 + 4y^2\\)", "\\(4x^2 - 4y^2\\)", "\\(4x^2 + 8xy + 4y^2\\)", "\\(2x^2 + 2y^2\\)"], "correctAnswer": 1, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v28_q7", "variant": 28, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 4\\)", "options": ["\\((x + 2)^2\\)", "\\(x(x - 4)\\)", "\\((x - 2)^2\\)", "\\((x - 2)(x + 2)\\)"], "correctAnswer": 3, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v28_q8", "variant": 28, "text": "Hisoblang: \\(\\sqrt{16 \\cdot 4}\\)", "options": ["11", "16", "8", "6"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v28_q9", "variant": 28, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{3} = \\frac{30}{5}\\)", "options": ["36", "19", "18", "15"], "correctAnswer": 1, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v28_q10", "variant": 28, "text": "Ifodani qiymatini toping: \\(8a + 4b\\), bunda \\(a=3, b=2\\)", "options": ["33", "30", "36", "32"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v28_q11", "variant": 28, "text": "Tengsizlikni yeching: \\(x + 2 < 10\\)", "options": ["\\([8; \\infty)\\)", "\\((-\\infty; 8]\\)", "\\((8; \\infty)\\)", "\\((-\\infty; 8\\)\\)"], "correctAnswer": 2, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q12", "variant": 28, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 13x + 22 = 0\\)", "options": ["11", "2", "13", "22"], "correctAnswer": 3, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q13", "variant": 28, "text": "Arifmetik progressiyada \\(a_1 = 2\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["32", "20", "26", "52"], "correctAnswer": 1, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q14", "variant": 28, "text": "Geometrik progressiyada \\(b_1 = 5\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["18", "40", "20", "24"], "correctAnswer": 2, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q15", "variant": 28, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 15 \\\\ x - y = -5 \\end{cases}\\)", "options": ["45", "50", "60", "52"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q16", "variant": 28, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(1\\)", "\\(\\sqrt{2}\\)", "\\(2\\)", "\\(\\frac{\\sqrt{2}}{2}\\)"], "correctAnswer": 0, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v28_q17", "variant": 28, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(2\\sin^2 x\\)", "\\(1\\)", "\\(2\\cos^2 x\\)", "\\(0\\)"], "correctAnswer": 0, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v28_q18", "variant": 28, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["4", "8", "2", "8"], "correctAnswer": 2, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q19", "variant": 28, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["8", "5", "3", "4"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q20", "variant": 28, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)", "\\((0; 9)\\)"], "correctAnswer": 1, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v28_q21", "variant": 28, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{5}\\)", "options": ["\\(x^{4}\\)", "\\(5x^{4}\\)", "\\(\\frac{x^{6}}{6}\\)", "\\(5x^{5}\\)"], "correctAnswer": 0, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v28_q22", "variant": 28, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["10", "64", "32", "30"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v28_q23", "variant": 28, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 4}\\)", "options": ["\\([4; \\infty)\\)", "\\((-\\infty; \\infty)\\)", "\\((-\\infty; 4]\\)", "\\((4; \\infty)\\)"], "correctAnswer": 3, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v28_q24", "variant": 28, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["8", "16", "11", "22"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v28_q25", "variant": 28, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(-\\sin x + C\\)", "\\(\\sin x + C\\)", "\\(\\tan x + C\\)", "\\(\\cos x + C\\)"], "correctAnswer": 0, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v28_q26", "variant": 28, "text": "To'g'ri burchakli uchburchakning katetlari 4 va 9 ga teng. Uning yuzini toping.", "options": ["18", "15", "36", "23"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v28_q27", "variant": 28, "text": "To'g'ri to'rtburchakning tomonlari 3 va 10 ga teng. Uning perimetrini toping.", "options": ["28", "26", "22", "52"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v28_q28", "variant": 28, "text": "Kubning qirrasi 6 ga teng. Uning hajmini toping.", "options": ["36", "236", "216", "206"], "correctAnswer": 3, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v28_q29", "variant": 28, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(125\\pi\\)", "\\(25\\pi\\)", "\\(5\\pi\\)", "\\(10\\pi\\)"], "correctAnswer": 3, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v28_q30", "variant": 28, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 8 ga teng. Uning hajmini toping.", "options": ["\\(64\\pi\\)", "\\(16\\pi\\)", "\\(32\\pi\\)", "\\(64\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v29_q1", "variant": 29, "text": "Hisoblang: \\(23 + 51\\)", "options": ["74", "73", "82", "70"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v29_q2", "variant": 29, "text": "Hisoblang: \\(87 \\cdot 5\\)", "options": ["442", "430", "445", "435"], "correctAnswer": 0, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v29_q3", "variant": 29, "text": "Soddalashtiring: \\(\\left(\\frac{1}{23} + \\frac{1}{75}\\right) \\cdot 1725\\)", "options": ["103", "96", "196", "98"], "correctAnswer": 1, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v29_q4", "variant": 29, "text": "\\(980\\) ning \\(6\\%\\) ini toping.", "options": ["58", "63", "57", "60"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v29_q5", "variant": 29, "text": "Tenglamani yeching: \\(x + 95 = 31\\)", "options": ["-128", "-64", "-61", "-67"], "correctAnswer": 1, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v29_q6", "variant": 29, "text": "Soddalashtiring: \\((3x + 6y)^2 - 36xy\\)", "options": ["\\(9x^2 - 36y^2\\)", "\\(9x^2 + 36y^2\\)", "\\(9x^2 + 36xy + 36y^2\\)", "\\(3x^2 + 6y^2\\)"], "correctAnswer": 0, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v29_q7", "variant": 29, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 25\\)", "options": ["\\((x + 5)^2\\)", "\\(x(x - 25)\\)", "\\((x - 5)(x + 5)\\)", "\\((x - 5)^2\\)"], "correctAnswer": 2, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v29_q8", "variant": 29, "text": "Hisoblang: \\(\\sqrt{64 \\cdot 49}\\)", "options": ["59", "112", "56", "54"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v29_q9", "variant": 29, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{5} = \\frac{24}{3}\\)", "options": ["40", "80", "37", "41"], "correctAnswer": 3, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v29_q10", "variant": 29, "text": "Ifodani qiymatini toping: \\(2a + 6b\\), bunda \\(a=3, b=2\\)", "options": ["19", "22", "18", "16"], "correctAnswer": 2, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v29_q11", "variant": 29, "text": "Tengsizlikni yeching: \\(x + 5 < 16\\)", "options": ["\\((-\\infty; 11]\\)", "\\((11; \\infty)\\)", "\\((-\\infty; 11\\)\\)", "\\([11; \\infty)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q12", "variant": 29, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 9x + 14 = 0\\)", "options": ["2", "14", "9", "7"], "correctAnswer": 1, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q13", "variant": 29, "text": "Arifmetik progressiyada \\(a_1 = 4\\), \\(d = 6\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["56", "28", "22", "34"], "correctAnswer": 2, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q14", "variant": 29, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "12", "6", "8"], "correctAnswer": 3, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q15", "variant": 29, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 14 \\\\ x - y = -4 \\end{cases}\\)", "options": ["55", "45", "40", "47"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q16", "variant": 29, "text": "Hisoblang: \\(\\sin 45^\\circ + \\cos 45^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(2\\)", "\\(\\sqrt{2}\\)", "\\(1\\)", "\\(\\frac{\\sqrt{2}}{2}\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v29_q17", "variant": 29, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(0\\)", "\\(1\\)", "\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v29_q18", "variant": 29, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["4", "8", "2", "8"], "correctAnswer": 2, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q19", "variant": 29, "text": "Tenglamani yeching: \\(2^x = 8\\)", "options": ["2", "3", "4", "6"], "correctAnswer": 2, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q20", "variant": 29, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((0; 9)\\)", "\\((-\\infty; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 2, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v29_q21", "variant": 29, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{2}\\)", "\\(x^{1}\\)", "\\(2x^{1}\\)", "\\(\\frac{x^{3}}{3}\\)"], "correctAnswer": 1, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v29_q22", "variant": 29, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 2x^{1} dx\\)", "options": ["4", "4", "8", "2"], "correctAnswer": 3, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v29_q23", "variant": 29, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 2}\\)", "options": ["\\((2; \\infty)\\)", "\\((-\\infty; 2]\\)", "\\([2; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 0, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v29_q24", "variant": 29, "text": "Funksiya berilgan: \\(f(x) = 5x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["12", "20", "15", "30"], "correctAnswer": 2, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v29_q25", "variant": 29, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(-\\sin x + C\\)", "\\(\\cos x + C\\)", "\\(\\sin x + C\\)", "\\(\\tan x + C\\)"], "correctAnswer": 0, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v29_q26", "variant": 29, "text": "To'g'ri burchakli uchburchakning katetlari 8 va 7 ga teng. Uning yuzini toping.", "options": ["33", "56", "28", "25"], "correctAnswer": 2, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v29_q27", "variant": 29, "text": "To'g'ri to'rtburchakning tomonlari 7 va 4 ga teng. Uning perimetrini toping.", "options": ["22", "44", "18", "24"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v29_q28", "variant": 29, "text": "Kubning qirrasi 5 ga teng. Uning hajmini toping.", "options": ["25", "115", "145", "125"], "correctAnswer": 1, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v29_q29", "variant": 29, "text": "Radiusi 5 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(25\\pi\\)", "\\(10\\pi\\)", "\\(5\\pi\\)", "\\(125\\pi\\)"], "correctAnswer": 1, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v29_q30", "variant": 29, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 6 ga teng. Uning hajmini toping.", "options": ["\\(24\\pi\\)", "\\(12\\pi\\)", "\\(48\\pi\\)", "\\(36\\pi\\)"], "correctAnswer": 1, "difficulty": 1.9, "category": "Geometriya"},
+  {"id": "v30_q1", "variant": 30, "text": "Hisoblang: \\(47 + 99\\)", "options": ["146", "154", "145", "141"], "correctAnswer": 0, "difficulty": -1.35, "category": "Sonlar va amallar"},
+  {"id": "v30_q2", "variant": 30, "text": "Hisoblang: \\(35 \\cdot 8\\)", "options": ["290", "280", "275", "282"], "correctAnswer": 3, "difficulty": -1.2, "category": "Sonlar va amallar"},
+  {"id": "v30_q3", "variant": 30, "text": "Soddalashtiring: \\(\\left(\\frac{1}{81} + \\frac{1}{69}\\right) \\cdot 5589\\)", "options": ["155", "148", "300", "150"], "correctAnswer": 1, "difficulty": -1.05, "category": "Sonlar va amallar"},
+  {"id": "v30_q4", "variant": 30, "text": "\\(730\\) ning \\(5\\%\\) ini toping.", "options": ["35", "36", "41", "38"], "correctAnswer": 3, "difficulty": -0.9, "category": "Sonlar va amallar"},
+  {"id": "v30_q5", "variant": 30, "text": "Tenglamani yeching: \\(x + 17 = 60\\)", "options": ["86", "40", "43", "48"], "correctAnswer": 2, "difficulty": -0.75, "category": "Sonlar va amallar"},
+  {"id": "v30_q6", "variant": 30, "text": "Soddalashtiring: \\((3x + 6y)^2 - 36xy\\)", "options": ["\\(9x^2 + 36xy + 36y^2\\)", "\\(9x^2 + 36y^2\\)", "\\(9x^2 - 36y^2\\)", "\\(3x^2 + 6y^2\\)"], "correctAnswer": 2, "difficulty": -0.48, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v30_q7", "variant": 30, "text": "Ko'paytuvchilarga ajrating: \\(x^2 - 49\\)", "options": ["\\((x + 7)^2\\)", "\\((x - 7)(x + 7)\\)", "\\((x - 7)^2\\)", "\\(x(x - 49)\\)"], "correctAnswer": 1, "difficulty": -0.36, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v30_q8", "variant": 30, "text": "Hisoblang: \\(\\sqrt{36 \\cdot 81}\\)", "options": ["54", "57", "108", "52"], "correctAnswer": 3, "difficulty": -0.24, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v30_q9", "variant": 30, "text": "Proportsiyadan \\(x\\) ni toping: \\(\\frac{x}{9} = \\frac{14}{2}\\)", "options": ["64", "126", "60", "63"], "correctAnswer": 0, "difficulty": -0.12, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v30_q10", "variant": 30, "text": "Ifodani qiymatini toping: \\(7a + 7b\\), bunda \\(a=3, b=2\\)", "options": ["39", "33", "36", "35"], "correctAnswer": 3, "difficulty": 0.0, "category": "Algebraik shakl almashtirishlar"},
+  {"id": "v30_q11", "variant": 30, "text": "Tengsizlikni yeching: \\(x + 3 < 13\\)", "options": ["\\([10; \\infty)\\)", "\\((10; \\infty)\\)", "\\((-\\infty; 10]\\)", "\\((-\\infty; 10\\)\\)"], "correctAnswer": 1, "difficulty": 0.2, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q12", "variant": 30, "text": "Tenglamaning ildizlari yig'indisini toping: \\(x^2 - 11x + 28 = 0\\)", "options": ["4", "11", "28", "7"], "correctAnswer": 2, "difficulty": 0.3, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q13", "variant": 30, "text": "Arifmetik progressiyada \\(a_1 = 5\\), \\(d = 11\\) bo'lsa, \\(a_5\\) ni toping.", "options": ["60", "49", "98", "38"], "correctAnswer": 3, "difficulty": 0.4, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q14", "variant": 30, "text": "Geometrik progressiyada \\(b_1 = 2\\), \\(q = 2\\) bo'lsa, \\(b_3\\) ni toping.", "options": ["16", "8", "12", "6"], "correctAnswer": 1, "difficulty": 0.5, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q15", "variant": 30, "text": "Tenglamalar sistemasini yeching va \\(x \\cdot y\\) ni toping: \\(\\begin{cases} x + y = 10 \\\\ x - y = -2 \\end{cases}\\)", "options": ["34", "19", "24", "26"], "correctAnswer": 3, "difficulty": 0.6, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q16", "variant": 30, "text": "Hisoblang: \\(\\sin 60^\\circ + \\cos 60^\\circ\\) ifodaning qiymati qaysi qatorda to'g'ri berilgan?", "options": ["\\(0\\)", "\\(\\frac{1 + \\sqrt{3}}{2}\\)", "\\(\\sqrt{3}\\)", "\\(1\\)"], "correctAnswer": 2, "difficulty": 0.7, "category": "Trigonometriya"},
+  {"id": "v30_q17", "variant": 30, "text": "Soddalashtiring: \\(1 - \\sin^2 x + \\cos^2 x\\)", "options": ["\\(1\\)", "\\(0\\)", "\\(2\\sin^2 x\\)", "\\(2\\cos^2 x\\)"], "correctAnswer": 2, "difficulty": 0.8, "category": "Trigonometriya"},
+  {"id": "v30_q18", "variant": 30, "text": "Tenglamani yeching: \\(\\log_2 x = 2\\)", "options": ["4", "2", "8", "8"], "correctAnswer": 1, "difficulty": 0.9, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q19", "variant": 30, "text": "Tenglamani yeching: \\(2^x = 16\\)", "options": ["8", "5", "4", "3"], "correctAnswer": 1, "difficulty": 1.0, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q20", "variant": 30, "text": "Tengsizlikni yeching: \\(\\log_3 x < 2\\)", "options": ["\\((9; \\infty)\\)", "\\((-\\infty; 9)\\)", "\\((0; 9)\\)", "\\([0; 9]\\)"], "correctAnswer": 1, "difficulty": 1.1, "category": "Tenglama va tengsizliklar"},
+  {"id": "v30_q21", "variant": 30, "text": "Funksiyaning hosilasini toping: \\(f(x) = x^{2}\\)", "options": ["\\(2x^{1}\\)", "\\(2x^{2}\\)", "\\(\\frac{x^{3}}{3}\\)", "\\(x^{1}\\)"], "correctAnswer": 3, "difficulty": 1.18, "category": "Matematik analiz asoslari"},
+  {"id": "v30_q22", "variant": 30, "text": "Integralni hisoblang: \\(\\int_{0}^{2} 5x^{4} dx\\)", "options": ["64", "10", "30", "32"], "correctAnswer": 2, "difficulty": 1.26, "category": "Matematik analiz asoslari"},
+  {"id": "v30_q23", "variant": 30, "text": "Funksiyaning aniqlanish sohasini toping: \\(y = \\sqrt{x - 5}\\)", "options": ["\\([5; \\infty)\\)", "\\((-\\infty; 5]\\)", "\\((5; \\infty)\\)", "\\((-\\infty; \\infty)\\)"], "correctAnswer": 2, "difficulty": 1.34, "category": "Funksiyalar"},
+  {"id": "v30_q24", "variant": 30, "text": "Funksiya berilgan: \\(f(x) = 3x^2 + 5x\\). Hosila \\(f'(1)\\) ning qiymatini toping.", "options": ["22", "16", "8", "11"], "correctAnswer": 3, "difficulty": 1.42, "category": "Matematik analiz asoslari"},
+  {"id": "v30_q25", "variant": 30, "text": "Boshlang'ich funksiyasini toping: \\(f(x) = \\cos x\\)", "options": ["\\(\\tan x + C\\)", "\\(\\cos x + C\\)", "\\(-\\sin x + C\\)", "\\(\\sin x + C\\)"], "correctAnswer": 2, "difficulty": 1.5, "category": "Matematik analiz asoslari"},
+  {"id": "v30_q26", "variant": 30, "text": "To'g'ri burchakli uchburchakning katetlari 7 va 9 ga teng. Uning yuzini toping.", "options": ["31", "36", "28", "62"], "correctAnswer": 0, "difficulty": 1.58, "category": "Geometriya"},
+  {"id": "v30_q27", "variant": 30, "text": "To'g'ri to'rtburchakning tomonlari 4 va 9 ga teng. Uning perimetrini toping.", "options": ["28", "26", "22", "52"], "correctAnswer": 2, "difficulty": 1.66, "category": "Geometriya"},
+  {"id": "v30_q28", "variant": 30, "text": "Kubning qirrasi 8 ga teng. Uning hajmini toping.", "options": ["532", "64", "502", "512"], "correctAnswer": 2, "difficulty": 1.74, "category": "Geometriya"},
+  {"id": "v30_q29", "variant": 30, "text": "Radiusi 7 ga teng bo'lgan doiraning yuzini toping.", "options": ["\\(343\\pi\\)", "\\(14\\pi\\)", "\\(7\\pi\\)", "\\(49\\pi\\)"], "correctAnswer": 1, "difficulty": 1.82, "category": "Geometriya"},
+  {"id": "v30_q30", "variant": 30, "text": "Tsilindrning asosi radiusi 2 ga, balandligi 4 ga teng. Uning hajmini toping.", "options": ["\\(32\\pi\\)", "\\(16\\pi\\)", "\\(16\\pi\\)", "\\(8\\pi\\)"], "correctAnswer": 3, "difficulty": 1.9, "category": "Geometriya"},
+
+  // ==================== ONA TILI VA ADABIYOT SAVOLLARI (900 TA SAVOL, 30 TA VARIANT, TUZATILGAN) ====================
   {"id": "v1_lang_q1", "variant": 1, "subject": "lang", "text": "Quyidagi gaplarning qaysi birida ham affiksatsiya, ham kompozitsiya usulida yasalgan sifatlar ishtirok etgan?", "options": ["Samig’ aka elliklardan oshgan, tarvuzdek yum-yumaloq, hazilkash, shirinso’z odam.", "Milliy mafkuramizda milliylik umumbashariy g’oyalar bilan uyg’unlashib ketgan.", "Hulkarning och jigarrang yanoqlarida ajib bir qizillik o’ynaydi.", "Osmono’par koshonalar, yangi libos kiygan cho’l-u sahrolar tasviri qo’shiq parvoziga esh bo’ladi."], "correctAnswer": 0, "difficulty": -1.0, "category": "Ona tili (Grammatika)"},
   {"id": "v1_lang_q2", "variant": 1, "subject": "lang", "text": "Qaysi javobda tarkibida faqat unli va jarangli undosh tovushlar ishtirok etgan sifat yasovchi qo‘shimchalar keltirilgan?", "options": ["-ma, -siz, -kor, -chan", "-ildoq, -bad, -bob, -don", "-zor, -g‘ich, -lab, -dor", "-don, be-, -bad, -mand"], "correctAnswer": 1, "difficulty": -0.92, "category": "Ona tili (Grammatika)"},
   {"id": "v1_lang_q3", "variant": 1, "subject": "lang", "text": "Yarimjon, chalajon. Berilgan so'zlar haqidagi qaysi fikr xato?", "options": ["ushbu so‘zlar tuzilishiga ko‘ra qo‘shma so'zlar sanaladi", "ushbu so‘ zlar shakl va ma’no munosabatiga ko‘ra ma’nodosh so‘zlardir", "ushbu so‘zlarning tarkibi sifat + ot dan tashkil topgan", "ushbu so'zlar kompozitsiya usulida yasalgan yasama so‘zlardir"], "correctAnswer": 0, "difficulty": -0.84, "category": "Ona tili (Grammatika)"},
